@@ -1,8 +1,7 @@
 "use client"
 
 import type React from "react"
-
-import { useState, useEffect } from "react"
+import { Suspense, useState, useEffect } from "react"
 import { useSearchParams } from "next/navigation"
 import { Mail, Phone, MapPin, Send, FileText, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -16,6 +15,23 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import FadeInSection from "@/components/fade-in-section"
 import AnimatedText from "@/components/animated-text"
 import { useLanguage } from "@/lib/contexts/language-context"
+
+function ContactTabs({ onTabChange }: { onTabChange: (tab: string) => void }) {
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const tab = searchParams.get("tab")
+    if (tab === "appointment") {
+      onTabChange("appointment")
+    } else if (tab === "quote") {
+      onTabChange("quote")
+    } else {
+      onTabChange("contact")
+    }
+  }, [searchParams, onTabChange])
+
+  return null
+}
 
 export default function ContactContent() {
   const { t } = useLanguage()
@@ -32,19 +48,11 @@ export default function ContactContent() {
     message: "",
   })
 
-  const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState("contact")
 
-  useEffect(() => {
-    const tab = searchParams.get("tab")
-    if (tab === "appointment") {
-      setActiveTab("appointment")
-    } else if (tab === "quote") {
-      setActiveTab("quote")
-    } else {
-      setActiveTab("contact")
-    }
-  }, [searchParams])
+  const handleTabChange = (tab: string) => {
+    setActiveTab(tab)
+  }
 
   const [quoteData, setQuoteData] = useState({
     name: "",
@@ -102,6 +110,9 @@ export default function ContactContent() {
 
   return (
     <div className="pt-16">
+      <Suspense fallback={null}>
+        <ContactTabs onTabChange={handleTabChange} />
+      </Suspense>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
