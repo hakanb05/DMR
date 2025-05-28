@@ -138,7 +138,7 @@ export default function ServicesContent() {
                 variant="outline"
                 className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4"
               >
-                <Link href="/quote">{t("requestQuote")}</Link>
+                <Link href="/contact?tab=quote">{t("requestQuote")}</Link>
               </Button>
             </div>
           </FadeInSection>

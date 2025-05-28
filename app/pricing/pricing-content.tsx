@@ -135,7 +135,7 @@ export default function PricingContent() {
                       asChild
                       className={`w-full mt-auto ${plan.popular ? "bg-blue-600 hover:bg-blue-700 text-white" : "bg-gray-100 hover:bg-gray-200 text-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white"}`}
                     >
-                      <Link href="/quote">{t("requestQuote")}</Link>
+                      <Link href="/contact?tab=quote">{t("requestQuote")}</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -156,7 +156,7 @@ export default function PricingContent() {
               Neem contact met ons op voor een persoonlijk advies en maatwerk offerte.
             </p>
             <Button asChild size="lg" className="professional-gradient text-white px-8 py-4">
-              <Link href="/contact?tab=appointment">{t("contactUs")}</Link>
+              <Link href="/contact?tab=contact">{t("contactUs")}</Link>
             </Button>
           </FadeInSection>
         </div>

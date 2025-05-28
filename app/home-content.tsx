@@ -151,7 +151,7 @@ export default function HomeContent() {
                 size="lg"
                 className="animated-button professional-gradient text-white px-8 py-4 text-lg font-semibold rounded-full"
               >
-                <Link href="/contact?tab=appointment">
+                <Link href="/contact?tab=contact">
                   {t("contactUs")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -176,7 +176,7 @@ export default function HomeContent() {
                 variant="outline"
                 className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
               >
-                <Link href="/quote">{t("requestQuote")}</Link>
+                <Link href="/contact?tab=quote">{t("requestQuote")}</Link>
               </Button>
             </div>
           </FadeInSection>
