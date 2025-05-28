@@ -1,9 +1,7 @@
 "use client"
 
 import type React from "react"
-
-import { useState, useEffect } from "react"
-import { useSearchParams } from "next/navigation"
+import { useState } from "react"
 import { Mail, Phone, MapPin, Send, FileText, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -17,9 +15,21 @@ import FadeInSection from "@/components/fade-in-section"
 import AnimatedText from "@/components/animated-text"
 import { useLanguage } from "@/lib/contexts/language-context"
 
-export default function ContactContent() {
+interface ContactContentProps {
+  initialTab: string
+}
+
+export default function ContactContent({ initialTab }: ContactContentProps) {
   const { t } = useLanguage()
-  const [contactType, setContactType] = useState("contact")
+
+  // Determine the correct initial tab
+  const getInitialTab = (tab: string) => {
+    if (tab === "appointment" || tab === "quote") return tab
+    return "contact"
+  }
+
+  const [activeTab, setActiveTab] = useState(getInitialTab(initialTab))
+
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -31,20 +41,6 @@ export default function ContactContent() {
     services: [] as string[],
     message: "",
   })
-
-  const searchParams = useSearchParams()
-  const [activeTab, setActiveTab] = useState("contact")
-
-  useEffect(() => {
-    const tab = searchParams.get("tab")
-    if (tab === "appointment") {
-      setActiveTab("appointment")
-    } else if (tab === "quote") {
-      setActiveTab("quote")
-    } else {
-      setActiveTab("contact")
-    }
-  }, [searchParams])
 
   const [quoteData, setQuoteData] = useState({
     name: "",
@@ -88,7 +84,6 @@ export default function ContactContent() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
     console.log("Form submitted:", formData)
   }
 
