@@ -173,11 +173,39 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                   </CardHeader>
                   <CardContent>
                     <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                      <TabsList className="grid grid-cols-3 mb-8">
-                        <TabsTrigger value="contact">Contact</TabsTrigger>
-                        <TabsTrigger value="appointment">Afspraak inplannen</TabsTrigger>
-                        <TabsTrigger value="quote">Offerte aanvragen</TabsTrigger>
-                      </TabsList>
+                      {/* Mobile-friendly tabs with horizontal scroll */}
+                      <div className="mb-8">
+                        {/* Desktop tabs (md and up) */}
+                        <TabsList className="hidden md:grid md:grid-cols-3 w-full">
+                          <TabsTrigger value="contact">Contact</TabsTrigger>
+                          <TabsTrigger value="appointment">Afspraak inplannen</TabsTrigger>
+                          <TabsTrigger value="quote">Offerte aanvragen</TabsTrigger>
+                        </TabsList>
+
+                        {/* Mobile tabs (below md) */}
+                        <div className="md:hidden overflow-x-auto">
+                          <TabsList className="inline-flex h-auto p-1 bg-gray-100 dark:bg-gray-800 rounded-lg min-w-full">
+                            <TabsTrigger
+                              value="contact"
+                              className="flex-shrink-0 px-3 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-gray-900 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-white"
+                            >
+                              Contact
+                            </TabsTrigger>
+                            <TabsTrigger
+                              value="appointment"
+                              className="flex-shrink-0 px-3 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-gray-900 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-white"
+                            >
+                              Afspraak
+                            </TabsTrigger>
+                            <TabsTrigger
+                              value="quote"
+                              className="flex-shrink-0 px-3 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-gray-900 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-white"
+                            >
+                              Offerte
+                            </TabsTrigger>
+                          </TabsList>
+                        </div>
+                      </div>
 
                       {/* Simple Contact Form */}
                       <TabsContent value="contact">
