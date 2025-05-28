@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send, FileText, Calendar } from "lucide-react"
+import { Mail, Phone, MapPin, Send, FileText, Calendar, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -29,6 +29,8 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
   }
 
   const [activeTab, setActiveTab] = useState(getInitialTab(initialTab))
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; message: string } | null>(null)
 
   const [formData, setFormData] = useState({
     name: "",
@@ -57,6 +59,14 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
     additionalInfo: "",
   })
 
+  const [contactFormData, setContactFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+
   const services = [
     "Financiële administratie",
     "Loonadministratie",
@@ -82,14 +92,116 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
+  const sendEmail = async (type: string, data: any) => {
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ type, data }),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send email")
+      }
+
+      return await response.json()
+    } catch (error) {
+      console.error("Error sending email:", error)
+      throw error
+    }
   }
 
-  const handleQuoteSubmit = (e: React.FormEvent) => {
+  const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Quote request submitted:", quoteData)
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      await sendEmail("contact", contactFormData)
+      setSubmitStatus({
+        type: "success",
+        message: "Uw bericht is succesvol verzonden! We nemen zo spoedig mogelijk contact met u op.",
+      })
+      setContactFormData({ name: "", company: "", email: "", phone: "", message: "" })
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het opnieuw.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const handleAppointmentSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      await sendEmail("appointment", formData)
+      setSubmitStatus({
+        type: "success",
+        message:
+          "Uw afspraakverzoek is succesvol verzonden! We nemen zo spoedig mogelijk contact met u op om de afspraak in te plannen.",
+      })
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        phone: "",
+        preferredDate: "",
+        preferredTime: "",
+        businessType: "",
+        services: [],
+        message: "",
+      })
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Er is een fout opgetreden bij het verzenden van uw afspraakverzoek. Probeer het opnieuw.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const handleQuoteSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      await sendEmail("quote", quoteData)
+      setSubmitStatus({
+        type: "success",
+        message:
+          "Uw offerteaanvraag is succesvol verzonden! We stellen een passende offerte voor u samen en nemen binnen 24 uur contact met u op.",
+      })
+      setQuoteData({
+        name: "",
+        company: "",
+        email: "",
+        phone: "",
+        businessType: "",
+        employees: "",
+        monthlyTransactions: "",
+        yearlyInvoices: "",
+        services: [],
+        currentAccountant: "",
+        startDate: "",
+        additionalInfo: "",
+      })
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Er is een fout opgetreden bij het verzenden van uw offerteaanvraag. Probeer het opnieuw.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   // Get today's date in YYYY-MM-DD format for min date on date inputs
@@ -172,6 +284,30 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                     <CardTitle className="text-2xl text-gray-900 dark:text-white">Hoe kunnen wij u helpen?</CardTitle>
                   </CardHeader>
                   <CardContent>
+                    {/* Status Message */}
+                    {submitStatus && (
+                      <div
+                        className={`mb-6 p-4 rounded-lg flex items-start space-x-3 ${
+                          submitStatus.type === "success"
+                            ? "bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800"
+                            : "bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800"
+                        }`}
+                      >
+                        {submitStatus.type === "success" && (
+                          <CheckCircle className="h-5 w-5 text-green-600 dark:text-green-400 mt-0.5" />
+                        )}
+                        <p
+                          className={`text-sm ${
+                            submitStatus.type === "success"
+                              ? "text-green-800 dark:text-green-200"
+                              : "text-red-800 dark:text-red-200"
+                          }`}
+                        >
+                          {submitStatus.message}
+                        </p>
+                      </div>
+                    )}
+
                     <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                       {/* Mobile-friendly tabs with horizontal scroll */}
                       <div className="mb-8">
@@ -209,26 +345,49 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                       {/* Simple Contact Form */}
                       <TabsContent value="contact">
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleContactSubmit} className="space-y-6">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                               <Label htmlFor="contact-name">Naam *</Label>
-                              <Input id="contact-name" placeholder="Uw naam" required />
+                              <Input
+                                id="contact-name"
+                                placeholder="Uw naam"
+                                value={contactFormData.name}
+                                onChange={(e) => setContactFormData((prev) => ({ ...prev, name: e.target.value }))}
+                                required
+                              />
                             </div>
                             <div>
                               <Label htmlFor="contact-company">Bedrijfsnaam</Label>
-                              <Input id="contact-company" placeholder="Bedrijfsnaam" />
+                              <Input
+                                id="contact-company"
+                                placeholder="Bedrijfsnaam"
+                                value={contactFormData.company}
+                                onChange={(e) => setContactFormData((prev) => ({ ...prev, company: e.target.value }))}
+                              />
                             </div>
                           </div>
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                               <Label htmlFor="contact-email">Email *</Label>
-                              <Input id="contact-email" type="email" placeholder="Uw email" required />
+                              <Input
+                                id="contact-email"
+                                type="email"
+                                placeholder="Uw email"
+                                value={contactFormData.email}
+                                onChange={(e) => setContactFormData((prev) => ({ ...prev, email: e.target.value }))}
+                                required
+                              />
                             </div>
                             <div>
                               <Label htmlFor="contact-phone">Telefoonnummer</Label>
-                              <Input id="contact-phone" placeholder="Telefoonnummer" />
+                              <Input
+                                id="contact-phone"
+                                placeholder="Telefoonnummer"
+                                value={contactFormData.phone}
+                                onChange={(e) => setContactFormData((prev) => ({ ...prev, phone: e.target.value }))}
+                              />
                             </div>
                           </div>
 
@@ -238,23 +397,26 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                               id="contact-message"
                               placeholder="Hoe kunnen wij u van dienst zijn?"
                               rows={4}
+                              value={contactFormData.message}
+                              onChange={(e) => setContactFormData((prev) => ({ ...prev, message: e.target.value }))}
                               required
                             />
                           </div>
 
                           <Button
                             type="submit"
+                            disabled={isSubmitting}
                             className="w-full professional-gradient text-white py-3 text-lg font-semibold"
                           >
                             <Send className="mr-2 h-5 w-5" />
-                            Versturen
+                            {isSubmitting ? "Versturen..." : "Versturen"}
                           </Button>
                         </form>
                       </TabsContent>
 
                       {/* Appointment Form */}
                       <TabsContent value="appointment">
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form onSubmit={handleAppointmentSubmit} className="space-y-6">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                               <Label htmlFor="name">Uw naam *</Label>
@@ -378,10 +540,11 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <Button
                             type="submit"
+                            disabled={isSubmitting}
                             className="w-full professional-gradient text-white py-3 text-lg font-semibold"
                           >
                             <Calendar className="mr-2 h-5 w-5" />
-                            Afspraak inplannen
+                            {isSubmitting ? "Versturen..." : "Afspraak inplannen"}
                           </Button>
                         </form>
                       </TabsContent>
@@ -543,10 +706,11 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <Button
                             type="submit"
+                            disabled={isSubmitting}
                             className="w-full professional-gradient text-white py-3 text-lg font-semibold"
                           >
                             <FileText className="mr-2 h-5 w-5" />
-                            Offerte Aanvragen
+                            {isSubmitting ? "Versturen..." : "Offerte Aanvragen"}
                           </Button>
                         </form>
                       </TabsContent>
