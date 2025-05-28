@@ -1,8 +1,8 @@
 "use client"
 
 import type React from "react"
-import { Suspense, useState, useEffect } from "react"
-import { useSearchParams } from "next/navigation"
+
+import { useState } from "react"
 import { Mail, Phone, MapPin, Send, FileText, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -15,23 +15,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import FadeInSection from "@/components/fade-in-section"
 import AnimatedText from "@/components/animated-text"
 import { useLanguage } from "@/lib/contexts/language-context"
-
-function ContactTabs({ onTabChange }: { onTabChange: (tab: string) => void }) {
-  const searchParams = useSearchParams()
-
-  useEffect(() => {
-    const tab = searchParams.get("tab")
-    if (tab === "appointment") {
-      onTabChange("appointment")
-    } else if (tab === "quote") {
-      onTabChange("quote")
-    } else {
-      onTabChange("contact")
-    }
-  }, [searchParams, onTabChange])
-
-  return null
-}
 
 export default function ContactContent() {
   const { t } = useLanguage()
@@ -47,12 +30,6 @@ export default function ContactContent() {
     services: [] as string[],
     message: "",
   })
-
-  const [activeTab, setActiveTab] = useState("contact")
-
-  const handleTabChange = (tab: string) => {
-    setActiveTab(tab)
-  }
 
   const [quoteData, setQuoteData] = useState({
     name: "",
@@ -110,9 +87,6 @@ export default function ContactContent() {
 
   return (
     <div className="pt-16">
-      <Suspense fallback={null}>
-        <ContactTabs onTabChange={handleTabChange} />
-      </Suspense>
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -154,6 +128,16 @@ export default function ContactContent() {
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white">Telefoon</h3>
                       <p className="text-gray-600 dark:text-gray-300">06 3882 4882</p>
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        className="mt-2 text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30"
+                      >
+                        <a href="https://wa.me/31638824882">
+                          <span>Snel contact via WhatsApp</span>
+                        </a>
+                      </Button>
                     </div>
                   </div>
 
@@ -164,36 +148,6 @@ export default function ContactContent() {
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white">Locatie</h3>
                       <p className="text-gray-600 dark:text-gray-300">Amsterdam, Nederland</p>
-                    </div>
-                  </div>
-
-                  {/* Snel Contact Buttons */}
-                  <div className="mt-8">
-                    <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Snel Contact</h3>
-                    <div className="grid grid-cols-2 gap-4">
-                      <Button asChild variant="outline" className="w-full flex justify-center items-center">
-                        <a href="https://wa.me/31638824882">
-                          <span className="flex items-center">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="16"
-                              height="16"
-                              fill="currentColor"
-                              className="mr-2"
-                              viewBox="0 0 16 16"
-                            >
-                              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                            </svg>
-                            WhatsApp
-                          </span>
-                        </a>
-                      </Button>
-                      <Button asChild variant="outline" className="w-full flex justify-center items-center">
-                        <a href="tel:+31638824882">
-                          <Phone className="h-4 w-4 mr-2" />
-                          Bel ons
-                        </a>
-                      </Button>
                     </div>
                   </div>
                 </div>
@@ -208,7 +162,7 @@ export default function ContactContent() {
                     <CardTitle className="text-2xl text-gray-900 dark:text-white">Hoe kunnen wij u helpen?</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+                    <Tabs defaultValue="contact" className="w-full">
                       <TabsList className="grid grid-cols-3 mb-8">
                         <TabsTrigger value="contact">Contact</TabsTrigger>
                         <TabsTrigger value="appointment">Afspraak inplannen</TabsTrigger>
