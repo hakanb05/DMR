@@ -2,7 +2,8 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useSearchParams } from "next/navigation"
 import { Mail, Phone, MapPin, Send, FileText, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -30,6 +31,20 @@ export default function ContactContent() {
     services: [] as string[],
     message: "",
   })
+
+  const searchParams = useSearchParams()
+  const [activeTab, setActiveTab] = useState("contact")
+
+  useEffect(() => {
+    const tab = searchParams.get("tab")
+    if (tab === "appointment") {
+      setActiveTab("appointment")
+    } else if (tab === "quote") {
+      setActiveTab("quote")
+    } else {
+      setActiveTab("contact")
+    }
+  }, [searchParams])
 
   const [quoteData, setQuoteData] = useState({
     name: "",
@@ -162,7 +177,7 @@ export default function ContactContent() {
                     <CardTitle className="text-2xl text-gray-900 dark:text-white">Hoe kunnen wij u helpen?</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <Tabs defaultValue="contact" className="w-full">
+                    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                       <TabsList className="grid grid-cols-3 mb-8">
                         <TabsTrigger value="contact">Contact</TabsTrigger>
                         <TabsTrigger value="appointment">Afspraak inplannen</TabsTrigger>

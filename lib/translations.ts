@@ -6,7 +6,7 @@ export const translations = {
   nl: {
     // Navigation
     home: "Home",
-    about: "Over Ons",
+    about: "Over ons",
     services: "Diensten",
     pricing: "Tarieven",
     contact: "Contact",
@@ -20,7 +20,7 @@ export const translations = {
     planMeeting: "Plan een gesprek",
 
     // Services
-    servicesTitle: "Onze Diensten",
+    servicesTitle: "Onze diensten",
     servicesSubtitle:
       "DMR Finance is een administratie- en advieskantoor dat verschillende diensten biedt aan bedrijven, ondernemers en particulieren.",
 
@@ -70,7 +70,7 @@ export const translations = {
     withVatAndTax: "Met BTW en jaaraangifte IB",
     excludingPersonnel: "Exclusief personeel",
     mostPopular: "Meest Populair",
-    requestQuote: "Vraag Offerte",
+    requestQuote: "Vraag offerte",
 
     // About
     aboutTitle: "Over DMR Finance",
@@ -80,7 +80,7 @@ export const translations = {
   en: {
     // Navigation
     home: "Home",
-    about: "About Us",
+    about: "About us",
     services: "Services",
     pricing: "Pricing",
     contact: "Contact",
@@ -94,7 +94,7 @@ export const translations = {
     planMeeting: "Schedule a meeting",
 
     // Services
-    servicesTitle: "Our Services",
+    servicesTitle: "Our services",
     servicesSubtitle:
       "DMR Finance is an administration and advisory office that offers various services to companies, entrepreneurs and individuals.",
 
@@ -144,7 +144,7 @@ export const translations = {
     withVatAndTax: "With VAT and annual tax return",
     excludingPersonnel: "Excluding personnel",
     mostPopular: "Most Popular",
-    requestQuote: "Request Quote",
+    requestQuote: "Request quote",
 
     // About
     aboutTitle: "About DMR Finance",

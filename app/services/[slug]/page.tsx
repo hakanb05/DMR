@@ -46,8 +46,13 @@ const services = [
   },
 ]
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const service = services.find((s) => s.slug === params.slug)
+type Props = {
+  params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params
+  const service = services.find((s) => s.slug === slug)
 
   if (!service) {
     return {
@@ -67,8 +72,9 @@ export function generateStaticParams() {
   }))
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug)
+export default async function ServicePage({ params }: Props) {
+  const { slug } = await params
+  const service = services.find((s) => s.slug === slug)
 
   if (!service) {
     notFound()

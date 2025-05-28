@@ -81,7 +81,7 @@ export default function Navigation() {
 
             {/* CTA Button */}
             <Button asChild className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white">
-              <Link href="/contact">{t("planMeeting")}</Link>
+              <Link href="/contact?tab=appointment">{t("planMeeting")}</Link>
             </Button>
 
             {/* Mobile Menu Button */}
@@ -106,7 +106,7 @@ export default function Navigation() {
                 </Link>
               ))}
               <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                <Link href="/contact" onClick={() => setIsOpen(false)}>
+                <Link href="/contact?tab=appointment" onClick={() => setIsOpen(false)}>
                   {t("planMeeting")}
                 </Link>
               </Button>

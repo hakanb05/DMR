@@ -130,7 +130,7 @@ export default function ServicesContent() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="professional-gradient text-white px-8 py-4">
-                <Link href="/contact">{t("planMeeting")}</Link>
+                <Link href="/contact?tab=appointment">{t("planMeeting")}</Link>
               </Button>
               <Button
                 asChild

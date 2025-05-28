@@ -80,7 +80,7 @@ export default function HomeContent() {
                 size="lg"
                 className="animated-button professional-gradient text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
-                <Link href="/contact" className="inline-flex items-center">
+                <Link href="/contact?tab=appointment" className="inline-flex items-center">
                   {t("planMeeting")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -151,7 +151,7 @@ export default function HomeContent() {
                 size="lg"
                 className="animated-button professional-gradient text-white px-8 py-4 text-lg font-semibold rounded-full"
               >
-                <Link href="/contact">
+                <Link href="/contact?tab=appointment">
                   {t("contactUs")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

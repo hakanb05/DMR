@@ -156,7 +156,7 @@ export default function PricingContent() {
               Neem contact met ons op voor een persoonlijk advies en maatwerk offerte.
             </p>
             <Button asChild size="lg" className="professional-gradient text-white px-8 py-4">
-              <Link href="/contact">{t("contactUs")}</Link>
+              <Link href="/contact?tab=appointment">{t("contactUs")}</Link>
             </Button>
           </FadeInSection>
         </div>
