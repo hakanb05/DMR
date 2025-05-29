@@ -24,13 +24,13 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
                 <a href="mailto:info@dmrfinance.nl" className="text-gray-300 hover:text-blue-400">
-                  info@dmrfinance.nl
+                Info@dmradministratie.nl
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <a href="https://wa.me/31638824882" className="text-gray-300 hover:text-blue-400">
-                  06 3882 4882
+                <a href="https://wa.me/31685295247" className="text-gray-300 hover:text-blue-400">
+                0685295247
                 </a>
               </div>
             </div>
@@ -70,12 +70,12 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
                 <a href="mailto:info@dmrfinance.nl" className="hover:text-blue-400">
-                  info@dmrfinance.nl
+                Info@dmradministratie.nl
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span>06 3882 4882</span>
+                <span>0685295247</span>
               </div>
               <div className="mt-2">
                 <Button
@@ -84,8 +84,8 @@ export default function Footer() {
                   size="sm"
                   className="text-blue-400 border-blue-400 hover:bg-blue-400/10"
                 >
-                  <a href="https://wa.me/31638824882">
-                    <span className="mr-2">Snel contact via WhatsApp</span>
+                  <a href="https://wa.me/31685295247">
+                    <span className="mr-2">{t("quickContactWhatsApp")}</span>
                   </a>
                 </Button>
               </div>

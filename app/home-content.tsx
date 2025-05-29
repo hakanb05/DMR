@@ -40,7 +40,7 @@ export default function HomeContent() {
 
   const whyChooseUs = [
     { icon: Star, text: t("experience") },
-    { icon: TrendingUp, text: t("minimalTax") },
+    { icon: TrendingUp, text: t("optimizedFinance") },
     { icon: CheckCircle, text: t("youSendWeDo") },
     { icon: Shield, text: t("expertise") },
     { icon: Users, text: t("clients") },
@@ -115,7 +115,7 @@ export default function HomeContent() {
                       {service.description}
                     </p>
                     <Button asChild variant="outline" className="w-full mt-auto">
-                      <Link href={service.href}>Meer informatie</Link>
+                      <Link href={service.href}>{t("moreInfo")}</Link>
                     </Button>
                   </CardContent>
                 </Card>

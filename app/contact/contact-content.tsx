@@ -122,13 +122,13 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
       await sendEmail("contact", contactFormData)
       setSubmitStatus({
         type: "success",
-        message: "Uw bericht is succesvol verzonden! We nemen zo spoedig mogelijk contact met u op.",
+        message: t("successMessage"),
       })
       setContactFormData({ name: "", company: "", email: "", phone: "", message: "" })
     } catch (error) {
       setSubmitStatus({
         type: "error",
-        message: "Er is een fout opgetreden bij het verzenden van uw bericht. Probeer het opnieuw.",
+        message: t("errorMessage"),
       })
     } finally {
       setIsSubmitting(false)
@@ -144,8 +144,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
       await sendEmail("appointment", formData)
       setSubmitStatus({
         type: "success",
-        message:
-          "Uw afspraakverzoek is succesvol verzonden! We nemen zo spoedig mogelijk contact met u op om de afspraak in te plannen.",
+        message: t("appointmentSuccessMessage"),
       })
       setFormData({
         name: "",
@@ -161,7 +160,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
     } catch (error) {
       setSubmitStatus({
         type: "error",
-        message: "Er is een fout opgetreden bij het verzenden van uw afspraakverzoek. Probeer het opnieuw.",
+        message: t("appointmentErrorMessage"),
       })
     } finally {
       setIsSubmitting(false)
@@ -177,8 +176,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
       await sendEmail("quote", quoteData)
       setSubmitStatus({
         type: "success",
-        message:
-          "Uw offerteaanvraag is succesvol verzonden! We stellen een passende offerte voor u samen en nemen binnen 24 uur contact met u op.",
+        message: t("quoteSuccessMessage"),
       })
       setQuoteData({
         name: "",
@@ -197,7 +195,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
     } catch (error) {
       setSubmitStatus({
         type: "error",
-        message: "Er is een fout opgetreden bij het verzenden van uw offerteaanvraag. Probeer het opnieuw.",
+        message: t("quoteErrorMessage"),
       })
     } finally {
       setIsSubmitting(false)
@@ -212,12 +210,12 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AnimatedText text="Contact" className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8" />
+          <AnimatedText
+            text={t("contactTitle")}
+            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8"
+          />
           <FadeInSection>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Neem contact op met DMR Finance voor al uw vragen over financiële administratie, loonadministratie en
-              belastingadvies.
-            </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">{t("makeContact")}</p>
           </FadeInSection>
         </div>
       </section>
@@ -228,7 +226,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
             {/* Contact Information */}
             <div className="lg:col-span-1">
               <FadeInSection>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Contactgegevens</h2>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">{t("contactInfo")}</h2>
 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -236,9 +234,9 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                       <Mail className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">Email</h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">{t("email")}</h3>
                       <a href="mailto:info@dmrfinance.nl" className="text-blue-600 dark:text-blue-400 hover:underline">
-                        info@dmrfinance.nl
+                        Info@dmradministratie.nl
                       </a>
                     </div>
                   </div>
@@ -248,7 +246,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                       <Phone className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">Telefoon</h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">{t("phone")}</h3>
                       <p className="text-gray-600 dark:text-gray-300">06 3882 4882</p>
                       <Button
                         asChild
@@ -256,8 +254,8 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                         size="sm"
                         className="mt-2 text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30"
                       >
-                        <a href="https://wa.me/31638824882">
-                          <span>Snel contact via WhatsApp</span>
+                        <a href={`https://wa.me/31638824882?text=${t("whatsappMessage")}`}>
+                          <span>{t("quickContactWhatsApp")}</span>
                         </a>
                       </Button>
                     </div>
@@ -268,7 +266,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                       <MapPin className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 dark:text-white">Locatie</h3>
+                      <h3 className="font-semibold text-gray-900 dark:text-white">{t("location")}</h3>
                       <p className="text-gray-600 dark:text-gray-300">Amsterdam, Nederland</p>
                     </div>
                   </div>
@@ -281,7 +279,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
               <FadeInSection>
                 <Card className="shadow-lg border-0">
                   <CardHeader>
-                    <CardTitle className="text-2xl text-gray-900 dark:text-white">Hoe kunnen wij u helpen?</CardTitle>
+                    <CardTitle className="text-2xl text-gray-900 dark:text-white">{t("howCanWeHelp")}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     {/* Status Message */}
@@ -313,9 +311,9 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                       <div className="mb-8">
                         {/* Desktop tabs (md and up) */}
                         <TabsList className="hidden md:grid md:grid-cols-3 w-full">
-                          <TabsTrigger value="contact">Contact</TabsTrigger>
-                          <TabsTrigger value="appointment">Afspraak inplannen</TabsTrigger>
-                          <TabsTrigger value="quote">Offerte aanvragen</TabsTrigger>
+                          <TabsTrigger value="contact">{t("contactTab")}</TabsTrigger>
+                          <TabsTrigger value="appointment">{t("appointmentTab")}</TabsTrigger>
+                          <TabsTrigger value="quote">{t("quoteTab")}</TabsTrigger>
                         </TabsList>
 
                         {/* Mobile tabs (below md) */}
@@ -325,19 +323,19 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                               value="contact"
                               className="flex-shrink-0 px-3 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-gray-900 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-white"
                             >
-                              Contact
+                              {t("contactTab")}
                             </TabsTrigger>
                             <TabsTrigger
                               value="appointment"
                               className="flex-shrink-0 px-3 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-gray-900 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-white"
                             >
-                              Afspraak
+                              {t("appointmentTabShort")}
                             </TabsTrigger>
                             <TabsTrigger
                               value="quote"
                               className="flex-shrink-0 px-3 py-2 text-sm whitespace-nowrap data-[state=active]:bg-white data-[state=active]:text-gray-900 dark:data-[state=active]:bg-gray-700 dark:data-[state=active]:text-white"
                             >
-                              Offerte
+                              {t("quoteTabShort")}
                             </TabsTrigger>
                           </TabsList>
                         </div>
@@ -348,20 +346,20 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                         <form onSubmit={handleContactSubmit} className="space-y-6">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="contact-name">Naam *</Label>
+                              <Label htmlFor="contact-name">{t("name")} *</Label>
                               <Input
                                 id="contact-name"
-                                placeholder="Uw naam"
+                                placeholder={t("yourName")}
                                 value={contactFormData.name}
                                 onChange={(e) => setContactFormData((prev) => ({ ...prev, name: e.target.value }))}
                                 required
                               />
                             </div>
                             <div>
-                              <Label htmlFor="contact-company">Bedrijfsnaam</Label>
+                              <Label htmlFor="contact-company">{t("companyName")}</Label>
                               <Input
                                 id="contact-company"
-                                placeholder="Bedrijfsnaam"
+                                placeholder={t("companyName")}
                                 value={contactFormData.company}
                                 onChange={(e) => setContactFormData((prev) => ({ ...prev, company: e.target.value }))}
                               />
@@ -370,21 +368,21 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="contact-email">Email *</Label>
+                              <Label htmlFor="contact-email">{t("email")} *</Label>
                               <Input
                                 id="contact-email"
                                 type="email"
-                                placeholder="Uw email"
+                                placeholder={t("yourEmail")}
                                 value={contactFormData.email}
                                 onChange={(e) => setContactFormData((prev) => ({ ...prev, email: e.target.value }))}
                                 required
                               />
                             </div>
                             <div>
-                              <Label htmlFor="contact-phone">Telefoonnummer</Label>
+                              <Label htmlFor="contact-phone">{t("phoneNumber")}</Label>
                               <Input
                                 id="contact-phone"
-                                placeholder="Telefoonnummer"
+                                placeholder={t("phoneNumber")}
                                 value={contactFormData.phone}
                                 onChange={(e) => setContactFormData((prev) => ({ ...prev, phone: e.target.value }))}
                               />
@@ -392,10 +390,10 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                           </div>
 
                           <div>
-                            <Label htmlFor="contact-message">Uw vraag of opmerking *</Label>
+                            <Label htmlFor="contact-message">{t("message")} *</Label>
                             <Textarea
                               id="contact-message"
-                              placeholder="Hoe kunnen wij u van dienst zijn?"
+                              placeholder={t("howCanWeHelpYou")}
                               rows={4}
                               value={contactFormData.message}
                               onChange={(e) => setContactFormData((prev) => ({ ...prev, message: e.target.value }))}
@@ -409,7 +407,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                             className="w-full professional-gradient text-white py-3 text-lg font-semibold"
                           >
                             <Send className="mr-2 h-5 w-5" />
-                            {isSubmitting ? "Versturen..." : "Versturen"}
+                            {isSubmitting ? t("sending") : t("send")}
                           </Button>
                         </form>
                       </TabsContent>
@@ -419,20 +417,20 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                         <form onSubmit={handleAppointmentSubmit} className="space-y-6">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="name">Uw naam *</Label>
+                              <Label htmlFor="name">{t("yourName")} *</Label>
                               <Input
                                 id="name"
-                                placeholder="Naam contactpersoon"
+                                placeholder={t("contactPerson")}
                                 value={formData.name}
                                 onChange={(e) => setFormData((prev) => ({ ...prev, name: e.target.value }))}
                                 required
                               />
                             </div>
                             <div>
-                              <Label htmlFor="company">Bedrijfsnaam</Label>
+                              <Label htmlFor="company">{t("companyName")}</Label>
                               <Input
                                 id="company"
-                                placeholder="Bedrijfsnaam"
+                                placeholder={t("companyName")}
                                 value={formData.company}
                                 onChange={(e) => setFormData((prev) => ({ ...prev, company: e.target.value }))}
                               />
@@ -441,21 +439,21 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="email">Email *</Label>
+                              <Label htmlFor="email">{t("email")} *</Label>
                               <Input
                                 id="email"
                                 type="email"
-                                placeholder="Uw email"
+                                placeholder={t("yourEmail")}
                                 value={formData.email}
                                 onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
                                 required
                               />
                             </div>
                             <div>
-                              <Label htmlFor="phone">Telefoonnummer</Label>
+                              <Label htmlFor="phone">{t("phoneNumber")}</Label>
                               <Input
                                 id="phone"
-                                placeholder="Telefoonnummer"
+                                placeholder={t("phoneNumber")}
                                 value={formData.phone}
                                 onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
                               />
@@ -464,7 +462,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="preferredDate">Voorkeursdatum afspraak</Label>
+                              <Label htmlFor="preferredDate">{t("preferredDate")}</Label>
                               <Input
                                 id="preferredDate"
                                 type="date"
@@ -474,29 +472,29 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                               />
                             </div>
                             <div>
-                              <Label htmlFor="preferredTime">Voorkeurstijd</Label>
+                              <Label htmlFor="preferredTime">{t("preferredTime")}</Label>
                               <Select
                                 onValueChange={(value) => setFormData((prev) => ({ ...prev, preferredTime: value }))}
                               >
                                 <SelectTrigger>
-                                  <SelectValue placeholder="Kies tijdframe" />
+                                  <SelectValue placeholder={t("chooseTimeframe")} />
                                 </SelectTrigger>
                                 <SelectContent>
-                                  <SelectItem value="morning">Ochtend (09:00-12:00)</SelectItem>
-                                  <SelectItem value="afternoon">Middag (12:00-17:00)</SelectItem>
-                                  <SelectItem value="evening">Avond (17:00-20:00)</SelectItem>
+                                  <SelectItem value="morning">{t("morning")}</SelectItem>
+                                  <SelectItem value="afternoon">{t("afternoon")}</SelectItem>
+                                  <SelectItem value="evening">{t("evening")}</SelectItem>
                                 </SelectContent>
                               </Select>
                             </div>
                           </div>
 
                           <div>
-                            <Label htmlFor="businessType">Rechtsvorm</Label>
+                            <Label htmlFor="businessType">{t("legalForm")}</Label>
                             <Select
                               onValueChange={(value) => setFormData((prev) => ({ ...prev, businessType: value }))}
                             >
                               <SelectTrigger>
-                                <SelectValue placeholder="Selecteer rechtsvorm" />
+                                <SelectValue placeholder={t("selectLegalForm")} />
                               </SelectTrigger>
                               <SelectContent>
                                 <SelectItem value="zzp">ZZP</SelectItem>
@@ -510,7 +508,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                           </div>
 
                           <div>
-                            <Label>Welke diensten heeft u nodig? *</Label>
+                            <Label>{t("servicesNeeded")} *</Label>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
                               {services.map((service) => (
                                 <div key={service} className="flex items-center space-x-2">
@@ -528,10 +526,10 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                           </div>
 
                           <div>
-                            <Label htmlFor="message">Aanvullende opmerkingen of vragen:</Label>
+                            <Label htmlFor="message">{t("additionalComments")}</Label>
                             <Textarea
                               id="message"
-                              placeholder="Heeft u specifieke fiscale behoeften of vragen?"
+                              placeholder={t("specificFiscalNeeds")}
                               rows={4}
                               value={formData.message}
                               onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
@@ -544,7 +542,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                             className="w-full professional-gradient text-white py-3 text-lg font-semibold"
                           >
                             <Calendar className="mr-2 h-5 w-5" />
-                            {isSubmitting ? "Versturen..." : "Afspraak inplannen"}
+                            {isSubmitting ? t("sending") : t("scheduleAppointment")}
                           </Button>
                         </form>
                       </TabsContent>
@@ -554,20 +552,20 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                         <form onSubmit={handleQuoteSubmit} className="space-y-6">
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="quote-name">Contactpersoon *</Label>
+                              <Label htmlFor="quote-name">{t("contactPerson2")} *</Label>
                               <Input
                                 id="quote-name"
-                                placeholder="Voor- en achternaam"
+                                placeholder={t("fullName")}
                                 value={quoteData.name}
                                 onChange={(e) => setQuoteData((prev) => ({ ...prev, name: e.target.value }))}
                                 required
                               />
                             </div>
                             <div>
-                              <Label htmlFor="quote-company">Bedrijfsnaam *</Label>
+                              <Label htmlFor="quote-company">{t("companyName")} *</Label>
                               <Input
                                 id="quote-company"
-                                placeholder="Naam van uw bedrijf"
+                                placeholder={t("companyName2")}
                                 value={quoteData.company}
                                 onChange={(e) => setQuoteData((prev) => ({ ...prev, company: e.target.value }))}
                                 required
@@ -577,21 +575,21 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="quote-email">Email *</Label>
+                              <Label htmlFor="quote-email">{t("email")} *</Label>
                               <Input
                                 id="quote-email"
                                 type="email"
-                                placeholder="uw.email@bedrijf.nl"
+                                placeholder={t("yourEmailAddress")}
                                 value={quoteData.email}
                                 onChange={(e) => setQuoteData((prev) => ({ ...prev, email: e.target.value }))}
                                 required
                               />
                             </div>
                             <div>
-                              <Label htmlFor="quote-phone">Telefoonnummer</Label>
+                              <Label htmlFor="quote-phone">{t("phoneNumber")}</Label>
                               <Input
                                 id="quote-phone"
-                                placeholder="06 12345678"
+                                placeholder={t("phoneExample")}
                                 value={quoteData.phone}
                                 onChange={(e) => setQuoteData((prev) => ({ ...prev, phone: e.target.value }))}
                               />
@@ -600,12 +598,12 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="quote-businessType">Rechtsvorm *</Label>
+                              <Label htmlFor="quote-businessType">{t("legalForm")} *</Label>
                               <Select
                                 onValueChange={(value) => setQuoteData((prev) => ({ ...prev, businessType: value }))}
                               >
                                 <SelectTrigger>
-                                  <SelectValue placeholder="Selecteer rechtsvorm" />
+                                  <SelectValue placeholder={t("selectLegalForm")} />
                                 </SelectTrigger>
                                 <SelectContent>
                                   <SelectItem value="zzp">ZZP</SelectItem>
@@ -618,19 +616,19 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                               </Select>
                             </div>
                             <div>
-                              <Label htmlFor="quote-employees">Aantal medewerkers</Label>
+                              <Label htmlFor="quote-employees">{t("employees")}</Label>
                               <Select
                                 onValueChange={(value) => setQuoteData((prev) => ({ ...prev, employees: value }))}
                               >
                                 <SelectTrigger>
-                                  <SelectValue placeholder="Selecteer aantal" />
+                                  <SelectValue placeholder={t("selectNumber")} />
                                 </SelectTrigger>
                                 <SelectContent>
-                                  <SelectItem value="0">Geen personeel</SelectItem>
-                                  <SelectItem value="1-5">1-5 medewerkers</SelectItem>
-                                  <SelectItem value="6-10">6-10 medewerkers</SelectItem>
-                                  <SelectItem value="11-25">11-25 medewerkers</SelectItem>
-                                  <SelectItem value="25+">Meer dan 25</SelectItem>
+                                  <SelectItem value="0">{t("noPersonnel")}</SelectItem>
+                                  <SelectItem value="1-5">{t("employees1to5")}</SelectItem>
+                                  <SelectItem value="6-10">{t("employees6to10")}</SelectItem>
+                                  <SelectItem value="11-25">{t("employees11to25")}</SelectItem>
+                                  <SelectItem value="25+">{t("employeesMore25")}</SelectItem>
                                 </SelectContent>
                               </Select>
                             </div>
@@ -638,45 +636,45 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
 
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                              <Label htmlFor="quote-monthlyTransactions">Banktransacties per maand</Label>
+                              <Label htmlFor="quote-monthlyTransactions">{t("monthlyTransactions")}</Label>
                               <Select
                                 onValueChange={(value) =>
                                   setQuoteData((prev) => ({ ...prev, monthlyTransactions: value }))
                                 }
                               >
                                 <SelectTrigger>
-                                  <SelectValue placeholder="Geschat aantal" />
+                                  <SelectValue placeholder={t("estimatedNumber")} />
                                 </SelectTrigger>
                                 <SelectContent>
-                                  <SelectItem value="0-50">0-50</SelectItem>
-                                  <SelectItem value="51-100">51-100</SelectItem>
-                                  <SelectItem value="101-200">101-200</SelectItem>
-                                  <SelectItem value="201-500">201-500</SelectItem>
-                                  <SelectItem value="500+">Meer dan 500</SelectItem>
+                                  <SelectItem value="0-50">{t("transactions0to50")}</SelectItem>
+                                  <SelectItem value="51-100">{t("transactions51to100")}</SelectItem>
+                                  <SelectItem value="101-200">{t("transactions101to200")}</SelectItem>
+                                  <SelectItem value="201-500">{t("transactions201to500")}</SelectItem>
+                                  <SelectItem value="500+">{t("transactionsMore500")}</SelectItem>
                                 </SelectContent>
                               </Select>
                             </div>
                             <div>
-                              <Label htmlFor="quote-yearlyInvoices">Facturen per jaar</Label>
+                              <Label htmlFor="quote-yearlyInvoices">{t("yearlyInvoices")}</Label>
                               <Select
                                 onValueChange={(value) => setQuoteData((prev) => ({ ...prev, yearlyInvoices: value }))}
                               >
                                 <SelectTrigger>
-                                  <SelectValue placeholder="Geschat aantal" />
+                                  <SelectValue placeholder={t("estimatedNumber")} />
                                 </SelectTrigger>
                                 <SelectContent>
-                                  <SelectItem value="0-100">0-100</SelectItem>
-                                  <SelectItem value="101-200">101-200</SelectItem>
-                                  <SelectItem value="201-300">201-300</SelectItem>
-                                  <SelectItem value="301-500">301-500</SelectItem>
-                                  <SelectItem value="500+">Meer dan 500</SelectItem>
+                                  <SelectItem value="0-100">{t("invoices0to100")}</SelectItem>
+                                  <SelectItem value="101-200">{t("invoices101to200")}</SelectItem>
+                                  <SelectItem value="201-300">{t("invoices201to300")}</SelectItem>
+                                  <SelectItem value="301-500">{t("invoices301to500")}</SelectItem>
+                                  <SelectItem value="500+">{t("invoicesMore500")}</SelectItem>
                                 </SelectContent>
                               </Select>
                             </div>
                           </div>
 
                           <div>
-                            <Label>Gewenste diensten *</Label>
+                            <Label>{t("desiredServices")} *</Label>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-3">
                               {services.map((service) => (
                                 <div key={service} className="flex items-center space-x-2">
@@ -694,10 +692,10 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                           </div>
 
                           <div>
-                            <Label htmlFor="quote-additionalInfo">Aanvullende informatie</Label>
+                            <Label htmlFor="quote-additionalInfo">{t("additionalInfo")}</Label>
                             <Textarea
                               id="quote-additionalInfo"
-                              placeholder="Vertel ons meer over uw specifieke wensen of situatie..."
+                              placeholder={t("additionalInfoPlaceholder")}
                               rows={4}
                               value={quoteData.additionalInfo}
                               onChange={(e) => setQuoteData((prev) => ({ ...prev, additionalInfo: e.target.value }))}
@@ -710,7 +708,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                             className="w-full professional-gradient text-white py-3 text-lg font-semibold"
                           >
                             <FileText className="mr-2 h-5 w-5" />
-                            {isSubmitting ? "Versturen..." : "Offerte Aanvragen"}
+                            {isSubmitting ? t("sending") : t("requestQuoteButton")}
                           </Button>
                         </form>
                       </TabsContent>

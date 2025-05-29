@@ -12,23 +12,23 @@ export default function AboutContent() {
   const values = [
     {
       icon: Users,
-      title: "Persoonlijke Benadering",
-      description: "Wij houden de lijnen kort voor een persoonlijke service",
+      title: t("personalApproach"),
+      description: t("personalApproachDesc"),
     },
     {
       icon: Award,
-      title: "Expertise",
-      description: "10+ jaar ervaring in financiële dienstverlening",
+      title: t("expertiseValue"),
+      description: t("expertiseValueDesc"),
     },
     {
       icon: Clock,
-      title: "Betrouwbaarheid",
-      description: "Altijd op tijd en volgens afspraak",
+      title: t("reliability"),
+      description: t("reliabilityDesc"),
     },
     {
       icon: Heart,
-      title: "Betrokkenheid",
-      description: "Uw succes is ons succes",
+      title: t("commitment"),
+      description: t("commitmentDesc"),
     },
   ]
 
@@ -56,7 +56,7 @@ export default function AboutContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-16">
-              Onze waarden
+              {t("ourValues")}
             </h2>
           </FadeInSection>
 
@@ -84,23 +84,12 @@ export default function AboutContent() {
           <div className="max-w-4xl mx-auto">
             <FadeInSection>
               <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-                Ons Verhaal
+                {t("ourStory")}
               </h2>
               <div className="prose prose-lg dark:prose-invert mx-auto">
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  DMR Finance is ontstaan uit de passie voor het helpen van ondernemers en particulieren bij hun
-                  financiële administratie. Met meer dan 10 jaar ervaring in de sector hebben wij een diepgaand begrip
-                  ontwikkeld van de uitdagingen waarmee onze klanten worden geconfronteerd.
-                </p>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  Wij geloven dat goede communicatie en persoonlijke aandacht de sleutel zijn tot succesvol
-                  partnerschap. Daarom werken wij met een klein, toegewijd team dat elke klant de aandacht geeft die hij
-                  of zij verdient.
-                </p>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Ons doel is eenvoudig: uw administratieve lasten verlichten zodat u zich kunt concentreren op wat u
-                  het beste doet - uw bedrijf runnen en uw dromen realiseren.
-                </p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">{t("storyParagraph1")}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">{t("storyParagraph2")}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{t("storyParagraph3")}</p>
               </div>
             </FadeInSection>
           </div>

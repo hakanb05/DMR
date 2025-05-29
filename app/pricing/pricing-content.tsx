@@ -18,66 +18,75 @@ export default function PricingContent() {
       price: "125",
       popular: false,
       features: [
-        "200 banktransacties",
-        "200 facturen per jaar",
-        "Met BTW en jaaraangifte IB",
-        "Beste voor ZZP boekhouding",
-        "Exclusief personeel",
+        t("pricingFeature200BankTransactions"),
+        t("pricingFeature200InvoicesPerYear"),
+        t("pricingFeatureWithVatAndTax"),
+        t("pricingFeatureBestForZZP"),
+        t("pricingFeatureExcludingPersonnel"),
       ],
     },
     {
       name: "EENMANSZAAK",
-      price: "175",
+      price: "150",
       popular: true,
       features: [
-        "500 banktransacties",
-        "300 facturen per jaar",
-        "Met BTW en jaaraangifte IB",
-        "Boekhouding eenmanszaak",
-        "Exclusief personeel",
+        t("pricingFeature500BankTransactions"),
+        t("pricingFeature300InvoicesPerYear"),
+        t("pricingFeatureWithVatAndTax"),
+        t("pricingFeatureEenmanszaakBookkeeping"),
+        t("pricingFeatureExcludingPersonnel"),
+        t("zakelijkAuto"),
       ],
     },
     {
       name: "V.O.F",
-      price: "200",
+      price: "185",
       popular: false,
       features: [
-        "500 banktransacties",
-        "300 facturen per jaar",
-        "Met BTW en jaaraangifte IB",
-        "Tot maximaal 2 vennoten",
-        "Exclusief personeel",
+        t("pricingFeature500BankTransactions"),
+        t("pricingFeature300InvoicesPerYear"),
+        t("pricingFeatureWithVatAndTax"),
+        t("pricingFeatureMaxTwoPartners"),
+        t("pricingFeatureExcludingPersonnel"),
+        t("zakelijkAuto"),
       ],
     },
     {
       name: "B.V.",
-      price: "375",
+      price: "325",
       popular: false,
       features: [
-        "500 banktransacties",
-        "300 facturen per jaar",
-        "Met BTW en jaaraangifte IB",
-        "Inclusief DGA loonstrook",
-        "Exclusief personeel",
+        t("pricingFeature500BankTransactions"),
+        t("pricingFeature300InvoicesPerYear"),
+        t("pricingFeatureWithVatAndTax"),
+        t("pricingFeatureIncludingDGAPayslip"),
+        t("pricingFeatureExcludingPersonnel"),
+        t("zakelijkAuto"),
       ],
     },
     {
       name: "HOLDING",
       price: "150",
       popular: false,
-      features: ["Inclusief DGA verloning", "40 facturen per jaar", "100 banktransacties per jaar"],
+      features: [
+        t("pricingFeatureIncludingDGAPayroll"),
+        t("pricingFeature40InvoicesPerYear"),
+        t("pricingFeature100BankTransactionsPerYear"),
+        t("zakelijkAuto"),
+      ],
     },
     {
       name: "PERSONEEL",
       price: "50",
       popular: false,
       features: [
-        "Loonstrook",
-        "4 Personeel",
-        "Inclusief in/uitdienst",
-        "Jaaropgave",
-        "Loon journaal",
-        "Pensioen administratie",
+        t("pricingFeaturePayslip"),
+        t("pricingFeature4Personnel"),
+        t("pricingFeatureIncludingInOut"),
+        t("pricingFeatureAnnualStatement"),
+        t("pricingFeaturePayrollJournal"),
+        t("pricingFeaturePensionAdmin"),
+        t("zakelijkAuto"),
       ],
     },
   ]
@@ -92,10 +101,7 @@ export default function PricingContent() {
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8"
           />
           <FadeInSection>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Transparante tarieven voor professionele financiële dienstverlening. Kies het pakket dat het beste bij uw
-              onderneming past.
-            </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">{t("pricingQuestionsDesc")}</p>
           </FadeInSection>
         </div>
       </section>
@@ -150,11 +156,9 @@ export default function PricingContent() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              Heeft u vragen over onze tarieven?
+              {t("pricingQuestions")}
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Neem contact met ons op voor een persoonlijk advies en maatwerk offerte.
-            </p>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{t("pricingQuestionsDesc")}</p>
             <Button asChild size="lg" className="professional-gradient text-white px-8 py-4">
               <Link href="/contact?tab=contact">{t("contactUs")}</Link>
             </Button>

@@ -19,205 +19,173 @@ interface ServiceDetailContentProps {
 export default function ServiceDetailContent({ service }: ServiceDetailContentProps) {
   const { t } = useLanguage()
 
-  // Service-specific content
+  // Service-specific content using translation keys
   const serviceContent = {
     "financial-administration": {
-      icon: "/placeholder.svg?height=200&width=200&query=financial%20document",
-      benefits: [
-        "Volledige verwerking van uw financiële administratie",
-        "Tijdige en correcte BTW-aangiftes",
-        "Inzicht in uw financiële positie",
-        "Jaarrekeningen en financiële rapportages",
-        "Persoonlijke begeleiding en advies",
+      icon: "/images/services/financial.png",
+      bzenefits: [
+        t("financialAdminBenefit1"),
+        t("financialAdminBenefit2"),
+        t("financialAdminBenefit3"),
+        t("financialAdminBenefit4"),
+        t("financialAdminBenefit5"),
       ],
-      intro:
-        "Onze kernwerkzaamheid betreft het verzorgen van de financiële administratie. Van de diensten die wij bieden is de verwerking van uw administratie voor de aangifte omzetbelasting en inkomstenbelasting onze voornaamste bezigheid.",
-      description: [
-        "Een goede financiële administratie is de basis voor het succes van uw onderneming. Het geeft u inzicht in uw financiële positie, helpt bij het nemen van strategische beslissingen en zorgt ervoor dat u voldoet aan alle wettelijke verplichtingen.",
-        "Bij DMR Finance nemen wij deze complexe taak volledig uit handen. Wij zorgen voor een nauwkeurige verwerking van al uw financiële gegevens, van facturen en bonnetjes tot bankafschriften en kasboeken. Onze ervaren professionals zorgen ervoor dat uw administratie altijd up-to-date en compliant is.",
-      ],
+      intro: t("financialAdminDesc"),
+      description: [t("financialAdminDescription1"), t("financialAdminDescription2")],
       services: [
-        "Verwerken van uw dagelijkse administratie",
-        "Opstellen en indienen van BTW-aangiftes",
-        "Debiteuren- en crediteurenbeheer",
-        "Opstellen van jaarrekeningen",
-        "Financiële rapportages en analyses",
-        "Persoonlijk advies over uw financiële situatie",
+        t("financialAdminService1"),
+        t("financialAdminService2"),
+        t("financialAdminService3"),
+        t("financialAdminService4"),
+        t("financialAdminService5"),
+        t("financialAdminService6"),
       ],
     },
     "payroll-administration": {
-      icon: "/placeholder.svg?height=200&width=200&query=payroll%20document",
+      icon: "/images/services/loon.png",
       benefits: [
-        "Correcte en tijdige salarisverwerking",
-        "Naleving van alle wet- en regelgeving",
-        "Verzorging van alle loonaangiften",
-        "Jaaropgaven en loonstroken",
-        "Personeelsdossiers en -administratie",
+        t("payrollAdminBenefit1"),
+        t("payrollAdminBenefit2"),
+        t("payrollAdminBenefit3"),
+        t("payrollAdminBenefit4"),
+        t("payrollAdminBenefit5"),
       ],
-      intro:
-        "Indien u personeel in dienst hebt of van plan bent personeel aan te nemen, krijgt u te maken met de loonadministratie. Hierbij moet u denken aan het verlonen van het personeel en het indienen van de loonaangiften.",
-      description: [
-        "Een correcte loonadministratie is essentieel voor uw bedrijf. Het zorgt ervoor dat uw medewerkers op tijd en correct worden betaald, en dat u voldoet aan alle wettelijke verplichtingen op het gebied van belastingen en sociale premies.",
-        "Bij DMR Finance nemen wij de volledige loonadministratie uit handen. Onze specialisten zorgen ervoor dat alle salarissen correct worden berekend en uitbetaald, en dat alle aangiften op tijd worden ingediend.",
-      ],
+      intro: t("payrollAdminDesc"),
+      description: [t("payrollAdminDescription1"), t("payrollAdminDescription2")],
       services: [
-        "Opstellen en verwerken van salarissen",
-        "Verzorgen van loonstroken",
-        "Indienen van loonaangiften",
-        "Jaaropgaven voor werknemers",
-        "Bijhouden van personeelsdossiers",
-        "Advies over arbeidsvoorwaarden en CAO's",
-        "Begeleiding bij in- en uitdiensttreding",
+        t("payrollAdminService1"),
+        t("payrollAdminService2"),
+        t("payrollAdminService3"),
+        t("payrollAdminService4"),
+        t("payrollAdminService5"),
+        t("payrollAdminService6"),
+        t("payrollAdminService7"),
       ],
     },
     "tax-advice": {
-      icon: "/placeholder.svg?height=200&width=200&query=tax%20advice",
+      icon: "/images/services/belasting.png",
       benefits: [
-        "Minimalisatie van uw belastingdruk",
-        "Proactief fiscaal advies",
-        "Optimale fiscale structuur",
-        "Begeleiding bij belastingcontroles",
-        "Up-to-date kennis van fiscale wetgeving",
+        t("taxAdviceBenefit1"),
+        t("taxAdviceBenefit2"),
+        t("taxAdviceBenefit3"),
+        t("taxAdviceBenefit4"),
+        t("taxAdviceBenefit5"),
       ],
-      intro:
-        "Aangezien de meeste van onze diensten gebaseerd zijn op belastingaangiften, bieden we de mogelijkheid op elke relevante dienst de meest gunstige belastingpositie te behalen.",
-      description: [
-        "Belastingen vormen een aanzienlijke kostenpost voor zowel bedrijven als particulieren. Met deskundig belastingadvies kunt u echter aanzienlijk besparen en uw fiscale positie optimaliseren.",
-        "Bij DMR Finance helpen onze fiscale experts u om binnen de wettelijke kaders uw belastingdruk te minimaliseren. Wij houden de veranderende fiscale wetgeving nauwlettend in de gaten en passen onze adviezen hierop aan.",
-      ],
+      intro: t("taxAdviceDesc"),
+      description: [t("taxAdviceDescription1"), t("taxAdviceDescription2")],
       services: [
-        "Opstellen en indienen van belastingaangiften",
-        "Fiscale planning en optimalisatie",
-        "Advies over BTW-vraagstukken",
-        "Begeleiding bij fiscale controles",
-        "Advies over bedrijfsopvolging en -overdracht",
-        "Fiscale aspecten van investeringen",
-        "Internationale fiscale vraagstukken",
+        t("taxAdviceService1"),
+        t("taxAdviceService2"),
+        t("taxAdviceService3"),
+        t("taxAdviceService4"),
+        t("taxAdviceService5"),
+        t("taxAdviceService6"),
+        t("taxAdviceService7"),
       ],
     },
     "credit-mediation": {
-      icon: "/placeholder.svg?height=200&width=200&query=financial%20growth",
+      icon: "/images/services/krediet.png",
       benefits: [
-        "Toegang tot diverse financieringsopties",
-        "Onafhankelijk advies over financieringsmogelijkheden",
-        "Begeleiding bij het aanvraagproces",
-        "Onderhandeling over gunstige voorwaarden",
-        "Snellere toegang tot kapitaal",
+        t("creditMediationBenefit1"),
+        t("creditMediationBenefit2"),
+        t("creditMediationBenefit3"),
+        t("creditMediationBenefit4"),
+        t("creditMediationBenefit5"),
       ],
-      intro:
-        "Wij helpen u bij het vinden van de juiste financieringsoplossingen voor uw bedrijf. Van bedrijfsleningen tot hypotheken, wij bemiddelen voor de beste voorwaarden.",
-      description: [
-        "Toegang tot kapitaal is cruciaal voor de groei en ontwikkeling van uw onderneming. Of u nu wilt investeren in nieuwe apparatuur, een pand wilt aanschaffen of werkkapitaal nodig heeft, de juiste financiering is essentieel.",
-        "Als onafhankelijke kredietbemiddelaar helpt DMR Finance u bij het vinden van de meest geschikte financieringsoplossing. Wij hebben toegang tot een breed netwerk van financiers en kennen de markt door en door.",
-      ],
+      intro: t("creditMediationDetails"),
+      description: [t("creditMediationDescription1"), t("creditMediationDescription2")],
       services: [
-        "Analyse van uw financieringsbehoefte",
-        "Advies over verschillende financieringsvormen",
-        "Opstellen van een financieringsaanvraag",
-        "Onderhandelen met financiers",
-        "Begeleiding tijdens het gehele aanvraagproces",
-        "Herfinanciering van bestaande leningen",
-        "Advies over lease- en huurkoopconstructies",
+        t("creditMediationService1"),
+        t("creditMediationService2"),
+        t("creditMediationService3"),
+        t("creditMediationService4"),
+        t("creditMediationService5"),
+        t("creditMediationService6"),
+        t("creditMediationService7"),
       ],
     },
     "business-advice": {
-      icon: "/placeholder.svg?height=200&width=200&query=business%20strategy",
+      icon: "/images/services/belasting.png",
       benefits: [
-        "Strategische bedrijfsplanning",
-        "Financiële prognoses en budgettering",
-        "Kostenanalyse en -optimalisatie",
-        "Advies over bedrijfsstructuur",
-        "Begeleiding bij groei en expansie",
+        t("businessAdviceBenefit1"),
+        t("businessAdviceBenefit2"),
+        t("businessAdviceBenefit3"),
+        t("businessAdviceBenefit4"),
+        t("businessAdviceBenefit5"),
       ],
-      intro:
-        "Strategisch advies voor ondernemers die hun bedrijf willen laten groeien. Wij helpen bij bedrijfsplanning, financiële prognoses en strategische beslissingen.",
-      description: [
-        "Een duidelijke strategie en goede planning zijn essentieel voor het succes en de groei van uw onderneming. Met professioneel bedrijfsadvies kunt u weloverwogen beslissingen nemen en uw doelen effectiever bereiken.",
-        "Bij DMR Finance bieden wij uitgebreid bedrijfsadvies op maat. Onze adviseurs hebben jarenlange ervaring in verschillende sectoren en helpen u bij het ontwikkelen en implementeren van effectieve strategieën.",
-      ],
+      intro: t("businessAdviceDetails"),
+      description: [t("businessAdviceDescription1"), t("businessAdviceDescription2")],
       services: [
-        "Opstellen van bedrijfsplannen",
-        "Financiële prognoses en scenario-analyses",
-        "Kostenanalyse en efficiëntieverbeteringen",
-        "Advies over bedrijfsstructuur en -organisatie",
-        "Begeleiding bij groei en expansie",
-        "Strategische planning en doelstellingen",
-        "Benchmarking en concurrentieanalyse",
+        t("businessAdviceService1"),
+        t("businessAdviceService2"),
+        t("businessAdviceService3"),
+        t("businessAdviceService4"),
+        t("businessAdviceService5"),
+        t("businessAdviceService6"),
+        t("businessAdviceService7"),
       ],
     },
     "startup-support": {
-      icon: "/placeholder.svg?height=200&width=200&query=startup%20launch",
+      icon: "/images/services/belasting.png",
       benefits: [
-        "Begeleiding bij het opzetten van uw administratie",
-        "Advies over rechtsvorm en bedrijfsstructuur",
-        "Ondersteuning bij financiële planning",
-        "Hulp bij het aanvragen van subsidies",
-        "Netwerk van relevante partners",
+        t("startupSupportBenefit1"),
+        t("startupSupportBenefit2"),
+        t("startupSupportBenefit3"),
+        t("startupSupportBenefit4"),
+        t("startupSupportBenefit5"),
       ],
-      intro:
-        "Speciaal voor startende ondernemers bieden wij uitgebreide ondersteuning bij het opzetten van uw administratie en het maken van de juiste keuzes vanaf het begin.",
-      description: [
-        "De start van een onderneming is een spannende maar ook uitdagende fase. Er moeten veel beslissingen worden genomen die bepalend zijn voor de toekomst van uw bedrijf. Professionele ondersteuning kan u helpen om de juiste keuzes te maken en kostbare fouten te voorkomen.",
-        "DMR Finance biedt specifieke ondersteuning voor startups en beginnende ondernemers. Wij helpen u bij het leggen van een solide financiële basis voor uw onderneming en begeleiden u bij de eerste stappen als ondernemer.",
-      ],
+      intro: t("startupSupportDetails"),
+      description: [t("startupSupportDescription1"), t("startupSupportDescription2")],
       services: [
-        "Advies over de keuze van rechtsvorm",
-        "Opzetten van uw financiële administratie",
-        "Begeleiding bij inschrijving KvK en Belastingdienst",
-        "Opstellen van een ondernemingsplan",
-        "Financiële prognoses en budgettering",
-        "Advies over subsidies en financieringsmogelijkheden",
-        "Belastingadvies voor startende ondernemers",
+        t("startupSupportService1"),
+        t("startupSupportService2"),
+        t("startupSupportService3"),
+        t("startupSupportService4"),
+        t("startupSupportService5"),
+        t("startupSupportService6"),
+        t("startupSupportService7"),
       ],
     },
     "legal-financial-advice": {
-      icon: "/placeholder.svg?height=200&width=200&query=legal%20financial%20advice",
+      icon: "/images/services/krediet.png",
       benefits: [
-        "Geïntegreerd juridisch en financieel advies",
-        "Bescherming van uw bedrijfsbelangen",
-        "Optimalisatie van contracten en overeenkomsten",
-        "Risicomanagement en -beperking",
-        "Compliance met wet- en regelgeving",
+        t("legalFinancialAdviceBenefit1"),
+        t("legalFinancialAdviceBenefit2"),
+        t("legalFinancialAdviceBenefit3"),
+        t("legalFinancialAdviceBenefit4"),
+        t("legalFinancialAdviceBenefit5"),
       ],
-      intro:
-        "Combinatie van juridische en financiële expertise om uw bedrijf optimaal te beschermen en kansen te benutten in een complexe regelgeving.",
-      description: [
-        "In het huidige complexe zakelijke landschap zijn juridische en financiële aspecten vaak nauw met elkaar verweven. Een geïntegreerde aanpak is daarom essentieel om uw bedrijf optimaal te beschermen en kansen te benutten.",
-        "DMR Finance biedt een unieke combinatie van juridisch en financieel advies. Onze experts hebben kennis van beide vakgebieden en kunnen u daardoor holistisch adviseren over complexe zakelijke vraagstukken.",
-      ],
+      intro: t("legalFinancialAdviceDetails"),
+      description: [t("legalFinancialAdviceDescription1"), t("legalFinancialAdviceDescription2")],
       services: [
-        "Juridische structurering van uw onderneming",
-        "Opstellen en beoordelen van contracten",
-        "Advies over algemene voorwaarden",
-        "Begeleiding bij geschillen en conflicten",
-        "Compliance met wet- en regelgeving",
-        "Risicomanagement en -beperking",
-        "Advies over intellectueel eigendom",
+        t("legalFinancialAdviceService1"),
+        t("legalFinancialAdviceService2"),
+        t("legalFinancialAdviceService3"),
+        t("legalFinancialAdviceService4"),
+        t("legalFinancialAdviceService5"),
+        t("legalFinancialAdviceService6"),
+        t("legalFinancialAdviceService7"),
       ],
     },
     individuals: {
-      icon: "/placeholder.svg?height=200&width=200&query=personal%20finance",
+      icon: "/images/services/loon.png",
       benefits: [
-        "Persoonlijke begeleiding bij belastingaangiften",
-        "Optimalisatie van uw fiscale positie",
-        "Advies over vermogensplanning",
-        "Begeleiding bij financiële beslissingen",
-        "Hulp bij toeslagen en subsidies",
+        t("individualsBenefit1"),
+        t("individualsBenefit2"),
+        t("individualsBenefit3"),
+        t("individualsBenefit4"),
+        t("individualsBenefit5"),
       ],
-      intro:
-        "Ook voor u als particulier staan wij u bij. Wij kunnen u assisteren bij het indienen van uw particuliere aangifte inkomstenbelasting.",
-      description: [
-        "Ook als particulier kunt u te maken krijgen met complexe financiële en fiscale vraagstukken. Of het nu gaat om uw belastingaangifte, vermogensplanning of financiële beslissingen, professioneel advies kan u helpen om de juiste keuzes te maken.",
-        "Bij DMR Finance bieden wij uitgebreide dienstverlening voor particulieren. Onze adviseurs helpen u bij het optimaliseren van uw financiële situatie en het minimaliseren van uw belastingdruk.",
-      ],
+      intro: t("individualsDesc"),
+      description: [t("individualsDescription1"), t("individualsDescription2")],
       services: [
-        "Opstellen en indienen van uw belastingaangifte",
-        "Advies over fiscale aftrekposten",
-        "Begeleiding bij bezwaar- en beroepsprocedures",
-        "Vermogensplanning en -beheer",
-        "Advies over schenkingen en erfenissen",
-        "Hulp bij aanvragen van toeslagen",
-        "Financiële planning voor uw toekomst",
+        t("individualsService1"),
+        t("individualsService2"),
+        t("individualsService3"),
+        t("individualsService4"),
+        t("individualsService5"),
+        t("individualsService6"),
+        t("individualsService7"),
       ],
     },
   }
@@ -240,7 +208,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{service.description}</p>
                 <Button asChild size="lg" className="professional-gradient text-white px-8 py-4">
                   <Link href="/contact">
-                    Vraag een offerte aan
+                    {t("requestQuote")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
@@ -249,7 +217,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
             <div className="lg:w-1/2">
               <FadeInSection>
                 <img
-                  src={currentService.icon || "/placeholder.svg"}
+                  src={currentService.icon}
                   alt={service.title}
                   className="rounded-lg shadow-xl w-full max-w-md mx-auto"
                 />
@@ -263,7 +231,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection>
-            <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">Voordelen</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">{t("benefits")}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {currentService.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-4">
@@ -290,7 +258,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                     <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mr-4">
                       <Target className="h-6 w-6 text-blue-600 dark:text-blue-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Over deze dienst</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{t("aboutThisService")}</h3>
                   </div>
 
                   <div className="space-y-6">
@@ -316,7 +284,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                     <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mr-4">
                       <Users className="h-6 w-6 text-green-600 dark:text-green-400" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Wat wij voor u doen</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{t("whatWeDo")}</h3>
                   </div>
 
                   <div className="space-y-4">
@@ -334,11 +302,10 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                     <div className="flex items-start space-x-3">
                       <TrendingUp className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5" />
                       <div>
-                        <p className="text-sm font-medium text-blue-800 dark:text-blue-200 mb-1">Persoonlijke aanpak</p>
-                        <p className="text-sm text-blue-700 dark:text-blue-300">
-                          Elke situatie is uniek. Daarom stemmen wij onze dienstverlening volledig af op uw specifieke
-                          behoeften en doelstellingen.
+                        <p className="text-sm font-medium text-blue-800 dark:text-blue-200 mb-1">
+                          {t("personalApproachTitle")}
                         </p>
+                        <p className="text-sm text-blue-700 dark:text-blue-300">{t("personalApproachText")}</p>
                       </div>
                     </div>
                   </div>
@@ -354,10 +321,8 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection>
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Hoe werken wij?</h2>
-              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                Ons proces is transparant en efficiënt, zodat u altijd weet waar u aan toe bent.
-              </p>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">{t("howWeWork")}</h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">{t("howWeWorkDesc")}</p>
             </div>
           </FadeInSection>
 
@@ -367,10 +332,8 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                 <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">1</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kennismaking</h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  We bespreken uw situatie en wensen tijdens een vrijblijvend gesprek.
-                </p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{t("step1Title")}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{t("step1Desc")}</p>
               </div>
             </FadeInSection>
 
@@ -379,10 +342,8 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                 <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">2</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Op maat advies</h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  We stellen een persoonlijk plan op dat perfect aansluit bij uw behoeften.
-                </p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{t("step2Title")}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{t("step2Desc")}</p>
               </div>
             </FadeInSection>
 
@@ -391,10 +352,8 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                 <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">3</span>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">Uitvoering</h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  We nemen de werkzaamheden uit handen en houden u op de hoogte van de voortgang.
-                </p>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{t("step3Title")}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{t("step3Desc")}</p>
               </div>
             </FadeInSection>
           </div>
@@ -405,13 +364,11 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <FadeInSection>
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Klaar om te beginnen?</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Neem contact met ons op voor een vrijblijvend gesprek over hoe wij u kunnen helpen.
-            </p>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">{t("readyToStart")}</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">{t("readyToStartCta")}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="professional-gradient text-white px-8 py-4">
-                <Link href="/contact?tab=appointment">Plan een gesprek</Link>
+                <Link href="/contact?tab=appointment">{t("planMeeting")}</Link>
               </Button>
               <Button
                 asChild
@@ -419,7 +376,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
                 variant="outline"
                 className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4"
               >
-                <Link href="/contact?tab=quote">Vraag een offerte aan</Link>
+                <Link href="/contact?tab=quote">{t("requestQuote")}</Link>
               </Button>
             </div>
           </FadeInSection>
