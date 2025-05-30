@@ -62,6 +62,26 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/services/credit-mediation" className="text-gray-300 hover:text-blue-400">
+                  {t("creditMediation")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/business-advice" className="text-gray-300 hover:text-blue-400">
+                  {t("businessAdvice")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/startup-support" className="text-gray-300 hover:text-blue-400">
+                  {t("startupSupport")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/legal-financial-advice" className="text-gray-300 hover:text-blue-400">
+                  {t("legalFinancialAdvice")}
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/individuals" className="text-gray-300 hover:text-blue-400">
                   {t("individuals")}
                 </Link>

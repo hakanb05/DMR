@@ -36,6 +36,7 @@ export default function PricingContent() {
         t("pricingFeatureEenmanszaakBookkeeping"),
         t("pricingFeatureExcludingPersonnel"),
         t("zakelijkAuto"),
+        t("posthelp"),
       ],
     },
     {
@@ -50,6 +51,7 @@ export default function PricingContent() {
         t("pricingFeatureMaxTwoPartners"),
         t("pricingFeatureExcludingPersonnel"),
         t("zakelijkAuto"),
+        t("posthelp"),
       ],
     },
     {
@@ -64,6 +66,7 @@ export default function PricingContent() {
         t("pricingFeatureIncludingDGAPayslip"),
         t("pricingFeatureExcludingPersonnel"),
         t("zakelijkAuto"),
+        t("posthelp"),
       ],
     },
     {
@@ -78,6 +81,7 @@ export default function PricingContent() {
         t("pricingFeaturePayrollJournal"),
         t("pricingFeaturePensionAdmin"),
         t("zakelijkAuto"),
+        t("posthelp"),
       ],
     },
     {
@@ -91,39 +95,40 @@ export default function PricingContent() {
         t("particulierenFeature4"),
         t("particulierenFeature5"),
         t("particulierenFeature6"),
+        t("posthelp"),
       ],
     },
     {
-      name: "Start-up ondersteuning",
+      name: t("startupSupportTitle"),
       price: t("pricingNOTK"),
       smallPriceText: true,
       popular: false,
       features: [
         t("startupSupportShortDesc"),
-        // t("startupSupportLongDesc"),
-        "Bedrijfsplanning",
-        "Juridische structurering",
-        "Financiële prognoses",
-        "Administratieve efficiëntie",
-        "Investeerdersrelaties",
+        t("startupSupportFeature1"),
+        t("startupSupportFeature2"),
+        t("startupSupportFeature3"),
+        t("startupSupportFeature4"),
+        t("startupSupportFeature5"),
+        t("posthelp"),
       ],
     },
     {
-      name: "Juridisch en Financieel advies",
+      name: t("legalFinancialAdviceTitle"),
       price: t("pricingNOTK"),
       smallPriceText: true,
       popular: false,
       features: [
         t("legalFinancialAdviceShortDesc"),
-        // t("legalFinancialAdviceLongDesc"),
-        "Bedrijfsstructurering",
-        "Contracten en Overeenkomsten",
-        "Intellectuele Eigendom",
-        "Compliance en Regelgeving",
-        "Financiële Planning",
-        "Belastingadvies",
-        "Risicobeheer",
-        "Investering en Kapitaalplanning",
+        t("legalFinancialAdviceFeature1"),
+        t("legalFinancialAdviceFeature2"),
+        t("legalFinancialAdviceFeature3"),
+        t("legalFinancialAdviceFeature4"),
+        t("legalFinancialAdviceFeature5"),
+        t("legalFinancialAdviceFeature6"),
+        t("legalFinancialAdviceFeature7"),
+        t("legalFinancialAdviceFeature8"),
+        t("posthelp"),
       ],
     },
   ]
@@ -164,11 +169,11 @@ export default function PricingContent() {
                       {plan.showFromText && (
                         <span className="text-sm text-gray-500 dark:text-gray-400 block mb-1">{t("from")}</span>
                       )}
-                      <span
-                        className={`font-bold text-blue-600 dark:text-blue-400 ${plan.smallPriceText ? "text-2xl" : "text-4xl"}`}
-                      >
-                        €{plan.price}
-                      </span>
+                      {!plan.smallPriceText && (
+                        <span className="font-bold text-4xl text-blue-600 dark:text-blue-400">
+                          €{plan.price}
+                        </span>
+                      )}
                       {!plan.smallPriceText && (
                         <span className="text-gray-600 dark:text-gray-300 ml-2">{t("perMonth")}</span>
                       )}

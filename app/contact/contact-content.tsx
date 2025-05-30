@@ -247,7 +247,7 @@ export default function ContactContent({ initialTab }: ContactContentProps) {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white">{t("phone")}</h3>
-                      <p className="text-gray-600 dark:text-gray-300">06 3882 4882</p>
+                      <p className="text-gray-600 dark:text-gray-300">06 8529 5247</p>
                       <Button
                         asChild
                         variant="outline"
