@@ -14,12 +14,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="text-2xl font-bold text-blue-400 mb-4">DMR Finance</div>
-            <p className="text-gray-300 mb-4">Administratie & Advies</p>
+          <div className="mb-4">
+            <img
+              src="/images/logo/dark.png"
+              alt="DMR Finance logo"
+              className="h-40 w-40 object-contain"
+            />
+          </div>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">Amsterdam, Nederland</span>
+                <span className="text-gray-300">Amsterdam, {t("Nederland")}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
@@ -91,25 +96,11 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
-          <div className="mt-6">
-            <h4 className="text-sm font-semibold mb-2">{t("followUs")}</h4>
-            <div className="flex space-x-3">
-              <a href="#" className="text-gray-300 hover:text-blue-400">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 DMR Finance. Alle rechten voorbehouden.</p>
+          <p>&copy;{t("rights")}</p>
+          <a href="www.devkan.nl"> {t("createdby") }</a>
         </div>
       </div>
     </footer>

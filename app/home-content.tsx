@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import AnimatedText from "@/components/animated-text"
 import FadeInSection from "@/components/fade-in-section"
 import { useLanguage } from "@/lib/contexts/language-context"
+import PartnersSection from "@/components/partner-section"
 
 export default function HomeContent() {
   const { t } = useLanguage()
@@ -182,6 +183,9 @@ export default function HomeContent() {
           </FadeInSection>
         </div>
       </section>
+
+      {/* Partners Section */}
+      <PartnersSection />
     </div>
   )
 }

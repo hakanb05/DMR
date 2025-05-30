@@ -41,6 +41,7 @@ export default function PricingContent() {
     {
       name: "V.O.F",
       price: "185",
+      showFromText: true,
       popular: false,
       features: [
         t("pricingFeature500BankTransactions"),
@@ -54,6 +55,7 @@ export default function PricingContent() {
     {
       name: "B.V.",
       price: "325",
+      showFromText: true,
       popular: false,
       features: [
         t("pricingFeature500BankTransactions"),
@@ -61,17 +63,6 @@ export default function PricingContent() {
         t("pricingFeatureWithVatAndTax"),
         t("pricingFeatureIncludingDGAPayslip"),
         t("pricingFeatureExcludingPersonnel"),
-        t("zakelijkAuto"),
-      ],
-    },
-    {
-      name: "HOLDING",
-      price: "150",
-      popular: false,
-      features: [
-        t("pricingFeatureIncludingDGAPayroll"),
-        t("pricingFeature40InvoicesPerYear"),
-        t("pricingFeature100BankTransactionsPerYear"),
         t("zakelijkAuto"),
       ],
     },
@@ -87,6 +78,52 @@ export default function PricingContent() {
         t("pricingFeaturePayrollJournal"),
         t("pricingFeaturePensionAdmin"),
         t("zakelijkAuto"),
+      ],
+    },
+    {
+      name: t("particulierenTitle"),
+      price: t("particulierenPrice"),
+      popular: false,
+      features: [
+        t("particulierenFeature1"),
+        t("particulierenFeature2"),
+        t("particulierenFeature3"),
+        t("particulierenFeature4"),
+        t("particulierenFeature5"),
+        t("particulierenFeature6"),
+      ],
+    },
+    {
+      name: "Start-up ondersteuning",
+      price: t("pricingNOTK"),
+      smallPriceText: true,
+      popular: false,
+      features: [
+        t("startupSupportShortDesc"),
+        // t("startupSupportLongDesc"),
+        "Bedrijfsplanning",
+        "Juridische structurering",
+        "Financiële prognoses",
+        "Administratieve efficiëntie",
+        "Investeerdersrelaties",
+      ],
+    },
+    {
+      name: "Juridisch en Financieel advies",
+      price: t("pricingNOTK"),
+      smallPriceText: true,
+      popular: false,
+      features: [
+        t("legalFinancialAdviceShortDesc"),
+        // t("legalFinancialAdviceLongDesc"),
+        "Bedrijfsstructurering",
+        "Contracten en Overeenkomsten",
+        "Intellectuele Eigendom",
+        "Compliance en Regelgeving",
+        "Financiële Planning",
+        "Belastingadvies",
+        "Risicobeheer",
+        "Investering en Kapitaalplanning",
       ],
     },
   ]
@@ -124,8 +161,17 @@ export default function PricingContent() {
                   <CardHeader className="text-center pb-4">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white">{plan.name}</h3>
                     <div className="mt-4">
-                      <span className="text-4xl font-bold text-blue-600 dark:text-blue-400">€{plan.price}</span>
-                      <span className="text-gray-600 dark:text-gray-300 ml-2">{t("perMonth")}</span>
+                      {plan.showFromText && (
+                        <span className="text-sm text-gray-500 dark:text-gray-400 block mb-1">{t("from")}</span>
+                      )}
+                      <span
+                        className={`font-bold text-blue-600 dark:text-blue-400 ${plan.smallPriceText ? "text-2xl" : "text-4xl"}`}
+                      >
+                        €{plan.price}
+                      </span>
+                      {!plan.smallPriceText && (
+                        <span className="text-gray-600 dark:text-gray-300 ml-2">{t("perMonth")}</span>
+                      )}
                     </div>
                   </CardHeader>
                   <CardContent className="pt-0 flex flex-col flex-grow">

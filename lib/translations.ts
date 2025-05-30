@@ -11,18 +11,20 @@ export const translations = {
     pricing: "Tarieven",
     contact: "Contact",
     quote: "Offerte",
+    rights: "2024 DMR Finance. Alle rechten voorbehouden.",
+    createdby: "Gemaakt door DevKan",
 
     makeContact:
       "Neem contact op met DMR Finance voor al uw vragen over financiële administratie, loonadministratie en belastingadvies.",
 
     // Hero Section
     heroTitle: "Wij beheren uw financiën,",
+    Nederland: "Nederland",
     heroSubtitle: "u realiseert uw ambities",
     heroDescription:
       "DMR Finance biedt op maat gemaakte financiële oplossingen en professioneel advies om uw onderneming te ondersteunen bij groei en succes. Wij nemen de complexe administratieve taken uit handen, zodat u zich volledig kunt richten op het verwezenlijken van uw doelen.",
     planMeeting: "Plan een gesprek",
     zakelijkAuto: "Zakelijke auto  op de zaak",
-
 
     // Services
     servicesTitle: "Onze diensten",
@@ -69,6 +71,20 @@ export const translations = {
     individualsShort: "Ervaar met particuliere financiën, verbeter uw financiële toekomst.",
     readyToStart: "Klaar om te beginnen?",
     readyToStartDesc: "Neem contact met ons op en ontdek hoe DMR Finance uw bedrijf kan ondersteunen.",
+
+    // New startup support content
+    startupSupportTitle: "Start-up ondersteuning",
+    startupSupportShortDesc: "Laat uw start-up gedijen met onze deskundige ondersteuning.",
+    startupSupportLongDesc:
+      "Bij DMR begrijpen we dat de reis van een start-up ondernemer uitdagend en opwindend kan zijn. Het begint met een idee, groeit uit tot een visie en bloeit uiteindelijk op tot een volwaardig bedrijf.",
+
+    // New legal financial advice content
+    legalFinancialAdviceTitle: "Juridisch en Financieel advies",
+    legalFinancialAdviceShortDesc: "Bescherm uw bedrijf en maximaliseer financiële kansen.",
+    legalFinancialAdviceLongDesc:
+      "Bij DMR administratie & advies geloven we dat solide juridisch en financieel advies de hoeksteen is van elk succesvol bedrijf.",
+
+    optimizedFinance: "Geoptimaliseerde financiën",
 
     // Service detail page
     requestQuote: "Vraag een offerte aan",
@@ -174,6 +190,14 @@ export const translations = {
     businessAdviceService6: "Strategische planning en doelstellingen",
     businessAdviceService7: "Benchmarking en concurrentieanalyse",
 
+    openingTimeTitle: "Openingstijden",
+    openingTimeDays: "maandag t/m vrijdag",
+    openingTimeWeekdays: "08:30 – 18:00",
+    openingTimeSaturday: "zaterdag",
+    openingTimeSaturdayHours: "09:00 – 13:00",
+    openingTimeSunday: "zondag",
+    openingTimeSundayHours: "gesloten",
+
     startupSupportBenefit1: "Begeleiding bij het opzetten van uw administratie",
     startupSupportBenefit2: "Advies over rechtsvorm en bedrijfsstructuur",
     startupSupportBenefit3: "Ondersteuning bij financiële planning",
@@ -224,6 +248,19 @@ export const translations = {
     individualsService5: "Advies over schenkingen en erfenissen",
     individualsService6: "Hulp bij aanvragen van toeslagen",
     individualsService7: "Financiële planning voor uw toekomst",
+
+    // Particulieren pricing features
+    particulierenTitle: "Particulieren",
+    particulierenPrice: "35",
+    particulierenFeature1: "Aanvraag zorgtoeslag",
+    particulierenFeature2: "Aanvraag huurtoeslag",
+    particulierenFeature3: "Aanvraag kindgebonden budget",
+    particulierenFeature4: "Aanvraag gemeentelijke formulieren",
+    particulierenFeature5: "Aangifte inkomstenbelasting €50",
+    particulierenFeature6: "Met partner +€25",
+
+    // NOTK pricing
+    pricingNOTK: "NOTK (nader overeen te komen)",
 
     // Why DMR
     whyDmrTitle: "Waarom DMR Finance?",
@@ -379,6 +416,28 @@ export const translations = {
     // WhatsApp message
     whatsappMessage:
       "Beste DMR administratie,%0A%0AIk had een vraag over uw dienstverlening. Kunt u mij meer informatie geven?%0A%0AMet vriendelijke groet",
+
+    // Service titles and descriptions for metadata
+    serviceFinancialAdminTitle: "Financiële Administratie",
+    serviceFinancialAdminDescription: "Krijg grip op uw financiën en verbeter uw bedrijfsresultaten.",
+    servicePayrollAdminTitle: "Loonadministratie",
+    servicePayrollAdminDescription: "Verlicht uw lasten en zorg voor loonadministratie zonder zorgen.",
+    serviceTaxAdviceTitle: "Belastingadvies",
+    serviceTaxAdviceDescription: "Minimaliseer belastingen met ons deskundig belastingadvies.",
+    serviceCreditMediationTitle: "Kredietbemiddeling",
+    serviceCreditMediationDescription: "Ontdek hoe onze kredietbemiddeling uw financiële groei kan versnellen.",
+    serviceBusinessAdviceTitle: "Bedrijfsadvies en -planning",
+    serviceBusinessAdviceDescription: "Optimaliseer uw bedrijfsstrategie en toekomstige groei.",
+    serviceStartupSupportTitle: "Start-up ondersteuning",
+    serviceStartupSupportDescription: "Laat uw start-up gedijen met onze deskundige ondersteuning.",
+    serviceLegalFinancialAdviceTitle: "Juridisch en Financieel advies",
+    serviceLegalFinancialAdviceDescription: "Bescherm uw bedrijf en maximaliseer financiële kansen.",
+    serviceIndividualsTitle: "Particulieren",
+    serviceIndividualsDescription: "Ervaar met particuliere financiën, verbeter uw financiële toekomst.",
+
+    // Partners section
+    partnersTitle: "Bedrijven waarmee wij samenwerken",
+    partnersSubtitle: "Wij werken samen met toonaangevende softwareleveranciers om u de beste service te bieden.",
   },
   en: {
     // Navigation
@@ -441,6 +500,20 @@ export const translations = {
     individualsShort: "Experience with personal finances, improve your financial future.",
     readyToStart: "Ready to get started?",
     readyToStartDesc: "Contact us and discover how DMR Finance can support your business.",
+
+    // New startup support content
+    startupSupportTitle: "Start-up Support",
+    startupSupportShortDesc: "Let your start-up thrive with our expert support.",
+    startupSupportLongDesc:
+      "At DMR we understand that the journey of a start-up entrepreneur can be challenging and exciting. It starts with an idea, grows into a vision and eventually blossoms into a full-fledged company.",
+
+    // New legal financial advice content
+    legalFinancialAdviceTitle: "Legal and Financial Advice",
+    legalFinancialAdviceShortDesc: "Protect your business and maximize financial opportunities.",
+    legalFinancialAdviceLongDesc:
+      "At DMR administration & advice we believe that solid legal and financial advice is the cornerstone of any successful business.",
+
+    optimizedFinance: "Optimized finances",
 
     // Service detail page
     requestQuote: "Request a quote",
@@ -531,6 +604,7 @@ export const translations = {
     creditMediationService7: "Advice on lease and hire purchase constructions",
 
     businessAdviceBenefit1: "Strategic business planning",
+
     businessAdviceBenefit2: "Financial forecasts and budgeting",
     businessAdviceBenefit3: "Cost analysis and optimization",
     businessAdviceBenefit4: "Advice on business structure",
@@ -545,6 +619,7 @@ export const translations = {
     businessAdviceService4: "Advice on business structure and organization",
     businessAdviceService5: "Guidance with growth and expansion",
     businessAdviceService6: "Strategic planning and objectives",
+    nederland: "Netherlands",
     businessAdviceService7: "Benchmarking and competition analysis",
 
     startupSupportBenefit1: "Guidance with setting up your administration",
@@ -563,7 +638,6 @@ export const translations = {
     startupSupportService5: "Financial forecasts and budgeting",
     startupSupportService6: "Advice on subsidies and financing options",
     startupSupportService7: "Tax advice for starting entrepreneurs",
-
 
     legalFinancialAdviceBenefit1: "Integrated legal and financial advice",
     legalFinancialAdviceBenefit2: "Protection of your business interests",
@@ -599,6 +673,19 @@ export const translations = {
     individualsService6: "Assistance with applying for allowances",
     individualsService7: "Financial planning for your future",
 
+    // Particulieren pricing features
+    particulierenTitle: "Individuals",
+    particulierenPrice: "35",
+    particulierenFeature1: "Healthcare allowance application",
+    particulierenFeature2: "Housing allowance application",
+    particulierenFeature3: "Child benefit application",
+    particulierenFeature4: "Municipal forms application",
+    particulierenFeature5: "Income tax return €50",
+    particulierenFeature6: "With partner +€25",
+
+    // NOTK pricing
+    pricingNOTK: "TBD (to be determined)",
+
     // Why DMR
     whyDmrTitle: "Why DMR Finance?",
     experience: "10+ years experience",
@@ -633,6 +720,7 @@ export const translations = {
 
     // About
     aboutTitle: "About DMR Finance",
+    rights: "2024 DMR Finance. All rights reserved.",
     aboutDescription:
       "At DMR Finance we keep the lines short. This gives you a personal approach when providing your financial administration. In our many years of experience as financial service providers, we have found that communication is of great importance.",
 
@@ -643,6 +731,7 @@ export const translations = {
     personalApproachDesc: "We keep the lines short for a personal service",
     expertiseValue: "Expertise",
     expertiseValueDesc: "10+ years of experience in financial services",
+    createdby: "Created by Devkan",
     reliability: "Reliability",
     reliabilityDesc: "Always on time and as agreed",
     commitment: "Commitment",
@@ -655,6 +744,14 @@ export const translations = {
       "Our goal is simple: to relieve your administrative burden so you can focus on what you do best - running your business and realizing your dreams.",
     makeContact:
       "Contact DMR Finance for all your questions about financial administration, payroll administration, and tax advice.",
+
+    openingTimeTitle: "Opening Hours",
+    openingTimeDays: "Monday to Friday",
+    openingTimeWeekdays: "08:30 – 18:00",
+    openingTimeSaturday: "Saturday",
+    openingTimeSaturdayHours: "09:00 – 13:00",
+    openingTimeSunday: "Sunday",
+    openingTimeSundayHours: "Closed",
 
     // Contact page translations
     contactTitle: "Contact",
@@ -755,6 +852,28 @@ export const translations = {
     // WhatsApp message
     whatsappMessage:
       "Dear DMR administration,%0A%0AI have a question about your services. Could you provide me with more information?%0A%0AKind regards",
+
+    // Service titles and descriptions for metadata
+    serviceFinancialAdminTitle: "Financial Administration",
+    serviceFinancialAdminDescription: "Get control of your finances and improve your business results.",
+    servicePayrollAdminTitle: "Payroll Administration",
+    servicePayrollAdminDescription: "Relieve your burden and ensure worry-free payroll administration.",
+    serviceTaxAdviceTitle: "Tax Advice",
+    serviceTaxAdviceDescription: "Minimize taxes with our expert tax advice.",
+    serviceCreditMediationTitle: "Credit Mediation",
+    serviceCreditMediationDescription: "Discover how our credit mediation can accelerate your financial growth.",
+    serviceBusinessAdviceTitle: "Business Advice and Planning",
+    serviceBusinessAdviceDescription: "Optimize your business strategy and future growth.",
+    serviceStartupSupportTitle: "Start-up Support",
+    serviceStartupSupportDescription: "Let your start-up thrive with our expert support.",
+    serviceLegalFinancialAdviceTitle: "Legal and Financial Advice",
+    serviceLegalFinancialAdviceDescription: "Protect your business and maximize financial opportunities.",
+    serviceIndividualsTitle: "Individuals",
+    serviceIndividualsDescription: "Experience with personal finances, improve your financial future.",
+
+    // Partners section
+    partnersTitle: "Companies we work with",
+    partnersSubtitle: "We collaborate with leading software providers to offer you the best service.",
   },
   bg: {
     // Navigation
@@ -774,6 +893,7 @@ export const translations = {
     heroDescription:
       "DMR Finance предлага персонализирани финансови решения и професионални съвети за подкрепа на вашия бизнес в растежа и успеха. Ние поемаме сложните административни задачи, за да можете да се съсредоточите изцяло върху постигането на целите си.",
     planMeeting: "Планирайте среща",
+    createdby: "Създадено от DevKan",
 
     // Services
     servicesTitle: "Нашите услуги",
@@ -820,8 +940,23 @@ export const translations = {
     readyToStart: "Готови ли сте да започнете?",
     readyToStartDesc: "Свържете се с нас и открийте как DMR Finance може да подкрепи вашия бизнес.",
 
+    // New startup support content
+    startupSupportTitle: "Поддръжка за стартъпи",
+    startupSupportShortDesc: "Нека вашият стартъп процъфтява с нашата експертна поддръжка.",
+    startupSupportLongDesc:
+      "В DMR разбираме, че пътуването на стартъп предприемача може да бъде предизвикателно и вълнуващо. То започва с идея, израства до визия и в крайна сметка разцъфтява в пълноценна компания.",
+
+    // New legal financial advice content
+    legalFinancialAdviceTitle: "Правни и финансови съвети",
+    legalFinancialAdviceShortDesc: "Защитете бизнеса си и максимизирайте финансовите възможности.",
+    legalFinancialAdviceLongDesc:
+      "В DMR администрация и съвети вярваме, че солидните правни и финансови съвети са краеъгълният камък на всеки успешен бизнес.",
+
+    optimizedFinance: "Оптимизирани финанси",
+
     // Service detail page
     requestQuote: "Заявете оферта",
+    rights: "2024 DMR Finance. Всички права запазени.",
     benefits: "Предимства",
     aboutThisService: "За тази услуга",
     whatWeDo: "Какво правим за вас",
@@ -934,51 +1069,64 @@ export const translations = {
       "DMR Finance предлага специфична подкрепа за стартиращи фирми и начинаещи предприемачи. Ние ви помагаме да поставите солидна финансова основа за вашата компания и ви напътстваме през първите стъпки като предприемач.",
     startupSupportService1: "Съвети относно избора на правна форма",
     startupSupportService2: "Създаване на вашата финансова администрация",
-    startupSupportService3: "Насоки при регистрация в Търговския регистър и Данъчната служба",
+    startupSupportService3: "Насоки при регистрация в Търговската камара и данъчните органи",
     startupSupportService4: "Подготовка на бизнес план",
     startupSupportService5: "Финансови прогнози и бюджетиране",
     startupSupportService6: "Съвети относно субсидии и възможности за финансиране",
-    startupSupportService7: "Данъчни съвети за стартиращи предприемачи",
-    quickContactWhatsApp: "Бърз контакт чрез WhatsApp",
+    startupSupportService7: "Данъчни съвети за начинаещи предприемачи",
 
     legalFinancialAdviceBenefit1: "Интегрирани правни и финансови съвети",
     legalFinancialAdviceBenefit2: "Защита на вашите бизнес интереси",
-    legalFinancialAdviceBenefit3: "Оптимизиране на договори и споразумения",
-    legalFinancialAdviceBenefit4: "Управление и смекчаване на риска",
-    legalFinancialAdviceBenefit5: "Съответствие със законите и разпоредбите",
+    legalFinancialAdviceBenefit3: "Оптимизация на договори и споразумения",
+    legalFinancialAdviceBenefit4: "Управление и ограничаване на риска",
+    legalFinancialAdviceBenefit5: "Съответствие със закони и разпоредби",
     legalFinancialAdviceDescription1:
-      "В днешния сложен бизнес пейзаж правните и финансовите аспекти често са тясно преплетени. Следователно интегрираният подход е от съществено значение за оптимална защита на вашата компания и използване на възможностите.",
+      "В днешния сложен бизнес пейзаж правните и финансовите аспекти често са тясно преплетени. Интегрираният подход затова е от съществено значение за оптимална защита на вашата компания и използване на възможностите.",
     legalFinancialAdviceDescription2:
-      "DMR Finance предлага уникална комбинация от правни и финансови съвети. Нашите експерти имат познания и в двете области и следователно могат да ви консултират холистично по сложни бизнес въпроси.",
+      "DMR Finance предлага уникална комбинация от правни и финансови съвети. Нашите експерти имат познания и в двете области и затова могат да ви дават холистични съвети по сложни бизнес въпроси.",
     legalFinancialAdviceService1: "Правно структуриране на вашата компания",
-    legalFinancialAdviceService2: "Съставяне и преглед на договори",
-    legalFinancialAdviceService3: "Съвети относно общите условия",
+    legalFinancialAdviceService2: "Изготвяне и преглед на договори",
+    legalFinancialAdviceService3: "Съвети относно общи условия",
     legalFinancialAdviceService4: "Насоки при спорове и конфликти",
-    legalFinancialAdviceService5: "Съответствие със законите и разпоредбите",
-    legalFinancialAdviceService6: "Управление и смекчаване на риска",
-    legalFinancialAdviceService7: "Съвети относно интелектуалната собственост",
+    legalFinancialAdviceService5: "Съответствие със закони и разпоредби",
+    legalFinancialAdviceService6: "Управление и ограничаване на риска",
+    legalFinancialAdviceService7: "Съвети относно интелектуална собственост",
 
     individualsBenefit1: "Лично ръководство при данъчни декларации",
-    individualsBenefit2: "Оптимизиране на вашата данъчна позиция",
-    individualsBenefit3: "Съвети относно планирането на богатството",
+    individualsBenefit2: "Оптимизация на вашата данъчна позиция",
+    individualsBenefit3: "Съвети относно планиране на богатството",
     individualsBenefit4: "Насоки при финансови решения",
-    individualsBenefit5: "Помощ при надбавки и субсидии",
+    individualsBenefit5: "Помощ при помощи и субсидии",
     individualsDescription1:
-      "Дори като физическо лице може да се сблъскате със сложни финансови и данъчни въпроси. Независимо дали става въпрос за вашата данъчна декларация, планиране на богатството или финансови решения, професионалните съвети могат да ви помогнат да направите правилния избор.",
+      "Дори като частно лице можете да се сблъскате със сложни финансови и данъчни въпроси. Независимо дали става въпрос за вашата данъчна декларация, планиране на богатството или финансови решения, професионалните съвети могат да ви помогнат да направите правилните избори.",
     individualsDescription2:
-      "В DMR Finance предлагаме изчерпателни услуги за физически лица. Нашите съветници ви помагат да оптимизирате финансовото си състояние и да минимизирате данъчната си тежест.",
+      "В DMR Finance предлагаме изчерпателни услуги за частни лица. Нашите съветници ви помагат да оптимизирате финансовата си ситуация и да минимизирате данъчната си тежест.",
     individualsService1: "Подготовка и подаване на вашата данъчна декларация",
-    individualsService2: "Съвети относно данъчните облекчения",
-    individualsService3: "Насоки при процедури за възражения и обжалвания",
+    individualsService2: "Съвети относно данъчни приспадания",
+    individualsService3: "Насоки при процедури за възражение и обжалване",
     individualsService4: "Планиране и управление на богатството",
     individualsService5: "Съвети относно дарения и наследства",
-    individualsService6: "Помощ при кандидатстване за надбавки",
+    individualsService6: "Помощ при кандидатстване за помощи",
+    Nederland: "Нидерландия",
     individualsService7: "Финансово планиране за вашето бъдеще",
+
+    // Particulieren pricing features
+    particulierenTitle: "Частни лица",
+    particulierenPrice: "35",
+    particulierenFeature1: "Заявление за здравна помощ",
+    particulierenFeature2: "Заявление за жилищна помощ",
+    particulierenFeature3: "Заявление за детски надбавки",
+    particulierenFeature4: "Заявление за общински формуляри",
+    particulierenFeature5: "Данъчна декларация за доходи €50",
+    particulierenFeature6: "С партньор +€25",
+
+    // NOTK pricing
+    pricingNOTK: "ДСУД (да се уговори допълнително)",
 
     // Why DMR
     whyDmrTitle: "Защо DMR Finance?",
     experience: "10+ години опит",
-    minimalTax: "Минимално данъчно плащане",
+    minimalTax: "Минимални данъчни плащания",
     youSendWeDo: "Вие изпращате, ние правим",
     expertise: "Експертиза и съвети",
     clients: "100+ доволни клиенти",
@@ -989,7 +1137,7 @@ export const translations = {
     // Working Method
     workingMethodTitle: "Метод на работа",
     workingMethodDesc:
-      "За да създадем точно финансово представяне на вашия бизнес, поддържането на вашата администрация е от съществено значение. След запознаване обясняваме как се поддържа администрация, настройваме вашата администрация и ви предоставяме релевантна информация.",
+      "За да се създаде точно финансово представяне на вашия бизнес, поддържането на вашата администрация е от съществено значение. След запознаване ви обясняваме как се поддържа администрация, настройваме вашата администрация и ви предоставяме съответната информация.",
 
     // Footer
     openingHours: "Работно време",
@@ -997,6 +1145,7 @@ export const translations = {
     saturdaySunday: "Събота и неделя",
     closed: "Затворено",
     followUs: "Последвайте ни",
+    quickContactWhatsApp: "бърз контакт чрез WhatsApp",
 
     // Pricing
     perMonth: "На месец",
@@ -1009,25 +1158,33 @@ export const translations = {
     // About
     aboutTitle: "За DMR Finance",
     aboutDescription:
-      "В DMR Finance поддържаме кратките линии. Това ви дава личен подход при предоставянето на вашата финансова администрация. В нашия многогодишен опит като доставчици на финансови услуги установихме, че комуникацията е от голямо значение.",
+      "В DMR Finance поддържаме кратките линии. Това ви дава личен подход при предоставянето на вашата финансова администрация. В нашия дългогодишен опит като доставчици на финансови услуги установихме, че комуникацията е от голямо значение.",
 
     // About page
     ourValues: "Нашите ценности",
     ourStory: "Нашата история",
     personalApproach: "Личен подход",
-    personalApproachDesc: "Поддържаме кратките линии за лично обслужване",
+    personalApproachDesc: "Поддържаме кратките линии за персонализирана услуга",
     expertiseValue: "Експертиза",
     expertiseValueDesc: "10+ години опит във финансовите услуги",
     reliability: "Надеждност",
-    reliabilityDesc: "Винаги навреме и според споразумението",
+    reliabilityDesc: "Винаги навреме и както е уговорено",
     commitment: "Ангажираност",
     commitmentDesc: "Вашият успех е нашият успех",
     storyParagraph1:
-      "DMR Finance е създадена от страстта да помага на предприемачи и частни лица с тяхната финансова администрация. С над 10 години опит в индустрията, ние развихме дълбоко разбиране за предизвикателствата, пред които са изправени нашите клиенти.",
+      "DMR Finance се роди от страстта за помощ на предприемачи и частни лица с тяхната финансова администрация. С над 10 години опит в индустрията, развихме дълбоко разбиране на предизвикателствата, пред които са изправени нашите клиенти.",
     storyParagraph2:
-      "Вярваме, че добрата комуникация и личното внимание са ключът към успешното партньорство. Ето защо работим с малък, отдаден екип, който обръща на всеки клиент вниманието, което заслужава.",
+      "Вярваме, че добрата комуникация и личното внимание са ключът към успешно партньорство. Затова работим с малък, отдаден екип, който дава на всеки клиент вниманието, което заслужава.",
     storyParagraph3:
-      "Наш��та цел е проста: да облекчим вашата административна тежест, за да можете да се съсредоточите върху това, което правите най-добре - да управлявате бизнеса си и да реализирате мечтите си.",
+      "Нашата цел е проста: да облекчим вашата административна тежест, за да можете да се съсредоточите върху това, което правите най-добре - управлявате бизнеса си и реализирате мечтите си.",
+
+    openingTimeTitle: "Работно време",
+    openingTimeDays: "Понеделник до петък",
+    openingTimeWeekdays: "08:30 – 18:00",
+    openingTimeSaturday: "Събота",
+    openingTimeSaturdayHours: "09:00 – 13:00",
+    openingTimeSunday: "Неделя",
+    openingTimeSundayHours: "Затворено",
 
     // Contact page translations
     contactTitle: "Контакт",
@@ -1041,7 +1198,6 @@ export const translations = {
       "Вашата заявка за среща беше изпратена успешно! Ще се свържем с вас възможно най-скоро, за да насрочим срещата.",
     quoteSuccessMessage:
       "Вашата заявка за оферта беше изпратена успешно! Ще подготвим подходяща оферта за вас и ще се свържем с вас в рамките на 24 часа.",
-      zakelijkAuto: "Служебен автомобил за бизнеса",
     errorMessage: "Възникна грешка при изпращането на вашето съобщение. Моля, опитайте отново.",
     appointmentErrorMessage: "Възникна грешка при изпращането на вашата заявка за среща. Моля, опитайте отново.",
     quoteErrorMessage: "Възникна грешка при изпращането на вашата заявка за оферта. Моля, опитайте отново.",
@@ -1060,39 +1216,39 @@ export const translations = {
     quoteTab: "Заявка за оферта",
     appointmentTabShort: "Среща",
     quoteTabShort: "Оферта",
-    contactPerson: "Име на лице за контакт",
+    contactPerson: "Име на контактното лице",
     preferredDate: "Предпочитана дата за среща",
     preferredTime: "Предпочитано време",
-    chooseTimeframe: "Изберете времеви диапазон",
+    chooseTimeframe: "Изберете времева рамка",
     morning: "Сутрин (09:00-12:00)",
     afternoon: "Следобед (12:00-17:00)",
     evening: "Вечер (17:00-20:00)",
     legalForm: "Правна форма",
     selectLegalForm: "Изберете правна форма",
-    servicesNeeded: "Какви услуги ви трябват?",
+    servicesNeeded: "От кои услуги се нуждаете?",
     additionalComments: "Допълнителни коментари или въпроси:",
     specificFiscalNeeds: "Имате ли специфични фискални нужди или въпроси?",
     scheduleAppointment: "Насрочване на среща",
-    contactPerson2: "Лице за контакт",
+    contactPerson2: "Контактно лице",
     fullName: "Име и фамилия",
     companyName2: "Име на вашата компания",
-    yourEmailAddress: "вашият.имейл@компания.com",
+    yourEmailAddress: "your.email@company.com",
     phoneExample: "06 12345678",
     employees: "Брой служители",
     selectNumber: "Изберете брой",
-    noPersonnel: "Без персонал",
+    noPersonnel: "Няма персонал",
     employees1to5: "1-5 служители",
     employees6to10: "6-10 служители",
     employees11to25: "11-25 служители",
     employeesMore25: "Повече от 25",
-    monthlyTransactions: "Банкови транзакции на месец",
+    monthlyTransactions: "Банкови транзакции месечно",
     estimatedNumber: "Приблизителен брой",
     transactions0to50: "0-50",
     transactions51to100: "51-100",
     transactions101to200: "101-200",
     transactions201to500: "201-500",
     transactionsMore500: "Повече от 500",
-    yearlyInvoices: "Фактури на година",
+    yearlyInvoices: "Фактури годишно",
     invoices0to100: "0-100",
     invoices101to200: "101-200",
     invoices201to300: "201-300",
@@ -1102,18 +1258,18 @@ export const translations = {
     additionalInfo: "Допълнителна информация",
     additionalInfoPlaceholder: "Разкажете ни повече за вашите специфични желания или ситуация...",
     requestQuoteButton: "Заявка за оферта",
-    pricingQuestions: "Имате въпроси относно нашите тарифи?",
-    pricingQuestionsDesc: "Свържете се с нас за лична консултация и персонализирана оферта.",
+    pricingQuestions: "Имате ли въпроси относно нашите цени?",
+    pricingQuestionsDesc: "Свържете се с нас за лични съвети и персонализирана оферта.",
 
     // Pricing features
     pricingFeature200BankTransactions: "200 банкови транзакции",
     pricingFeature200InvoicesPerYear: "200 фактури годишно",
     pricingFeatureWithVatAndTax: "С ДДС и годишна данъчна декларация",
-    pricingFeatureBestForZZP: "Най-добро за счетоводство на свободна практика",
+    pricingFeatureBestForZZP: "Най-добро за счетоводство на фрилансери",
     pricingFeatureExcludingPersonnel: "Без персонал",
     pricingFeature500BankTransactions: "500 банкови транзакции",
     pricingFeature300InvoicesPerYear: "300 фактури годишно",
-    pricingFeatureEenmanszaakBookkeeping: "Счетоводство на едноличен търговец",
+    pricingFeatureEenmanszaakBookkeeping: "Счетоводство на еднолично дружество",
     pricingFeatureMaxTwoPartners: "До максимум 2 партньори",
     pricingFeatureIncludingDGAPayslip: "Включително DGA фиш за заплата",
     pricingFeatureIncludingDGAPayroll: "Включително DGA заплата",
@@ -1122,275 +1278,350 @@ export const translations = {
     pricingFeaturePayslip: "Фиш за заплата",
     pricingFeature4Personnel: "4 Персонал",
     pricingFeatureIncludingInOut: "Включително наемане/уволнение",
-    pricingFeatureAnnualStatement: "Годишна справка",
-    pricingFeaturePayrollJournal: "Журнал за заплати",
+    pricingFeatureAnnualStatement: "Годишно извлечение",
+    pricingFeaturePayrollJournal: "Заплатен журнал",
     pricingFeaturePensionAdmin: "Пенсионна администрация",
+    zakelijkAuto: "Служебна кола за бизнес",
 
-    // WhatsApp message (using Turkish as requested)
+    // WhatsApp message
     whatsappMessage:
-      "Sayın DMR yönetimi,%0A%0AHizmetleriniz hakkında bir sorum var. Bana daha fazla bilgi verebilir misiniz?%0A%0ASaygılarımla",
+      "Уважаема DMR администрация,%0A%0AИмам въпрос относно вашите услуги. Можете ли да ми предоставите повече информация?%0A%0AС уважение",
+
+    // Service titles and descriptions for metadata
+    serviceFinancialAdminTitle: "Финансова администрация",
+    serviceFinancialAdminDescription: "Получете контрол върху финансите си и подобрете бизнес резултатите си.",
+    servicePayrollAdminTitle: "Заплатна администрация",
+    servicePayrollAdminDescription: "Облекчете тежестта си и осигурете безпроблемна заплатна администрация.",
+    serviceTaxAdviceTitle: "Данъчни съвети",
+    serviceTaxAdviceDescription: "Минимизирайте данъците с нашите експертни данъчни съвети.",
+    serviceCreditMediationTitle: "Кредитно посредничество",
+    serviceCreditMediationDescription:
+      "Открийте как нашето кредитно посредничество може да ускори вашия финансов растеж.",
+    serviceBusinessAdviceTitle: "Бизнес съвети и планиране",
+    serviceBusinessAdviceDescription: "Оптимизирайте вашата бизнес стратегия и бъдещ растеж.",
+    serviceStartupSupportTitle: "Поддръжка за стартъпи",
+    serviceStartupSupportDescription: "Нека вашият стартъп процъфтява с нашата експертна поддръжка.",
+    serviceLegalFinancialAdviceTitle: "Правни и финансови съвети",
+    serviceLegalFinancialAdviceDescription: "Защитете бизнеса си и максимизирайте финансовите възможности.",
+    serviceIndividualsTitle: "Частни лица",
+    serviceIndividualsDescription: "Опит с лични финанси, подобрете финансовото си бъдеще.",
+
+    // Partners section
+    partnersTitle: "Компании, с които работим",
+    partnersSubtitle: "Ние си сътрудничим с водещи доставчици на софтуер, за да ви предложим най-добрата услуга.",
   },
   tr: {
     // Navigation
     home: "Ana Sayfa",
     about: "Hakkımızda",
     services: "Hizmetler",
-    pricing: "Fiyatlar",
+    pricing: "Fiyatlandırma",
     contact: "İletişim",
     quote: "Teklif",
     moreInfo: "Daha fazla bilgi",
+    makeContact:
+      "Mali yönetim, bordro yönetimi ve vergi danışmanlığı konularındaki tüm sorularınız için DMR Finance ile iletişime geçin.",
 
     // Hero Section
-    heroTitle: "Finanslarınızı biz yönetiyoruz,",
-    heroSubtitle: "siz hedeflerinizi gerçekleştirin",
+    heroTitle: "Mali işlerinizi biz yönetiriz,",
+    heroSubtitle: "siz hedeflerinizi gerçekleştirirsiniz",
     heroDescription:
-      "DMR Finance, işletmenizi büyüme ve başarıda desteklemek için özel yapım finansal çözümler ve profesyonel danışmanlık sunar. Karmaşık idari görevleri üstleniriz, böylece siz tamamen hedeflerinizi gerçekleştirebilirsiniz.",
+      "DMR Finance, işletmenizin büyüme ve başarısını desteklemek için özel yapım mali çözümler ve profesyonel danışmanlık sunar. Karmaşık idari görevleri üstleniriz, böylece siz tamamen hedeflerinizi gerçekleştirmeye odaklanabilirsiniz.",
+    planMeeting: "Görüşme planlayın",
+
+    // Services
+    servicesTitle: "Hizmetlerimiz",
+    servicesSubtitle:
+      "DMR Finance, şirketlere, girişimcilere ve bireylere çeşitli hizmetler sunan bir yönetim ve danışmanlık ofisidir.",
+
+    financialAdmin: "Mali Yönetim",
+    financialAdminDesc:
+      "Temel faaliyetimiz mali yönetim sağlamaktır. Sunduğumuz hizmetlerden, KDV ve gelir vergisi beyannameleri için yönetiminizi işleme koymak ana meşguliyetimizdir.",
+    financialAdminShort: "Mali durumunuzu kontrol altına alın ve iş sonuçlarınızı iyileştirin.",
+
+    payrollAdmin: "Bordro Yönetimi",
+    payrollAdminDesc:
+      "Personeliniz varsa veya personel almayı planlıyorsanız, bordro yönetimi ile uğraşacaksınız. Bu, personelin ödenmesi ve bordro beyannamelerinin sunulmasını içerir.",
+    payrollAdminShort: "Yükünüzü hafifleten ve sorunsuz bordro yönetimi sağlayın.",
+
+    taxAdvice: "Vergi Danışmanlığı",
+    taxAdviceDesc:
+      "Hizmetlerimizin çoğu vergi beyannamelerine dayandığından, her ilgili hizmette en uygun vergi pozisyonunu elde etme imkanı sunuyoruz.",
+    taxAdviceShort: "Uzman vergi danışmanlığımızla vergileri minimize edin.",
+
+    individuals: "Bireyler",
+    individualsDesc:
+      "Ayrıca birey olarak da size yardımcı oluyoruz. Kişisel gelir vergisi beyannamenizi vermenizde size yardımcı olabiliriz.",
 
     // Services page
     creditMediation: "Kredi Aracılığı",
-    creditMediationDesc: "Kredi aracılığımızın finansal büyümenizi nasıl hızlandırabileceğini keşfedin.",
+    creditMediationDesc: "Kredi aracılığımızın mali büyümenizi nasıl hızlandırabileceğini keşfedin.",
     creditMediationDetails:
-      "İşletmeniz için doğru finansman çözümlerini bulmanıza yardımcı oluyoruz. İşletme kredilerinden ipoteklere kadar, en iyi koşullar için aracılık yapıyoruz.",
-    businessAdvice: "İşletme Danışmanlığı ve Planlama",
-    businessAdviceDesc: "İşletme stratejinizi ve gelecekteki büyümenizi optimize edin.",
+      "İşletmeniz için doğru finansman çözümlerini bulmanızda size yardımcı oluyoruz. İş kredilerinden ipoteklere kadar, en iyi koşullar için aracılık yapıyoruz.",
+    businessAdvice: "İş Danışmanlığı ve Planlama",
+    businessAdviceDesc: "İş stratejinizi ve gelecekteki büyümenizi optimize edin.",
     businessAdviceDetails:
-      "İşletmelerini büyütmek isteyen girişimciler için stratejik tavsiyeler. İş planlaması, finansal tahminler ve stratejik kararlarda yardımcı oluyoruz.",
-    startupSupport: "Başlangıç Desteği",
-    startupSupportDesc: "Uzman desteğimizle başlangıç şirketinizin gelişmesine izin verin.",
+      "İşlerini büyütmek isteyen girişimciler için stratejik danışmanlık. İş planlaması, mali tahminler ve stratejik kararlar konusunda yardımcı oluyoruz.",
+    startupSupport: "Startup Desteği",
+    startupSupportDesc: "Uzman desteğimizle startup'ınızın gelişmesini sağlayın.",
     startupSupportDetails:
-      "Özellikle yeni başlayan girişimciler için, yönetiminizi kurma ve en başından doğru seçimleri yapma konusunda kapsamlı destek sunuyoruz.",
-    legalFinancialAdvice: "Hukuki ve Finansal Danışmanlık",
-    legalFinancialAdviceDesc: "İşletmenizi koruyun ve finansal fırsatları en üst düzeye çıkarın.",
+      "Özellikle başlangıç girişimcileri için yönetiminizi kurmada ve başından itibaren doğru seçimler yapmada kapsamlı destek sunuyoruz.",
+    legalFinancialAdvice: "Hukuki ve Mali Danışmanlık",
+    legalFinancialAdviceDesc: "İşletmenizi koruyun ve mali fırsatları maksimize edin.",
     legalFinancialAdviceDetails:
-      "İşletmenizi en iyi şekilde korumak ve karmaşık düzenlemelerde fırsatları yakalamak için hukuki ve finansal uzmanlığın birleşimi.",
-    individualsShort: "Kişisel finans deneyimi ile finansal geleceğinizi iyileştirin.",
+      "İşletmenizi optimal şekilde korumak ve karmaşık düzenlemelerde fırsatları değerlendirmek için hukuki ve mali uzmanlığın birleşimi.",
+    individualsShort: "Kişisel finans deneyimi, mali geleceğinizi iyileştirin.",
     readyToStart: "Başlamaya hazır mısınız?",
-    readyToStartDesc: "Bizimle iletişime geçin ve DMR Finance'in işletmenizi nasıl destekleyebileceğini keşfedin.",
+    readyToStartDesc: "Bizimle iletişime geçin ve DMR Finance'ın işletmenizi nasıl destekleyebileceğini keşfedin.",
+
+    // New startup support content
+    startupSupportTitle: "Startup Desteği",
+    startupSupportShortDesc: "Uzman desteğimizle startup'ınızın gelişmesini sağlayın.",
+    startupSupportLongDesc:
+      "DMR'de bir startup girişimcisinin yolculuğunun zorlu ve heyecan verici olabileceğini anlıyoruz. Bir fikirle başlar, vizyona dönüşür ve sonunda tam teşekküllü bir şirkete çiçek açar.",
+
+    // New legal financial advice content
+    legalFinancialAdviceTitle: "Hukuki ve Mali Danışmanlık",
+    legalFinancialAdviceShortDesc: "İşletmenizi koruyun ve mali fırsatları maksimize edin.",
+    legalFinancialAdviceLongDesc:
+      "DMR yönetim ve danışmanlık olarak, sağlam hukuki ve mali danışmanlığın her başarılı işletmenin temel taşı olduğuna inanıyoruz.",
+
+    optimizedFinance: "Optimize edilmiş finans",
 
     // Service detail page
     requestQuote: "Teklif isteyin",
-    benefits: "Faydalar",
+    benefits: "Avantajlar",
     aboutThisService: "Bu hizmet hakkında",
-    whatWeDo: "Sizin için ne yapıyoruz",
+    whatWeDo: "Sizin için neler yapıyoruz",
     personalApproachTitle: "Kişisel yaklaşım",
     personalApproachText:
-      "Her durum benzersizdir. Bu nedenle, hizmetlerimizi tamamen sizin özel ihtiyaçlarınıza ve hedeflerinize göre uyarlıyoruz.",
+      "Her durum benzersizdir. Bu nedenle hizmetlerimizi tamamen özel ihtiyaçlarınıza ve hedeflerinize göre uyarlıyoruz.",
     howWeWork: "Nasıl çalışıyoruz?",
-    howWeWorkDesc: "Sürecimiz şeffaf ve verimlidir, böylece her zaman nerede durduğunuzu bilirsiniz.",
+    howWeWorkDesc: "Sürecimiz şeffaf ve verimlidir, böylece her zaman durumunuzu bilirsiniz.",
     step1Title: "Tanışma",
-    step1Desc: "Durumunuzu ve isteklerinizi taahhütsüz bir görüşme sırasında görüşüyoruz.",
-    step2Title: "Özel tavsiye",
+    step1Desc: "Bağlayıcı olmayan bir görüşmede durumunuzu ve isteklerinizi tartışıyoruz.",
+    step2Title: "Özel danışmanlık",
     step2Desc: "İhtiyaçlarınıza mükemmel şekilde uyan kişisel bir plan oluşturuyoruz.",
     step3Title: "Uygulama",
-    step3Desc: "İşi biz hallederiz ve sizi ilerleme hakkında bilgilendiririz.",
-    readyToStartCta: "Size nasıl yardımcı olabileceğimiz hakkında taahhütsüz bir görüşme için bizimle iletişime geçin.",
+    Nederland: "Hollanda",
+    rights: "2024 DMR Finance. Tüm hakları saklıdır.",
+    step3Desc: "İşleri üstleniyor ve ilerleme hakkında sizi bilgilendiriyoruz.",
+    readyToStartCta:
+      "Size nasıl yardımcı olabileceğimiz konusunda bağlayıcı olmayan bir görüşme için bizimle iletişime geçin.",
     serviceNotFound: "Hizmet bulunamadı - DMR Finance",
-    financialAdminDesc:"Ana faaliyetimiz finansal yönetim sağlamaktır. Sunmuş olduğumuz hizmetler arasında, yönetiminizin KDV ve gelir vergisi beyannameleri için işlenmesi en önemli uğraşımızdır.",
 
     // Service detail specific content
-    financialAdminBenefit1: "Finansal yönetiminizin tam olarak işlenmesi",
+    financialAdminBenefit1: "Mali yönetiminizin tam işleme alınması",
     financialAdminBenefit2: "Zamanında ve doğru KDV beyannameleri",
-    financialAdminBenefit3: "Finansal durumunuza ilişkin içgörü",
-    planMeeting: "Bir görüşme planlayın",
-    financialAdminBenefit4: "Yıllık hesaplar ve finansal raporlar",
-    financialAdminBenefit5: "Kişisel rehberlik ve tavsiye",
+    financialAdminBenefit3: "Mali durumunuza dair anlayış",
+    financialAdminBenefit4: "Yıllık hesaplar ve mali raporlar",
+    financialAdminBenefit5: "Kişisel rehberlik ve danışmanlık",
     financialAdminDescription1:
-      "İyi bir finansal yönetim, şirketinizin başarısının temelidir. Finansal durumunuza ilişkin içgörü sağlar, stratejik kararlar almanıza yardımcı olur ve tüm yasal yükümlülüklere uymanızı sağlar.",
+      "İyi mali yönetim şirketinizin başarısının temelidir. Mali durumunuz hakkında fikir verir, stratejik kararlar almanıza yardımcı olur ve tüm yasal yükümlülükleri yerine getirmenizi sağlar.",
     financialAdminDescription2:
-      "DMR Finance'de bu karmaşık görevi tamamen sizin yerinize biz üstleniyoruz. Faturalar ve makbuzlardan banka ekstrelerine ve kasa defterlerine kadar tüm finansal verilerinizin doğru bir şekilde işlenmesini sağlıyoruz. Deneyimli profesyonellerimiz, yönetiminizin her zaman güncel ve uyumlu olmasını sağlar.",
+      "DMR Finance'ta bu karmaşık görevi tamamen üstleniyoruz. Faturalardan ve makbuzlardan banka ekstrelerine ve kasa defterlerine kadar tüm mali verilerinizin doğru işlenmesini sağlıyoruz. Deneyimli profesyonellerimiz yönetiminizin her zaman güncel ve uyumlu olmasını sağlar.",
     financialAdminService1: "Günlük yönetiminizin işlenmesi",
     financialAdminService2: "KDV beyannamelerinin hazırlanması ve sunulması",
-    financialAdminService3: "Alacaklı ve borçlu yönetimi",
+    createdby: "DevKan tarafından oluşturuldu",
+    financialAdminService3: "Borçlu ve alacaklı yönetimi",
     financialAdminService4: "Yıllık hesapların hazırlanması",
-    financialAdminService5: "Finansal raporlar ve analizler",
-    financialAdminService6: "Finansal durumunuz hakkında kişisel tavsiye",
+    financialAdminService5: "Mali raporlar ve analizler",
+    financialAdminService6: "Mali durumunuz hakkında kişisel danışmanlık",
 
     payrollAdminBenefit1: "Doğru ve zamanında maaş işleme",
-    payrollAdminBenefit2: "Tüm yasa ve yönetmeliklere uyum",
+    payrollAdminBenefit2: "Tüm yasa ve düzenlemelere uyum",
     payrollAdminBenefit3: "Tüm bordro beyannamelerinin bakımı",
-    payrollAdminBenefit4: "Yıllık bildirimler ve maaş bordroları",
+    payrollAdminBenefit4: "Yıllık beyanlar ve maaş bordroları",
     payrollAdminBenefit5: "Personel dosyaları ve yönetimi",
     payrollAdminDescription1:
-      "Doğru bordro yönetimi şirketiniz için çok önemlidir. Çalışanlarınıza zamanında ve doğru ödeme yapılmasını ve vergi ve sosyal güvenlik katkıları alanındaki tüm yasal yükümlülüklere uymanızı sağlar.",
+      "Doğru bordro yönetimi şirketiniz için hayati önem taşır. Çalışanlarınızın zamanında ve doğru şekilde ödenmesini ve vergiler ve sosyal primler alanında tüm yasal yükümlülükleri yerine getirmenizi sağlar.",
     payrollAdminDescription2:
-      "DMR Finance'de tüm bordro yönetimini biz üstleniyoruz. Uzmanlarımız, tüm maaşların doğru bir şekilde hesaplanmasını ve ödenmesini ve tüm beyannamelerin zamanında sunulmasını sağlar.",
+      "DMR Finance'ta tam bordro yönetimini üstleniyoruz. Uzmanlarımız tüm maaşların doğru hesaplanıp ödendiğinden ve tüm beyannamelerin zamanında sunulduğundan emin olur.",
     payrollAdminService1: "Maaşların hazırlanması ve işlenmesi",
     payrollAdminService2: "Maaş bordrolarının bakımı",
     payrollAdminService3: "Bordro beyannamelerinin sunulması",
-    payrollAdminService4: "Çalışanlar için yıllık bildirimler",
+    payrollAdminService4: "Çalışanlar için yıllık beyanlar",
     payrollAdminService5: "Personel dosyalarının tutulması",
-    payrollAdminService6: "Çalışma koşulları ve toplu iş sözleşmeleri hakkında tavsiye",
-    payrollAdminService7: "İşe alma ve işten çıkarma konusunda rehberlik",
+    payrollAdminService6: "Çalışma koşulları ve toplu iş sözleşmeleri hakkında danışmanlık",
+    payrollAdminService7: "İşe alım ve işten çıkarma konularında rehberlik",
 
-    taxAdviceBenefit1: "Vergi yükünüzün en aza indirilmesi",
-    taxAdviceBenefit2: "Proaktif vergi tavsiyesi",
+    taxAdviceBenefit1: "Vergi yükünüzün minimize edilmesi",
+    taxAdviceBenefit2: "Proaktif vergi danışmanlığı",
     taxAdviceBenefit3: "Optimal vergi yapısı",
-    taxAdviceBenefit4: "Vergi denetimlerinde rehberlik",
-    taxAdviceBenefit5: "Vergi mevzuatına ilişkin güncel bilgi",
+    taxAdviceBenefit4: "Vergi denetimleri konusunda rehberlik",
+    taxAdviceBenefit5: "Vergi mevzuatı hakkında güncel bilgi",
     taxAdviceDescription1:
-      "Vergiler hem şirketler hem de bireyler için önemli bir maliyet kalemidir. Ancak, uzman vergi tavsiyesi ile önemli ölçüde tasarruf edebilir ve vergi pozisyonunuzu optimize edebilirsiniz.",
+      "Vergiler hem şirketler hem de bireyler için önemli bir maliyet kalemidir. Ancak uzman vergi danışmanlığı ile önemli ölçüde tasarruf edebilir ve vergi pozisyonunuzu optimize edebilirsiniz.",
     taxAdviceDescription2:
-      "DMR Finance'de vergi uzmanlarımız, yasal çerçeveler içinde vergi yükünüzü en aza indirmenize yardımcı olur. Değişen vergi mevzuatını yakından takip ediyor ve tavsiyelerimizi buna göre ayarlıyoruz.",
+      "DMR Finance'ta vergi uzmanlarımız yasal çerçeveler içinde vergi yükünüzü minimize etmenize yardımcı olur. Değişen vergi mevzuatını yakından takip ediyor ve danışmanlığımızı buna göre ayarlıyoruz.",
     taxAdviceService1: "Vergi beyannamelerinin hazırlanması ve sunulması",
     taxAdviceService2: "Vergi planlaması ve optimizasyonu",
-    taxAdviceService3: "KDV konularında tavsiye",
-    taxAdviceService4: "Vergi denetimlerinde rehberlik",
-    taxAdviceService5: "İşletme devri ve devri konusunda tavsiye",
+    taxAdviceService3: "KDV sorunları hakkında danışmanlık",
+    taxAdviceService4: "Vergi denetimleri konusunda rehberlik",
+    taxAdviceService5: "İş devri ve transferi hakkında danışmanlık",
     taxAdviceService6: "Yatırımların vergi yönleri",
-    taxAdviceService7: "Uluslararası vergi konuları",
+    taxAdviceService7: "Uluslararası vergi sorunları",
 
     creditMediationBenefit1: "Çeşitli finansman seçeneklerine erişim",
-    creditMediationBenefit2: "Finansman seçenekleri hakkında bağımsız tavsiye",
-    creditMediationBenefit3: "Başvuru sürecinde rehberlik",
-    creditMediationBenefit4: "Uygun koşulların müzakeresi",
+    creditMediationBenefit2: "Finansman seçenekleri hakkında bağımsız danışmanlık",
+    creditMediationBenefit3: "Başvuru süreci boyunca rehberlik",
+    creditMediationBenefit4: "Uygun koşullar için müzakere",
     creditMediationBenefit5: "Sermayeye daha hızlı erişim",
-    individuals: "Bireysel",
     creditMediationDescription1:
-      "Sermayeye erişim, şirketinizin büyümesi ve gelişmesi için çok önemlidir. İster yeni ekipmana yatırım yapmak, ister bir mülk satın almak veya işletme sermayesine ihtiyacınız olsun, doğru finansman çok önemlidir.",
+      "Sermayeye erişim şirketinizin büyümesi ve gelişimi için hayati önem taşır. Yeni ekipmana yatırım yapmak, gayrimenkul satın almak veya işletme sermayesine ihtiyacınız olsun, doğru finansman esastır.",
     creditMediationDescription2:
-      "Bağımsız bir kredi aracısı olarak DMR Finance, en uygun finansman çözümünü bulmanıza yardımcı olur. Geniş bir finansör ağına erişimimiz var ve piyasayı içeriden ve dışarıdan biliyoruz.",
+      "Bağımsız kredi aracısı olarak DMR Finance en uygun finansman çözümünü bulmanızda size yardımcı olur. Geniş finansör ağımıza erişimimiz var ve piyasayı çok iyi biliyoruz.",
     creditMediationService1: "Finansman ihtiyaçlarınızın analizi",
-    creditMediationService2: "Farklı finansman biçimleri hakkında tavsiye",
+    creditMediationService2: "Farklı finansman türleri hakkında danışmanlık",
     creditMediationService3: "Finansman başvurusunun hazırlanması",
     creditMediationService4: "Finansörlerle müzakere",
     creditMediationService5: "Tüm başvuru süreci boyunca rehberlik",
     creditMediationService6: "Mevcut kredilerin yeniden finansmanı",
-    creditMediationService7: "Kiralama ve satın alma yapıları hakkında tavsiye",
+    creditMediationService7: "Leasing ve satın alma yapıları hakkında danışmanlık",
 
     businessAdviceBenefit1: "Stratejik iş planlaması",
-    businessAdviceBenefit2: "Finansal tahminler ve bütçeleme",
+    businessAdviceBenefit2: "Mali tahminler ve bütçeleme",
     businessAdviceBenefit3: "Maliyet analizi ve optimizasyonu",
-    businessAdviceBenefit4: "İşletme yapısı hakkında tavsiye",
-    businessAdviceBenefit5: "Büyüme ve genişleme konusunda rehberlik",
+    businessAdviceBenefit4: "İş yapısı hakkında danışmanlık",
+    businessAdviceBenefit5: "Büyüme ve genişleme konularında rehberlik",
     businessAdviceDescription1:
-      "Şirketinizin başarısı ve büyümesi için net bir strateji ve iyi bir planlama şarttır. Profesyonel iş tavsiyesi ile bilinçli kararlar alabilir ve hedeflerinize daha etkili bir şekilde ulaşabilirsiniz.",
+      "Net bir strateji ve iyi planlama şirketinizin başarısı ve büyümesi için esastır. Profesyonel iş danışmanlığı ile bilinçli kararlar alabilir ve hedeflerinize daha etkili şekilde ulaşabilirsiniz.",
     businessAdviceDescription2:
-      "DMR Finance'de ihtiyaçlarınıza göre uyarlanmış kapsamlı iş tavsiyesi sunuyoruz. Danışmanlarımız çeşitli sektörlerde uzun yıllara dayanan deneyime sahiptir ve etkili stratejiler geliştirmenize ve uygulamanıza yardımcı olur.",
+      "DMR Finance'ta ihtiyaçlarınıza göre kapsamlı iş danışmanlığı sunuyoruz. Danışmanlarımız çeşitli sektörlerde yıllarca deneyime sahiptir ve etkili stratejiler geliştirip uygulamanızda size yardımcı olur.",
     businessAdviceService1: "İş planlarının hazırlanması",
-    businessAdviceService2: "Finansal tahminler ve senaryo analizleri",
+    businessAdviceService2: "Mali tahminler ve senaryo analizleri",
     businessAdviceService3: "Maliyet analizi ve verimlilik iyileştirmeleri",
-    businessAdviceService4: "İşletme yapısı ve organizasyonu hakkında tavsiye",
-    businessAdviceService5: "Büyüme ve genişleme konusunda rehberlik",
+    businessAdviceService4: "İş yapısı ve organizasyonu hakkında danışmanlık",
+    businessAdviceService5: "Büyüme ve genişleme konularında rehberlik",
     businessAdviceService6: "Stratejik planlama ve hedefler",
-    businessAdviceService7: "Benchmarking ve rekabet analizi",
+    businessAdviceService7: "Kıyaslama ve rekabet analizi",
 
     startupSupportBenefit1: "Yönetiminizi kurma konusunda rehberlik",
-    startupSupportBenefit2: "Yasal şekil ve işletme yapısı hakkında tavsiye",
-    startupSupportBenefit3: "Finansal planlama konusunda destek",
-    startupSupportBenefit4: "Sübvansiyonlara başvurma konusunda yardım",
+    startupSupportBenefit2: "Yasal form ve iş yapısı hakkında danışmanlık",
+    startupSupportBenefit3: "Mali planlama konusunda destek",
+    startupSupportBenefit4: "Hibe başvurularında yardım",
     startupSupportBenefit5: "İlgili ortaklar ağı",
     startupSupportDescription1:
-      "Bir işletme kurmak heyecan verici ama aynı zamanda zorlu bir aşamadır. Şirketinizin geleceğini belirleyen birçok karar alınmalıdır. Profesyonel destek, doğru seçimleri yapmanıza ve maliyetli hatalardan kaçınmanıza yardımcı olabilir.",
+      "Bir işletmeye başlamak heyecan verici ama aynı zamanda zorlu bir aşamadır. Şirketinizin geleceğini belirleyen birçok karar verilmelidir. Profesyonel destek doğru seçimler yapmanıza ve maliyetli hatalardan kaçınmanıza yardımcı olabilir.",
     startupSupportDescription2:
-      "DMR Finance, başlangıç şirketleri ve yeni başlayan girişimciler için özel destek sunar. Şirketiniz için sağlam bir finansal temel oluşturmanıza yardımcı oluyor ve bir girişimci olarak ilk adımlarınızda size rehberlik ediyoruz.",
-    startupSupportService1: "Yasal şekil seçimi konusunda tavsiye",
-    startupSupportService2: "Finansal yönetiminizin kurulması",
-    startupSupportService3: "Ticaret Odası ve Vergi Dairesi'ne kayıt konusunda rehberlik",
+      "DMR Finance startup'lar ve başlangıç girişimcileri için özel destek sunar. Şirketiniz için sağlam mali temel atmanızda size yardımcı oluyor ve girişimci olarak ilk adımlarınızda size rehberlik ediyoruz.",
+    startupSupportService1: "Yasal form seçimi hakkında danışmanlık",
+    startupSupportService2: "Mali yönetiminizin kurulması",
+    startupSupportService3: "Ticaret Odası ve Vergi Dairesi kaydı konusunda rehberlik",
     startupSupportService4: "İş planının hazırlanması",
-    startupSupportService5: "Finansal tahminler ve bütçeleme",
-    startupSupportService6: "Sübvansiyonlar ve finansman seçenekleri hakkında tavsiye",
-    startupSupportService7: "Yeni başlayan girişimciler için vergi tavsiyesi",
+    startupSupportService5: "Mali tahminler ve bütçeleme",
+    startupSupportService6: "Hibeler ve finansman seçenekleri hakkında danışmanlık",
+    startupSupportService7: "Başlangıç girişimcileri için vergi danışmanlığı",
 
-    legalFinancialAdviceBenefit1: "Entegre hukuki ve finansal tavsiye",
-    legalFinancialAdviceBenefit2: "İşletme çıkarlarınızın korunması",
-    legalFinancialAdviceBenefit3: "Sözleşmelerin ve anlaşmaların optimizasyonu",
+    legalFinancialAdviceBenefit1: "Entegre hukuki ve mali danışmanlık",
+    legalFinancialAdviceBenefit2: "İş çıkarlarınızın korunması",
+    legalFinancialAdviceBenefit3: "Sözleşme ve anlaşmaların optimizasyonu",
     legalFinancialAdviceBenefit4: "Risk yönetimi ve azaltma",
-    individualsDesc: "Birey olarak da size destek sağlıyoruz. Kişisel gelir vergisi beyannamenizi sunmanızda size yardımcı olabiliriz.",
-    legalFinancialAdviceBenefit5: "Yasa ve yönetmeliklere uyum",
+    legalFinancialAdviceBenefit5: "Yasa ve düzenlemelere uyum",
     legalFinancialAdviceDescription1:
-      "Günümüzün karmaşık iş ortamında, hukuki ve finansal yönler genellikle birbirine sıkı sıkıya bağlıdır. Bu nedenle, şirketinizin en iyi şekilde korunması ve fırsatların yakalanması için entegre bir yaklaşım şarttır.",
+      "Günümüzün karmaşık iş ortamında hukuki ve mali yönler genellikle iç içe geçmiştir. Bu nedenle entegre bir yaklaşım şirketinizi optimal şekilde korumak ve fırsatları değerlendirmek için esastır.",
     legalFinancialAdviceDescription2:
-      "DMR Finance, hukuki ve finansal tavsiyelerin benzersiz bir kombinasyonunu sunar. Uzmanlarımız her iki alanda da bilgi sahibidir ve bu nedenle karmaşık iş sorunları hakkında size bütünsel olarak tavsiyede bulunabilir.",
-    legalFinancialAdviceService1: "Şirketinizin hukuki olarak yapılandırılması",
+      "DMR Finance hukuki ve mali danışmanlığın benzersiz bir kombinasyonunu sunar. Uzmanlarımız her iki alanda da bilgi sahibidir ve bu nedenle karmaşık iş sorunları hakkında size bütünsel danışmanlık verebilir.",
+    legalFinancialAdviceService1: "Şirketinizin hukuki yapılandırılması",
     legalFinancialAdviceService2: "Sözleşmelerin hazırlanması ve gözden geçirilmesi",
-    legalFinancialAdviceService3: "Genel şartlar ve koşullar hakkında tavsiye",
-    legalFinancialAdviceService4: "Uyuşmazlıklar ve çatışmalarda rehberlik",
-    legalFinancialAdviceService5: "Yasa ve yönetmeliklere uyum",
+    legalFinancialAdviceService3: "Genel şartlar ve koşullar hakkında danışmanlık",
+    legalFinancialAdviceService4: "Anlaşmazlık ve çatışmalarda rehberlik",
+    legalFinancialAdviceService5: "Yasa ve düzenlemelere uyum",
     legalFinancialAdviceService6: "Risk yönetimi ve azaltma",
-    legalFinancialAdviceService7: "Fikri mülkiyet hakkında tavsiye",
+    legalFinancialAdviceService7: "Fikri mülkiyet hakkında danışmanlık",
 
-    individualsBenefit1: "Vergi beyannamelerinde kişisel rehberlik",
+    individualsBenefit1: "Vergi beyannameleri konusunda kişisel rehberlik",
     individualsBenefit2: "Vergi pozisyonunuzun optimizasyonu",
-    individualsBenefit3: "Varlık planlaması hakkında tavsiye",
-    individualsBenefit4: "Finansal kararlarda rehberlik",
-    individualsBenefit5: "Ödenekler ve sübvansiyonlar konusunda yardım",
+    individualsBenefit3: "Varlık planlaması hakkında danışmanlık",
+    individualsBenefit4: "Mali kararlar konusunda rehberlik",
+    individualsBenefit5: "Ödenekler ve hibeler konusunda yardım",
     individualsDescription1:
-      "Birey olarak bile karmaşık finansal ve vergi sorunlarıyla karşılaşabilirsiniz. İster vergi beyannameniz, ister varlık planlamanız veya finansal kararlarınız olsun, profesyonel tavsiye doğru seçimleri yapmanıza yardımcı olabilir.",
+      "Birey olarak da karmaşık mali ve vergi sorunlarıyla karşılaşabilirsiniz. Vergi beyannameniz, varlık planlaması veya mali kararlar olsun, profesyonel danışmanlık doğru seçimler yapmanıza yardımcı olabilir.",
     individualsDescription2:
-      "DMR Finance'de bireyler için kapsamlı hizmetler sunuyoruz. Danışmanlarımız, finansal durumunuzu optimize etmenize ve vergi yükünüzü en aza indirmenize yardımcı olur.",
+      "DMR Finance'ta bireyler için kapsamlı hizmetler sunuyoruz. Danışmanlarımız mali durumunuzu optimize etmenize ve vergi yükünüzü minimize etmenize yardımcı olur.",
     individualsService1: "Vergi beyannamenizin hazırlanması ve sunulması",
-    individualsService2: "Vergi indirimleri hakkında tavsiye",
+    individualsService2: "Vergi indirimleri hakkında danışmanlık",
     individualsService3: "İtiraz ve temyiz prosedürlerinde rehberlik",
     individualsService4: "Varlık planlaması ve yönetimi",
-    individualsService5: "Bağışlar ve miraslar hakkında tavsiye",
-    individualsService6: "Ödeneklere başvurma konusunda yardım",
-    payrollAdminDesc:
-    "Eğer personeliniz varsa veya personel almayı planlıyorsanız, bordro yönetimi ile ilgilenmeniz gerekecektir. Bu, personelin maaşlarının ödenmesi ve bordro beyannamelerinin sunulması gibi işlemleri içerir.",
-    individualsService7: "Geleceğiniz için finansal planlama",
+    individualsService5: "Bağış ve miraslar hakkında danışmanlık",
+    individualsService6: "Ödenek başvurularında yardım",
+    individualsService7: "Geleceğiniz için mali planlama",
+
+    // Particulieren pricing features
+    particulierenTitle: "Bireyler",
+    particulierenPrice: "35",
+    particulierenFeature1: "Sağlık ödeneği başvurusu",
+    particulierenFeature2: "Konut ödeneği başvurusu",
+    particulierenFeature3: "Çocuk ödeneği başvurusu",
+    particulierenFeature4: "Belediye formları başvurusu",
+    particulierenFeature5: "Gelir vergisi beyannamesi €50",
+    particulierenFeature6: "Eşle birlikte +€25",
+
+    // NOTK pricing
+    pricingNOTK: "BSK (belirlenmesi sonradan kararlaştırılacak)",
 
     // Why DMR
     whyDmrTitle: "Neden DMR Finance?",
-    experience: "10+ yıllık deneyim",
+    experience: "10+ yıl deneyim",
     minimalTax: "Minimum vergi ödemesi",
-    youSendWeDo: "Siz gönderin, biz yapalım",
-    expertise: "Uzmanlık ve tavsiye",
+    youSendWeDo: "Siz gönderirsiniz, biz yaparız",
+    expertise: "Uzmanlık ve danışmanlık",
     clients: "100+ memnun müşteri",
 
     // Contact CTA
-    contactUs: "Bize ulaşın",
+    contactUs: "Bizimle iletişime geçin",
 
     // Working Method
     workingMethodTitle: "Çalışma Yöntemi",
     workingMethodDesc:
-      "İşletmenizin doğru bir finansal temsilini oluşturmak için yönetiminizi sürdürmek çok önemlidir. Tanıştıktan sonra, bir yönetimin nasıl sürdürüldüğünü açıklıyor, yönetiminizi kuruyor ve size ilgili bilgileri sağlıyoruz.",
+      "İşletmenizin doğru mali temsilini oluşturmak için yönetiminizi sürdürmek esastır. Tanıştıktan sonra yönetimin nasıl sürdürüldüğünü açıklıyor, yönetiminizi kuruyor ve size ilgili bilgileri sağlıyoruz.",
 
     // Footer
-    openingHours: "Çalışma Saatleri",
+    openingHours: "Açılış Saatleri",
     mondayFriday: "Pazartesi - Cuma",
     saturdaySunday: "Cumartesi ve Pazar",
     closed: "Kapalı",
     followUs: "Bizi takip edin",
     quickContactWhatsApp: "WhatsApp ile hızlı iletişim",
-    taxAdviceDesc:
-    "Hizmetlerimizin çoğu vergi beyannamelerine dayandığından, her ilgili hizmette en uygun vergi pozisyonunu elde etme imkanı sunuyoruz.",
-    payrollAdmin: "Bordro Yönetimi",
 
     // Pricing
     perMonth: "Aylık",
     bankTransactions: "banka işlemleri",
-    invoicesPerYear: "yıllık fatura",
+    invoicesPerYear: "yıllık faturalar",
     withVatAndTax: "KDV ve yıllık vergi beyannamesi ile",
     excludingPersonnel: "Personel hariç",
     mostPopular: "En Popüler",
-    payrollAdminShort: "Yükünüzü hafifletin ve sorunsuz bordro yönetimi sağlayın.",
-
 
     // About
     aboutTitle: "DMR Finance Hakkında",
     aboutDescription:
-      "DMR Finance'de hatları kısa tutuyoruz. Bu, finansal yönetiminizi sağlarken size kişisel bir yaklaşım sunar. Finansal hizmet sağlayıcıları olarak uzun yıllara dayanan deneyimimizde, iletişimin büyük önem taşıdığını gördük.",
+      "DMR Finance'ta hatları kısa tutuyoruz. Bu size mali yönetiminizi sağlarken kişisel bir yaklaşım verir. Mali hizmet sağlayıcıları olarak uzun yıllara dayanan deneyimimizde iletişimin büyük önem taşıdığını gördük.",
 
     // About page
     ourValues: "Değerlerimiz",
-    makeContact:"DMR Finance ile iletişime geçerek finansal yönetim, bordro yönetimi ve vergi danışmanlığı konularındaki tüm sorularınızı sorabilirsiniz.",
-    zakelijkAuto: "İş için şirket arabası",
-
     ourStory: "Hikayemiz",
     personalApproach: "Kişisel Yaklaşım",
     personalApproachDesc: "Kişisel hizmet için hatları kısa tutuyoruz",
     expertiseValue: "Uzmanlık",
-    expertiseValueDesc: "Finansal hizmetlerde 10+ yıllık deneyim",
+    expertiseValueDesc: "Mali hizmetlerde 10+ yıl deneyim",
     reliability: "Güvenilirlik",
-    reliabilityDesc: "Her zaman zamanında ve kararlaştırıldığı gibi",
+    reliabilityDesc: "Her zaman zamanında ve anlaşıldığı gibi",
     commitment: "Bağlılık",
-    commitmentDesc: "Başarınız bizim başarımızdır",
+    commitmentDesc: "Sizin başarınız bizim başarımız",
     storyParagraph1:
-      "DMR Finance, girişimcilere ve bireylere finansal yönetimlerinde yardımcı olma tutkusundan doğdu. Sektörde 10 yılı aşkın deneyimimizle, müşterilerimizin karşılaştığı zorluklar hakkında derin bir anlayış geliştirdik.",
+      "DMR Finance, girişimcilere ve bireylere mali yönetimleri konusunda yardım etme tutkusundan doğdu. Sektörde 10 yılı aşkın deneyimle, müşterilerimizin karşılaştığı zorlukları derinlemesine anlayacak şekilde geliştik.",
     storyParagraph2:
-      "İyi iletişimin ve kişisel ilginin başarılı bir ortaklığın anahtarı olduğuna inanıyoruz. Bu nedenle, her müşteriye hak ettikleri ilgiyi gösteren küçük, özel bir ekiple çalışıyoruz.",
+      "İyi iletişim ve kişisel ilginin başarılı ortaklığın anahtarı olduğuna inanıyoruz. Bu nedenle her müşteriye hak ettiği ilgiyi gösteren küçük, kendini adamış bir ekiple çalışıyoruz.",
     storyParagraph3:
-      "Amacımız basit: Yönetim yükünüzü hafifletmek, böylece en iyi yaptığınız işe odaklanabilirsiniz - işinizi yürütmek ve hayallerinizi gerçekleştirmek.",
-      financialAdminShort: "Finansal kontrol sağlayın ve iş sonuçlarınızı iyileştirin.",
+      "Hedefimiz basittir: idari yükünüzü hafifletmek böylece en iyi yaptığınız şeye odaklanabilirsiniz - işletmenizi yönetmek ve hayallerinizi gerçekleştirmek.",
+
+    openingTimeTitle: "Açılış Saatleri",
+    openingTimeDays: "Pazartesi - Cuma",
+    openingTimeWeekdays: "08:30 – 18:00",
+    openingTimeSaturday: "Cumartesi",
+    openingTimeSaturdayHours: "09:00 – 13:00",
+    openingTimeSunday: "Pazar",
+    openingTimeSundayHours: "Kapalı",
 
     // Contact page translations
     contactTitle: "İletişim",
@@ -1403,44 +1634,42 @@ export const translations = {
     appointmentSuccessMessage:
       "Randevu talebiniz başarıyla gönderildi! Randevuyu planlamak için en kısa sürede sizinle iletişime geçeceğiz.",
     quoteSuccessMessage:
-      "Teklif talebiniz başarıyla gönderildi! Sizin için uygun bir teklif hazırlayacak ve 24 saat içinde sizinle iletişime geçeceğiz.",
+      "Teklif talebiniz başarıyla gönderildi! Sizin için uygun bir teklif hazırlayacağız ve 24 saat içinde sizinle iletişime geçeceğiz.",
     errorMessage: "Mesajınızı gönderirken bir hata oluştu. Lütfen tekrar deneyin.",
     appointmentErrorMessage: "Randevu talebinizi gönderirken bir hata oluştu. Lütfen tekrar deneyin.",
     quoteErrorMessage: "Teklif talebinizi gönderirken bir hata oluştu. Lütfen tekrar deneyin.",
     sending: "Gönderiliyor...",
     send: "Gönder",
-    name: "Ad",
+    name: "İsim",
     yourName: "Adınız",
     companyName: "Şirket adı",
     emailAddress: "E-posta",
-    taxAdvice: "Vergi Danışmanlığı",
-    yourEmail: "E-postanız",
+    yourEmail: "E-posta adresiniz",
     phoneNumber: "Telefon numarası",
     message: "Sorunuz veya yorumunuz",
-    howCanWeHelpYou: "Size nasıl yardımcı olabiliriz?",
+    howCanWeHelpYou: "Size nasıl hizmet edebiliriz?",
     contactTab: "İletişim",
-    appointmentTab: "Randevu planlayın",
-    quoteTab: "Teklif isteyin",
+    appointmentTab: "Randevu planla",
+    quoteTab: "Teklif iste",
     appointmentTabShort: "Randevu",
     quoteTabShort: "Teklif",
-    contactPerson: "İlgili kişi adı",
+    contactPerson: "İletişim kişisi adı",
     preferredDate: "Tercih edilen randevu tarihi",
     preferredTime: "Tercih edilen saat",
     chooseTimeframe: "Zaman dilimi seçin",
     morning: "Sabah (09:00-12:00)",
     afternoon: "Öğleden sonra (12:00-17:00)",
-    financialAdmin: "Finansal Yönetim",
     evening: "Akşam (17:00-20:00)",
     legalForm: "Yasal şekil",
     selectLegalForm: "Yasal şekil seçin",
     servicesNeeded: "Hangi hizmetlere ihtiyacınız var?",
     additionalComments: "Ek yorumlar veya sorular:",
-    specificFiscalNeeds: "Belirli mali ihtiyaçlarınız veya sorularınız var mı?",
-    scheduleAppointment: "Randevu planlayın",
-    contactPerson2: "İlgili kişi",
+    specificFiscalNeeds: "Özel mali ihtiyaçlarınız veya sorularınız var mı?",
+    scheduleAppointment: "Randevu planla",
+    contactPerson2: "İletişim kişisi",
     fullName: "Ad ve soyad",
     companyName2: "Şirketinizin adı",
-    yourEmailAddress: "your.email@company.com",
+    yourEmailAddress: "email@sirket.com",
     phoneExample: "06 12345678",
     employees: "Çalışan sayısı",
     selectNumber: "Sayı seçin",
@@ -1456,7 +1685,7 @@ export const translations = {
     transactions101to200: "101-200",
     transactions201to500: "201-500",
     transactionsMore500: "500'den fazla",
-    yearlyInvoices: "Yıllık fatura",
+    yearlyInvoices: "Yıllık faturalar",
     invoices0to100: "0-100",
     invoices101to200: "101-200",
     invoices201to300: "201-300",
@@ -1464,35 +1693,57 @@ export const translations = {
     invoicesMore500: "500'den fazla",
     desiredServices: "İstenilen hizmetler",
     additionalInfo: "Ek bilgi",
-    additionalInfoPlaceholder: "Lütfen özel istekleriniz veya durumunuz hakkında bize daha fazla bilgi verin...",
+    additionalInfoPlaceholder: "Özel istekleriniz veya durumunuz hakkında bize daha fazla bilgi verin...",
     requestQuoteButton: "Teklif İste",
-    pricingQuestions: "Fiyatlarımız hakkında sorularınız mı var?",
-    pricingQuestionsDesc: "Kişisel tavsiye ve özel bir teklif için bizimle iletişime geçin.",
+    pricingQuestions: "Fiyatlarımız hakkında sorularınız var mı?",
+    pricingQuestionsDesc: "Kişisel danışmanlık ve özel teklif için bizimle iletişime geçin.",
 
     // Pricing features
     pricingFeature200BankTransactions: "200 banka işlemi",
     pricingFeature200InvoicesPerYear: "Yılda 200 fatura",
     pricingFeatureWithVatAndTax: "KDV ve yıllık vergi beyannamesi ile",
-    pricingFeatureBestForZZP: "Serbest çalışan muhasebesi için en iyisi",
+    pricingFeatureBestForZZP: "Serbest çalışan muhasebesi için en iyi",
     pricingFeatureExcludingPersonnel: "Personel hariç",
     pricingFeature500BankTransactions: "500 banka işlemi",
     pricingFeature300InvoicesPerYear: "Yılda 300 fatura",
     pricingFeatureEenmanszaakBookkeeping: "Şahıs şirketi muhasebesi",
     pricingFeatureMaxTwoPartners: "Maksimum 2 ortağa kadar",
     pricingFeatureIncludingDGAPayslip: "DGA maaş bordrosu dahil",
-    pricingFeatureIncludingDGAPayroll: "DGA bordrosu dahil",
+    pricingFeatureIncludingDGAPayroll: "DGA maaşı dahil",
     pricingFeature40InvoicesPerYear: "Yılda 40 fatura",
     pricingFeature100BankTransactionsPerYear: "Yılda 100 banka işlemi",
     pricingFeaturePayslip: "Maaş bordrosu",
     pricingFeature4Personnel: "4 Personel",
-    pricingFeatureIncludingInOut: "İşe alma/çıkarma dahil",
-    pricingFeatureAnnualStatement: "Yıllık bildirim",
-    pricingFeaturePayrollJournal: "Bordro defteri",
-    taxAdviceShort: "Uzman vergi danışmanlığımızla vergileri en aza indirin.",
+    pricingFeatureIncludingInOut: "İşe alım/çıkarım dahil",
+    pricingFeatureAnnualStatement: "Yıllık beyan",
+    pricingFeaturePayrollJournal: "Bordro dergisi",
     pricingFeaturePensionAdmin: "Emeklilik yönetimi",
+    zakelijkAuto: "İş için şirket arabası",
 
     // WhatsApp message
     whatsappMessage:
       "Sayın DMR yönetimi,%0A%0AHizmetleriniz hakkında bir sorum var. Bana daha fazla bilgi verebilir misiniz?%0A%0ASaygılarımla",
+
+    // Service titles and descriptions for metadata
+    serviceFinancialAdminTitle: "Mali Yönetim",
+    serviceFinancialAdminDescription: "Mali durumunuzu kontrol altına alın ve iş sonuçlarınızı iyileştirin.",
+    servicePayrollAdminTitle: "Bordro Yönetimi",
+    servicePayrollAdminDescription: "Yükünüzü hafifleten ve sorunsuz bordro yönetimi sağlayın.",
+    serviceTaxAdviceTitle: "Vergi Danışmanlığı",
+    serviceTaxAdviceDescription: "Uzman vergi danışmanlığımızla vergileri minimize edin.",
+    serviceCreditMediationTitle: "Kredi Aracılığı",
+    serviceCreditMediationDescription: "Kredi aracılığımızın mali büyümenizi nasıl hızlandırabileceğini keşfedin.",
+    serviceBusinessAdviceTitle: "İş Danışmanlığı ve Planlama",
+    serviceBusinessAdviceDescription: "İş stratejinizi ve gelecekteki büyümenizi optimize edin.",
+    serviceStartupSupportTitle: "Startup Desteği",
+    serviceStartupSupportDescription: "Uzman desteğimizle startup'ınızın gelişmesini sağlayın.",
+    serviceLegalFinancialAdviceTitle: "Hukuki ve Mali Danışmanlık",
+    serviceLegalFinancialAdviceDescription: "İşletmenizi koruyun ve mali fırsatları maksimize edin.",
+    serviceIndividualsTitle: "Bireyler",
+    serviceIndividualsDescription: "Kişisel finans deneyimi, mali geleceğinizi iyileştirin.",
+
+    // Partners section
+    partnersTitle: "Birlikte çalıştığımız şirketler",
+    partnersSubtitle: "Size en iyi hizmeti sunmak için önde gelen yazılım sağlayıcıları ile işbirliği yapıyoruz.",
   },
 }
