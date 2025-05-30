@@ -14,9 +14,13 @@ export const metadata: Metadata = {
   title: "DMR Administratie - Administratie & Advies",
   description:
     "DMR Administratie biedt professionele financiële administratie, loonadministratie en belastingadvies voor ondernemers en particulieren.",
-  keywords: "administratie, boekhouding, belastingadvies, loonadministratie, DMR Administratie",
-    generator: 'v0.dev'
+  keywords: "administratie, boekhouding, belastingadvies, loonadministratie, DMR Administratie, Amsterdam",
+  generator: 'v0.dev',
+  icons: {
+    icon: "/images/logo/light.png",
+  },
 }
+
 
 export default function RootLayout({
   children,
@@ -33,6 +37,7 @@ export default function RootLayout({
             <Footer />
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )

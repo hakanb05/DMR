@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     description: "Professionele financiële dienstverlening voor ondernemers en particulieren",
     type: "website",
   },
+  icons: {
+    icon: "/images/logo/light.png",
+  },
 }
 
 export default function HomePage() {

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Contact - DMR Administratie",
   description:
     "Neem contact op met DMR Administratie voor al uw vragen over financiële administratie, loonadministratie en belastingadvies. Plan direct een gesprek.",
+  icons: {
+    icon: "/images/logo/light.png",
+  },
 }
 
 function ContactPageSkeleton() {
