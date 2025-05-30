@@ -6,6 +6,7 @@ import { LanguageProvider } from "@/lib/contexts/language-context"
 import { ThemeProvider } from "@/lib/contexts/theme-context"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
             <Footer />
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
