@@ -35,6 +35,10 @@ export default function PartnersSection() {
     const scrollContainer = scrollRef.current
     if (!scrollContainer) return
 
+    // Only start scrolling if not on mobile (check if container is visible)
+    const isVisible = window.getComputedStyle(scrollContainer).display !== 'none'
+    if (!isVisible) return
+
     const scroll = () => {
       if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
         scrollContainer.scrollLeft = 0
@@ -56,7 +60,7 @@ export default function PartnersSection() {
         </div>
 
         {/* Infinite scroll container */}
-        <div className="relative">
+        <div className="relative hidden md:block">
           <div
             ref={scrollRef}
             className="flex space-x-12 overflow-hidden"
