@@ -56,12 +56,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!service) {
     return {
-      title: "Dienst niet gevonden - DMR Finance",
+      title: "Dienst niet gevonden - DMR Administratie",
     }
   }
 
   return {
-    title: `${service.title} - DMR Finance`,
+    title: `${service.title} - DMR Administratie`,
     description: service.description,
   }
 }

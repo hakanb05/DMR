@@ -11,10 +11,10 @@ import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "DMR Finance - Administratie & Advies",
+  title: "DMR Administratie - Administratie & Advies",
   description:
-    "DMR Finance biedt professionele financiële administratie, loonadministratie en belastingadvies voor ondernemers en particulieren.",
-  keywords: "administratie, boekhouding, belastingadvies, loonadministratie, DMR Finance",
+    "DMR Administratie biedt professionele financiële administratie, loonadministratie en belastingadvies voor ondernemers en particulieren.",
+  keywords: "administratie, boekhouding, belastingadvies, loonadministratie, DMR Administratie",
     generator: 'v0.dev'
 }
 

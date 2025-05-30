@@ -11,25 +11,25 @@ export const translations = {
     pricing: "Tarieven",
     contact: "Contact",
     quote: "Offerte",
-    rights: "2024 DMR Finance. Alle rechten voorbehouden.",
+    rights: "2025 DMR Administratie. Alle rechten voorbehouden.",
     createdby: "Gemaakt door DevKan",
 
     makeContact:
-      "Neem contact op met DMR Finance voor al uw vragen over financiële administratie, loonadministratie en belastingadvies.",
+      "Neem contact op met DMR Administratie voor al uw vragen over financiële administratie, loonadministratie en belastingadvies.",
 
     // Hero Section
     heroTitle: "Wij beheren uw financiën,",
     Nederland: "Nederland",
     heroSubtitle: "u realiseert uw ambities",
     heroDescription:
-      "DMR Finance biedt op maat gemaakte financiële oplossingen en professioneel advies om uw onderneming te ondersteunen bij groei en succes. Wij nemen de complexe administratieve taken uit handen, zodat u zich volledig kunt richten op het verwezenlijken van uw doelen.",
+      "DMR Administratie biedt op maat gemaakte financiële oplossingen en professioneel advies om uw onderneming te ondersteunen bij groei en succes. Wij nemen de complexe administratieve taken uit handen, zodat u zich volledig kunt richten op het verwezenlijken van uw doelen.",
     planMeeting: "Plan een gesprek",
     zakelijkAuto: "Zakelijke auto  op de zaak",
 
     // Services
     servicesTitle: "Onze diensten",
     servicesSubtitle:
-      "DMR Finance is een administratie- en advieskantoor dat verschillende diensten biedt aan bedrijven, ondernemers en particulieren.",
+      "DMR Administratie is een administratie- en advieskantoor dat verschillende diensten biedt aan bedrijven, ondernemers en particulieren.",
     moreInfo: "Meer informatie",
 
     financialAdmin: "Financiële Administratie",
@@ -70,7 +70,7 @@ export const translations = {
       "Combinatie van juridische en financiële expertise om uw bedrijf optimaal te beschermen en kansen te benutten in een complexe regelgeving.",
     individualsShort: "Ervaar met particuliere financiën, verbeter uw financiële toekomst.",
     readyToStart: "Klaar om te beginnen?",
-    readyToStartDesc: "Neem contact met ons op en ontdek hoe DMR Finance uw bedrijf kan ondersteunen.",
+    readyToStartDesc: "Neem contact met ons op en ontdek hoe DMR Administratie uw bedrijf kan ondersteunen.",
 
     // New startup support content
     startupSupportTitle: "Start-up ondersteuning",
@@ -103,7 +103,7 @@ export const translations = {
     step3Title: "Uitvoering",
     step3Desc: "We nemen de werkzaamheden uit handen en houden u op de hoogte van de voortgang.",
     readyToStartCta: "Neem contact met ons op voor een vrijblijvend gesprek over hoe wij u kunnen helpen.",
-    serviceNotFound: "Dienst niet gevonden - DMR Finance",
+    serviceNotFound: "Dienst niet gevonden - DMR Administratie",
 
     // Service detail specific content
     financialAdminBenefit1: "Volledige verwerking van uw financiële administratie",
@@ -114,7 +114,7 @@ export const translations = {
     financialAdminDescription1:
       "Een goede financiële administratie is de basis voor het succes van uw onderneming. Het geeft u inzicht in uw financiële positie, helpt bij het nemen van strategische beslissingen en zorgt ervoor dat u voldoet aan alle wettelijke verplichtingen.",
     financialAdminDescription2:
-      "Bij DMR Finance nemen wij deze complexe taak volledig uit handen. Wij zorgen voor een nauwkeurige verwerking van al uw financiële gegevens, van facturen en bonnetjes tot bankafschriften en kasboeken. Onze ervaren professionals zorgen ervoor dat uw administratie altijd up-to-date en compliant is.",
+      "Bij DMR Administratie nemen wij deze complexe taak volledig uit handen. Wij zorgen voor een nauwkeurige verwerking van al uw financiële gegevens, van facturen en bonnetjes tot bankafschriften en kasboeken. Onze ervaren professionals zorgen ervoor dat uw administratie altijd up-to-date en compliant is.",
     financialAdminService1: "Verwerken van uw dagelijkse administratie",
     financialAdminService2: "Opstellen en indienen van BTW-aangiftes",
     financialAdminService3: "Debiteuren- en crediteurenbeheer",
@@ -130,7 +130,7 @@ export const translations = {
     payrollAdminDescription1:
       "Een correcte loonadministratie is essentieel voor uw bedrijf. Het zorgt ervoor dat uw medewerkers op tijd en correct worden betaald, en dat u voldoet aan alle wettelijke verplichtingen op het gebied van belastingen en sociale premies.",
     payrollAdminDescription2:
-      "Bij DMR Finance nemen wij de volledige loonadministratie uit handen. Onze specialisten zorgen ervoor dat alle salarissen correct worden berekend en uitbetaald, en dat alle aangiften op tijd worden ingediend.",
+      "Bij DMR Administratie nemen wij de volledige loonadministratie uit handen. Onze specialisten zorgen ervoor dat alle salarissen correct worden berekend en uitbetaald, en dat alle aangiften op tijd worden ingediend.",
     payrollAdminService1: "Opstellen en verwerken van salarissen",
     payrollAdminService2: "Verzorgen van loonstroken",
     payrollAdminService3: "Indienen van loonaangiften",
@@ -147,7 +147,7 @@ export const translations = {
     taxAdviceDescription1:
       "Belastingen vormen een aanzienlijke kostenpost voor zowel bedrijven als particulieren. Met deskundig belastingadvies kunt u echter aanzienlijk besparen en uw fiscale positie optimaliseren.",
     taxAdviceDescription2:
-      "Bij DMR Finance helpen onze fiscale experts u om binnen de wettelijke kaders uw belastingdruk te minimaliseren. Wij houden de veranderende fiscale wetgeving nauwlettend in de gaten en passen onze adviezen hierop aan.",
+      "Bij DMR Administratie helpen onze fiscale experts u om binnen de wettelijke kaders uw belastingdruk te minimaliseren. Wij houden de veranderende fiscale wetgeving nauwlettend in de gaten en passen onze adviezen hierop aan.",
     taxAdviceService1: "Opstellen en indienen van belastingaangiften",
     taxAdviceService2: "Fiscale planning en optimalisatie",
     taxAdviceService3: "Advies over BTW-vraagstukken",
@@ -164,7 +164,7 @@ export const translations = {
     creditMediationDescription1:
       "Toegang tot kapitaal is cruciaal voor de groei en ontwikkeling van uw onderneming. Of u nu wilt investeren in nieuwe apparatuur, een pand wilt aanschaffen of werkkapitaal nodig heeft, de juiste financiering is essentieel.",
     creditMediationDescription2:
-      "Als onafhankelijke kredietbemiddelaar helpt DMR Finance u bij het vinden van de meest geschikte financieringsoplossing. Wij hebben toegang tot een breed netwerk van financiers en kennen de markt door en door.",
+      "Als onafhankelijke kredietbemiddelaar helpt DMR Administratie u bij het vinden van de meest geschikte financieringsoplossing. Wij hebben toegang tot een breed netwerk van financiers en kennen de markt door en door.",
     creditMediationService1: "Analyse van uw financieringsbehoefte",
     creditMediationService2: "Advies over verschillende financieringsvormen",
     creditMediationService3: "Opstellen van een financieringsaanvraag",
@@ -181,7 +181,7 @@ export const translations = {
     businessAdviceDescription1:
       "Een duidelijke strategie en goede planning zijn essentieel voor het succes en de groei van uw onderneming. Met professioneel bedrijfsadvies kunt u weloverwogen beslissingen nemen en uw doelen effectiever bereiken.",
     businessAdviceDescription2:
-      "Bij DMR Finance bieden wij uitgebreid bedrijfsadvies op maat. Onze adviseurs hebben jarenlange ervaring in verschillende sectoren en helpen u bij het ontwikkelen en implementeren van effectieve strategieën.",
+      "Bij DMR Administratie bieden wij uitgebreid bedrijfsadvies op maat. Onze adviseurs hebben jarenlange ervaring in verschillende sectoren en helpen u bij het ontwikkelen en implementeren van effectieve strategieën.",
     businessAdviceService1: "Opstellen van bedrijfsplannen",
     businessAdviceService2: "Financiële prognoses en scenario-analyses",
     businessAdviceService3: "Kostenanalyse en efficiëntieverbeteringen",
@@ -206,7 +206,7 @@ export const translations = {
     startupSupportDescription1:
       "De start van een onderneming is een spannende maar ook uitdagende fase. Er moeten veel beslissingen worden genomen die bepalend zijn voor de toekomst van uw bedrijf. Professionele ondersteuning kan u helpen om de juiste keuzes te maken en kostbare fouten te voorkomen.",
     startupSupportDescription2:
-      "DMR Finance biedt specifieke ondersteuning voor startups en beginnende ondernemers. Wij helpen u bij het leggen van een solide financiële basis voor uw onderneming en begeleiden u bij de eerste stappen als ondernemer.",
+      "DMR Administratie biedt specifieke ondersteuning voor startups en beginnende ondernemers. Wij helpen u bij het leggen van een solide financiële basis voor uw onderneming en begeleiden u bij de eerste stappen als ondernemer.",
     startupSupportService1: "Advies over de keuze van rechtsvorm",
     startupSupportService2: "Opzetten van uw financiële administratie",
     startupSupportService3: "Begeleiding bij inschrijving KvK en Belastingdienst",
@@ -223,7 +223,7 @@ export const translations = {
     legalFinancialAdviceDescription1:
       "In het huidige complexe zakelijke landschap zijn juridische en financiële aspecten vaak nauw met elkaar verweven. Een geïntegreerde aanpak is daarom essentieel om uw bedrijf optimaal te beschermen en kansen te benutten.",
     legalFinancialAdviceDescription2:
-      "DMR Finance biedt een unieke combinatie van juridisch en financieel advies. Onze experts hebben kennis van beide vakgebieden en kunnen u daardoor holistisch adviseren over complexe zakelijke vraagstukken.",
+      "DMR Administratie biedt een unieke combinatie van juridisch en financieel advies. Onze experts hebben kennis van beide vakgebieden en kunnen u daardoor holistisch adviseren over complexe zakelijke vraagstukken.",
     legalFinancialAdviceService1: "Juridische structurering van uw onderneming",
     legalFinancialAdviceService2: "Opstellen en beoordelen van contracten",
     legalFinancialAdviceService3: "Advies over algemene voorwaarden",
@@ -240,7 +240,7 @@ export const translations = {
     individualsDescription1:
       "Ook als particulier kunt u te maken krijgen met complexe financiële en fiscale vraagstukken. Of het nu gaat om uw belastingaangifte, vermogensplanning of financiële beslissingen, professioneel advies kan u helpen om de juiste keuzes te maken.",
     individualsDescription2:
-      "Bij DMR Finance bieden wij uitgebreide dienstverlening voor particulieren. Onze adviseurs helpen u bij het optimaliseren van uw financiële situatie en het minimaliseren van uw belastingdruk.",
+      "Bij DMR Administratie bieden wij uitgebreide dienstverlening voor particulieren. Onze adviseurs helpen u bij het optimaliseren van uw financiële situatie en het minimaliseren van uw belastingdruk.",
     individualsService1: "Opstellen en indienen van uw belastingaangifte",
     individualsService2: "Advies over fiscale aftrekposten",
     individualsService3: "Begeleiding bij bezwaar- en beroepsprocedures",
@@ -263,7 +263,7 @@ export const translations = {
     pricingNOTK: "NOTK (nader overeen te komen)",
 
     // Why DMR
-    whyDmrTitle: "Waarom DMR Finance?",
+    whyDmrTitle: "Waarom DMR Administratie?",
     experience: "10+ jaar ervaring",
     minimalTax: "Minimale belasting betalen",
     youSendWeDo: "U stuurt, wij doen",
@@ -294,9 +294,9 @@ export const translations = {
     mostPopular: "Meest Populair",
 
     // About
-    aboutTitle: "Over DMR Finance",
+    aboutTitle: "Over DMR Administratie",
     aboutDescription:
-      "Bij DMR Finance houden we de lijnen kort. Hierdoor hebt u een persoonlijke benadering bij het verzorgen van uw financiële administratie. In de vele jaren ervaring als financiële dienstverleners hebben we ondervonden dat communicatie van groot belang is.",
+      "Bij DMR Administratie houden we de lijnen kort. Hierdoor hebt u een persoonlijke benadering bij het verzorgen van uw financiële administratie. In de vele jaren ervaring als financiële dienstverleners hebben we ondervonden dat communicatie van groot belang is.",
 
     // About page
     ourValues: "Onze Waarden",
@@ -310,7 +310,7 @@ export const translations = {
     commitment: "Betrokkenheid",
     commitmentDesc: "Uw succes is ons succes",
     storyParagraph1:
-      "DMR Finance is ontstaan uit de passie voor het helpen van ondernemers en particulieren bij hun financiële administratie. Met meer dan 10 jaar ervaring in de sector hebben wij een diepgaand begrip ontwikkeld van de uitdagingen waarmee onze klanten worden geconfronteerd.",
+      "DMR Administratie is ontstaan uit de passie voor het helpen van ondernemers en particulieren bij hun financiële administratie. Met meer dan 10 jaar ervaring in de sector hebben wij een diepgaand begrip ontwikkeld van de uitdagingen waarmee onze klanten worden geconfronteerd.",
     storyParagraph2:
       "Wij geloven dat goede communicatie en persoonlijke aandacht de sleutel zijn tot succesvol partnerschap. Daarom werken wij met een klein, toegewijd team dat elke klant de aandacht geeft die hij of zij verdient.",
     storyParagraph3:
@@ -453,13 +453,13 @@ export const translations = {
     heroTitle: "We manage your finances,",
     heroSubtitle: "you realize your ambitions",
     heroDescription:
-      "DMR Finance offers tailor-made financial solutions and professional advice to support your business in growth and success. We take care of complex administrative tasks, so you can fully focus on achieving your goals.",
+      "DMR Administration offers tailor-made financial solutions and professional advice to support your business in growth and success. We take care of complex administrative tasks, so you can fully focus on achieving your goals.",
     planMeeting: "Schedule a meeting",
 
     // Services
     servicesTitle: "Our services",
     servicesSubtitle:
-      "DMR Finance is an administration and advisory office that offers various services to companies, entrepreneurs and individuals.",
+      "DMR Administration is an administration and advisory office that offers various services to companies, entrepreneurs and individuals.",
 
     financialAdmin: "Financial Administration",
     financialAdminDesc:
@@ -499,7 +499,7 @@ export const translations = {
       "Combination of legal and financial expertise to optimally protect your business and seize opportunities in complex regulations.",
     individualsShort: "Experience with personal finances, improve your financial future.",
     readyToStart: "Ready to get started?",
-    readyToStartDesc: "Contact us and discover how DMR Finance can support your business.",
+    readyToStartDesc: "Contact us and discover how DMR Administration can support your business.",
 
     // New startup support content
     startupSupportTitle: "Start-up Support",
@@ -532,7 +532,7 @@ export const translations = {
     step3Title: "Execution",
     step3Desc: "We take care of the work and keep you informed of the progress.",
     readyToStartCta: "Contact us for a non-committal conversation about how we can help you.",
-    serviceNotFound: "Service not found - DMR Finance",
+    serviceNotFound: "Service not found - DMR Administration",
 
     // Service detail specific content
     financialAdminBenefit1: "Full processing of your financial administration",
@@ -543,7 +543,7 @@ export const translations = {
     financialAdminDescription1:
       "Good financial administration is the basis for the success of your company. It gives you insight into your financial position, helps you make strategic decisions and ensures that you meet all legal obligations.",
     financialAdminDescription2:
-      "At DMR Finance, we take this complex task completely off your hands. We ensure accurate processing of all your financial data, from invoices and receipts to bank statements and cash books. Our experienced professionals ensure that your administration is always up-to-date and compliant.",
+      "At DMR Administration, we take this complex task completely off your hands. We ensure accurate processing of all your financial data, from invoices and receipts to bank statements and cash books. Our experienced professionals ensure that your administration is always up-to-date and compliant.",
     financialAdminService1: "Processing your daily administration",
     financialAdminService2: "Preparing and submitting VAT returns",
     financialAdminService3: "Debtor and creditor management",
@@ -559,7 +559,7 @@ export const translations = {
     payrollAdminDescription1:
       "Correct payroll administration is essential for your company. It ensures that your employees are paid on time and correctly, and that you meet all legal obligations in the field of taxes and social security contributions.",
     payrollAdminDescription2:
-      "At DMR Finance, we take care of the complete payroll administration. Our specialists ensure that all salaries are calculated and paid correctly, and that all returns are submitted on time.",
+      "At DMR Administration, we take care of the complete payroll administration. Our specialists ensure that all salaries are calculated and paid correctly, and that all returns are submitted on time.",
     payrollAdminService1: "Preparing and processing salaries",
     payrollAdminService2: "Taking care of payslips",
     payrollAdminService3: "Submitting payroll returns",
@@ -577,7 +577,7 @@ export const translations = {
     taxAdviceDescription1:
       "Taxes are a significant cost item for both companies and individuals. However, with expert tax advice you can save considerably and optimize your tax position.",
     taxAdviceDescription2:
-      "At DMR Finance, our tax experts help you to minimize your tax burden within the legal frameworks. We closely monitor the changing tax legislation and adjust our advice accordingly.",
+      "At DMR Administration, our tax experts help you to minimize your tax burden within the legal frameworks. We closely monitor the changing tax legislation and adjust our advice accordingly.",
     taxAdviceService1: "Preparing and submitting tax returns",
     taxAdviceService2: "Tax planning and optimization",
     taxAdviceService3: "Advice on VAT issues",
@@ -594,7 +594,7 @@ export const translations = {
     creditMediationDescription1:
       "Access to capital is crucial for the growth and development of your company. Whether you want to invest in new equipment, purchase a property or need working capital, the right financing is essential.",
     creditMediationDescription2:
-      "As an independent credit intermediary, DMR Finance helps you find the most suitable financing solution. We have access to a broad network of financiers and know the market inside and out.",
+      "As an independent credit intermediary, DMR Administration helps you find the most suitable financing solution. We have access to a broad network of financiers and know the market inside and out.",
     creditMediationService1: "Analysis of your financing needs",
     creditMediationService2: "Advice on different forms of financing",
     creditMediationService3: "Preparing a financing application",
@@ -612,7 +612,7 @@ export const translations = {
     businessAdviceDescription1:
       "A clear strategy and good planning are essential for the success and growth of your company. With professional business advice you can make informed decisions and achieve your goals more effectively.",
     businessAdviceDescription2:
-      "At DMR Finance, we offer comprehensive business advice tailored to your needs. Our advisors have years of experience in various sectors and help you develop and implement effective strategies.",
+      "At DMR Administration, we offer comprehensive business advice tailored to your needs. Our advisors have years of experience in various sectors and help you develop and implement effective strategies.",
     businessAdviceService1: "Preparing business plans",
     businessAdviceService2: "Financial forecasts and scenario analyses",
     businessAdviceService3: "Cost analysis and efficiency improvements",
@@ -630,7 +630,7 @@ export const translations = {
     startupSupportDescription1:
       "Starting a business is an exciting but also challenging phase. Many decisions have to be made that determine the future of your company. Professional support can help you make the right choices and avoid costly mistakes.",
     startupSupportDescription2:
-      "DMR Finance offers specific support for startups and starting entrepreneurs. We help you lay a solid financial foundation for your company and guide you through the first steps as an entrepreneur.",
+      "DMR Administration offers specific support for startups and starting entrepreneurs. We help you lay a solid financial foundation for your company and guide you through the first steps as an entrepreneur.",
     startupSupportService1: "Advice on the choice of legal form",
     startupSupportService2: "Setting up your financial administration",
     startupSupportService3: "Guidance with registration at the Chamber of Commerce and Tax Authorities",
@@ -647,7 +647,7 @@ export const translations = {
     legalFinancialAdviceDescription1:
       "In today's complex business landscape, legal and financial aspects are often closely intertwined. An integrated approach is therefore essential to optimally protect your company and seize opportunities.",
     legalFinancialAdviceDescription2:
-      "DMR Finance offers a unique combination of legal and financial advice. Our experts have knowledge of both fields and can therefore advise you holistically on complex business issues.",
+      "DMR Administration offers a unique combination of legal and financial advice. Our experts have knowledge of both fields and can therefore advise you holistically on complex business issues.",
     legalFinancialAdviceService1: "Legal structuring of your company",
     legalFinancialAdviceService2: "Drafting and reviewing contracts",
     legalFinancialAdviceService3: "Advice on general terms and conditions",
@@ -664,7 +664,7 @@ export const translations = {
     individualsDescription1:
       "Even as an individual, you may face complex financial and tax issues. Whether it concerns your tax return, wealth planning or financial decisions, professional advice can help you make the right choices.",
     individualsDescription2:
-      "At DMR Finance, we offer comprehensive services for individuals. Our advisors help you optimize your financial situation and minimize your tax burden.",
+      "At DMR Administration, we offer comprehensive services for individuals. Our advisors help you optimize your financial situation and minimize your tax burden.",
     individualsService1: "Preparing and submitting your tax return",
     individualsService2: "Advice on tax deductions",
     individualsService3: "Guidance with objection and appeal procedures",
@@ -687,7 +687,7 @@ export const translations = {
     pricingNOTK: "TBD (to be determined)",
 
     // Why DMR
-    whyDmrTitle: "Why DMR Finance?",
+    whyDmrTitle: "Why DMR Administration?",
     experience: "10+ years experience",
     minimalTax: "Minimal tax payment",
     youSendWeDo: "You send, we do",
@@ -719,10 +719,10 @@ export const translations = {
     mostPopular: "Most Popular",
 
     // About
-    aboutTitle: "About DMR Finance",
-    rights: "2024 DMR Finance. All rights reserved.",
+    aboutTitle: "About DMR Administration",
+    rights: "2024 DMR Administration. All rights reserved.",
     aboutDescription:
-      "At DMR Finance we keep the lines short. This gives you a personal approach when providing your financial administration. In our many years of experience as financial service providers, we have found that communication is of great importance.",
+      "At DMR Administration we keep the lines short. This gives you a personal approach when providing your financial administration. In our many years of experience as financial service providers, we have found that communication is of great importance.",
 
     // About page
     ourValues: "Our Values",
@@ -737,13 +737,13 @@ export const translations = {
     commitment: "Commitment",
     commitmentDesc: "Your success is our success",
     storyParagraph1:
-      "DMR Finance was born out of a passion for helping entrepreneurs and individuals with their financial administration. With over 10 years of experience in the industry, we have developed a deep understanding of the challenges our clients face.",
+      "DMR Administration was born out of a passion for helping entrepreneurs and individuals with their financial administration. With over 10 years of experience in the industry, we have developed a deep understanding of the challenges our clients face.",
     storyParagraph2:
       "We believe that good communication and personal attention are key to a successful partnership. That's why we work with a small, dedicated team that gives each client the attention they deserve.",
     storyParagraph3:
       "Our goal is simple: to relieve your administrative burden so you can focus on what you do best - running your business and realizing your dreams.",
     makeContact:
-      "Contact DMR Finance for all your questions about financial administration, payroll administration, and tax advice.",
+      "Contact DMR Administration for all your questions about financial administration, payroll administration, and tax advice.",
 
     openingTimeTitle: "Opening Hours",
     openingTimeDays: "Monday to Friday",
@@ -885,20 +885,20 @@ export const translations = {
     quote: "Оферта",
     moreInfo: "Повече информация",
     makeContact:
-      "Свържете се с DMR Finance за всички ваши въпроси относно финансовата администрация, администрацията на заплатите и данъчните консултации.",
+      "Свържете се с DMR Administratie за всички ваши въпроси относно финансовата администрация, администрацията на заплатите и данъчните консултации.",
 
     // Hero Section
     heroTitle: "Ние управляваме вашите финанси,",
     heroSubtitle: "вие реализирате амбициите си",
     heroDescription:
-      "DMR Finance предлага персонализирани финансови решения и професионални съвети за подкрепа на вашия бизнес в растежа и успеха. Ние поемаме сложните административни задачи, за да можете да се съсредоточите изцяло върху постигането на целите си.",
+      "DMR Administratie предлага персонализирани финансови решения и професионални съвети за подкрепа на вашия бизнес в растежа и успеха. Ние поемаме сложните административни задачи, за да можете да се съсредоточите изцяло върху постигането на целите си.",
     planMeeting: "Планирайте среща",
     createdby: "Създадено от DevKan",
 
     // Services
     servicesTitle: "Нашите услуги",
     servicesSubtitle:
-      "DMR Finance е административна и консултантска кантора, която предлага различни услуги на компании, предприемачи и частни лица.",
+      "DMR Administratie е административна и консултантска кантора, която предлага различни услуги на компании, предприемачи и частни лица.",
 
     financialAdmin: "Финансова администрация",
     financialAdminDesc:
@@ -938,7 +938,7 @@ export const translations = {
       "Комбинация от правна и финансова експертиза за оптимална защита на вашия бизнес и използване на възможностите в сложните регулации.",
     individualsShort: "Опит с лични финанси, подобрете финансовото си бъдеще.",
     readyToStart: "Готови ли сте да започнете?",
-    readyToStartDesc: "Свържете се с нас и открийте как DMR Finance може да подкрепи вашия бизнес.",
+    readyToStartDesc: "Свържете се с нас и открийте как DMR Administratie може да подкрепи вашия бизнес.",
 
     // New startup support content
     startupSupportTitle: "Поддръжка за стартъпи",
@@ -956,7 +956,7 @@ export const translations = {
 
     // Service detail page
     requestQuote: "Заявете оферта",
-    rights: "2024 DMR Finance. Всички права запазени.",
+    rights: "2024 DMR Administratie. Всички права запазени.",
     benefits: "Предимства",
     aboutThisService: "За тази услуга",
     whatWeDo: "Какво правим за вас",
@@ -972,7 +972,7 @@ export const translations = {
     step3Title: "Изпълнение",
     step3Desc: "Поемаме работата и ви държим в течение за напредъка.",
     readyToStartCta: "Свържете се с нас за необвързващ разговор за това как можем да ви помогнем.",
-    serviceNotFound: "Услугата не е намерена - DMR Finance",
+    serviceNotFound: "Услугата не е намерена - DMR Administratie",
 
     // Service detail specific content
     financialAdminBenefit1: "Пълна обработка на вашата финансова администрация",
@@ -983,7 +983,7 @@ export const translations = {
     financialAdminDescription1:
       "Добрата финансова администрация е основата за успеха на вашата компания. Тя ви дава представа за вашето финансово състояние, помага ви да вземате стратегически решения и гарантира, че спазвате всички законови задължения.",
     financialAdminDescription2:
-      "В DMR Finance ние напълно поемаме тази сложна задача. Ние гарантираме точна обработка на всички ваши финансови данни, от фактури и разписки до банкови извлечения и касови книги. Нашите опитни професионалисти гарантират, че вашата администрация е винаги актуална и съвместима.",
+      "В DMR Administratie ние напълно поемаме тази сложна задача. Ние гарантираме точна обработка на всички ваши финансови данни, от фактури и разписки до банкови извлечения и касови книги. Нашите опитни професионалисти гарантират, че вашата администрация е винаги актуална и съвместима.",
     financialAdminService1: "Обработка на вашата ежедневна администрация",
     financialAdminService2: "Съставяне и подаване на ДДС декларации",
     financialAdminService3: "Управление на дебитори и кредитори",
@@ -999,7 +999,7 @@ export const translations = {
     payrollAdminDescription1:
       "Правилната администрация на заплатите е от съществено значение за вашата компания. Тя гарантира, че вашите служители са платени навреме и правилно и че спазвате всички законови задължения в областта на данъците и социалните осигуровки.",
     payrollAdminDescription2:
-      "В DMR Finance ние се грижим за цялата администрация на заплатите. Нашите специалисти гарантират, че всички заплати са изчислени и изплатени правилно и че всички декларации са подадени навреме.",
+      "В DMR Administratie ние се грижим за цялата администрация на заплатите. Нашите специалисти гарантират, че всички заплати са изчислени и изплатени правилно и че всички декларации са подадени навреме.",
     payrollAdminService1: "Съставяне и обработка на заплати",
     payrollAdminService2: "Грижа за фишове за заплати",
     payrollAdminService3: "Подаване на декларации за заплати",
@@ -1016,7 +1016,7 @@ export const translations = {
     taxAdviceDescription1:
       "Данъците са значителен разход както за компаниите, така и за физическите лица. С експертни данъчни съвети обаче можете да спестите значително и да оптимизирате данъчната си позиция.",
     taxAdviceDescription2:
-      "В DMR Finance нашите данъчни експерти ви помагат да минимизирате данъчната си тежест в рамките на законовите рамки. Ние следим отблизо променящото се данъчно законодателство и съответно коригираме нашите съвети.",
+      "В DMR Administratie нашите данъчни експерти ви помагат да минимизирате данъчната си тежест в рамките на законовите рамки. Ние следим отблизо променящото се данъчно законодателство и съответно коригираме нашите съвети.",
     taxAdviceService1: "Съставяне и подаване на данъчни декларации",
     taxAdviceService2: "Данъчно планиране и оптимизация",
     taxAdviceService3: "Съвети относно въпроси, свързани с ДДС",
@@ -1033,7 +1033,7 @@ export const translations = {
     creditMediationDescription1:
       "Достъпът до капитал е от решаващо значение за растежа и развитието на вашата компания. Независимо дали искате да инвестирате в ново оборудване, да закупите имот или се нуждаете от оборотен капитал, правилното финансиране е от съществено значение.",
     creditMediationDescription2:
-      "Като независим кредитен посредник, DMR Finance ви помага да намерите най-подходящото решение за финансиране. Имаме достъп до широка мрежа от финансисти и познаваме пазара отвътре и отвън.",
+      "Като независим кредитен посредник, DMR Administratie ви помага да намерите най-подходящото решение за финансиране. Имаме достъп до широка мрежа от финансисти и познаваме пазара отвътре и отвън.",
     creditMediationService1: "Анализ на вашите нужди от финансиране",
     creditMediationService2: "Съвети относно различни форми на финансиране",
     creditMediationService3: "Подготовка на заявление за финансиране",
@@ -1049,7 +1049,7 @@ export const translations = {
     businessAdviceDescription1:
       "Ясна стратегия и добро планиране са от съществено значение за успеха и растежа на вашата компания. С професионални бизнес съвети можете да вземате информирани решения и да постигате целите си по-ефективно.",
     businessAdviceDescription2:
-      "В DMR Finance предлагаме изчерпателни бизнес съвети, съобразени с вашите нужди. Нашите съветници имат дългогодишен опит в различни сектори и ви помагат да разработите и приложите ефективни стратегии.",
+      "В DMR Administratie предлагаме изчерпателни бизнес съвети, съобразени с вашите нужди. Нашите съветници имат дългогодишен опит в различни сектори и ви помагат да разработите и приложите ефективни стратегии.",
     businessAdviceService1: "Подготовка на бизнес планове",
     businessAdviceService2: "Финансови прогнози и анализи на сценарии",
     businessAdviceService3: "Анализ на разходите и подобрения на ефективността",
@@ -1066,7 +1066,7 @@ export const translations = {
     startupSupportDescription1:
       "Стартирането на бизнес е вълнуваща, но и предизвикателна фаза. Трябва да се вземат много решения, които определят бъдещето на вашата компания. Професионалната подкрепа може да ви помогне да направите правилния избор и да избегнете скъпи грешки.",
     startupSupportDescription2:
-      "DMR Finance предлага специфична подкрепа за стартиращи фирми и начинаещи предприемачи. Ние ви помагаме да поставите солидна финансова основа за вашата компания и ви напътстваме през първите стъпки като предприемач.",
+      "DMR Administratie предлага специфична подкрепа за стартиращи фирми и начинаещи предприемачи. Ние ви помагаме да поставите солидна финансова основа за вашата компания и ви напътстваме през първите стъпки като предприемач.",
     startupSupportService1: "Съвети относно избора на правна форма",
     startupSupportService2: "Създаване на вашата финансова администрация",
     startupSupportService3: "Насоки при регистрация в Търговската камара и данъчните органи",
@@ -1083,7 +1083,7 @@ export const translations = {
     legalFinancialAdviceDescription1:
       "В днешния сложен бизнес пейзаж правните и финансовите аспекти често са тясно преплетени. Интегрираният подход затова е от съществено значение за оптимална защита на вашата компания и използване на възможностите.",
     legalFinancialAdviceDescription2:
-      "DMR Finance предлага уникална комбинация от правни и финансови съвети. Нашите експерти имат познания и в двете области и затова могат да ви дават холистични съвети по сложни бизнес въпроси.",
+      "DMR Administratie предлага уникална комбинация от правни и финансови съвети. Нашите експерти имат познания и в двете области и затова могат да ви дават холистични съвети по сложни бизнес въпроси.",
     legalFinancialAdviceService1: "Правно структуриране на вашата компания",
     legalFinancialAdviceService2: "Изготвяне и преглед на договори",
     legalFinancialAdviceService3: "Съвети относно общи условия",
@@ -1100,7 +1100,7 @@ export const translations = {
     individualsDescription1:
       "Дори като частно лице можете да се сблъскате със сложни финансови и данъчни въпроси. Независимо дали става въпрос за вашата данъчна декларация, планиране на богатството или финансови решения, професионалните съвети могат да ви помогнат да направите правилните избори.",
     individualsDescription2:
-      "В DMR Finance предлагаме изчерпателни услуги за частни лица. Нашите съветници ви помагат да оптимизирате финансовата си ситуация и да минимизирате данъчната си тежест.",
+      "В DMR Administratie предлагаме изчерпателни услуги за частни лица. Нашите съветници ви помагат да оптимизирате финансовата си ситуация и да минимизирате данъчната си тежест.",
     individualsService1: "Подготовка и подаване на вашата данъчна декларация",
     individualsService2: "Съвети относно данъчни приспадания",
     individualsService3: "Насоки при процедури за възражение и обжалване",
@@ -1124,7 +1124,7 @@ export const translations = {
     pricingNOTK: "ДСУД (да се уговори допълнително)",
 
     // Why DMR
-    whyDmrTitle: "Защо DMR Finance?",
+    whyDmrTitle: "Защо DMR Administratie?",
     experience: "10+ години опит",
     minimalTax: "Минимални данъчни плащания",
     youSendWeDo: "Вие изпращате, ние правим",
@@ -1156,9 +1156,9 @@ export const translations = {
     mostPopular: "Най-популярен",
 
     // About
-    aboutTitle: "За DMR Finance",
+    aboutTitle: "За DMR Administratie",
     aboutDescription:
-      "В DMR Finance поддържаме кратките линии. Това ви дава личен подход при предоставянето на вашата финансова администрация. В нашия дългогодишен опит като доставчици на финансови услуги установихме, че комуникацията е от голямо значение.",
+      "В DMR Administratie поддържаме кратките линии. Това ви дава личен подход при предоставянето на вашата финансова администрация. В нашия дългогодишен опит като доставчици на финансови услуги установихме, че комуникацията е от голямо значение.",
 
     // About page
     ourValues: "Нашите ценности",
@@ -1172,7 +1172,7 @@ export const translations = {
     commitment: "Ангажираност",
     commitmentDesc: "Вашият успех е нашият успех",
     storyParagraph1:
-      "DMR Finance се роди от страстта за помощ на предприемачи и частни лица с тяхната финансова администрация. С над 10 години опит в индустрията, развихме дълбоко разбиране на предизвикателствата, пред които са изправени нашите клиенти.",
+      "DMR Administratie се роди от страстта за помощ на предприемачи и частни лица с тяхната финансова администрация. С над 10 години опит в индустрията, развихме дълбоко разбиране на предизвикателствата, пред които са изправени нашите клиенти.",
     storyParagraph2:
       "Вярваме, че добрата комуникация и личното внимание са ключът към успешно партньорство. Затова работим с малък, отдаден екип, който дава на всеки клиент вниманието, което заслужава.",
     storyParagraph3:
@@ -1320,19 +1320,19 @@ export const translations = {
     quote: "Teklif",
     moreInfo: "Daha fazla bilgi",
     makeContact:
-      "Mali yönetim, bordro yönetimi ve vergi danışmanlığı konularındaki tüm sorularınız için DMR Finance ile iletişime geçin.",
+      "Mali yönetim, bordro yönetimi ve vergi danışmanlığı konularındaki tüm sorularınız için DMR Administratie ile iletişime geçin.",
 
     // Hero Section
     heroTitle: "Mali işlerinizi biz yönetiriz,",
     heroSubtitle: "siz hedeflerinizi gerçekleştirirsiniz",
     heroDescription:
-      "DMR Finance, işletmenizin büyüme ve başarısını desteklemek için özel yapım mali çözümler ve profesyonel danışmanlık sunar. Karmaşık idari görevleri üstleniriz, böylece siz tamamen hedeflerinizi gerçekleştirmeye odaklanabilirsiniz.",
+      "DMR Adminitratie, işletmenizin büyüme ve başarısını desteklemek için özel yapım mali çözümler ve profesyonel danışmanlık sunar. Karmaşık idari görevleri üstleniriz, böylece siz tamamen hedeflerinizi gerçekleştirmeye odaklanabilirsiniz.",
     planMeeting: "Görüşme planlayın",
 
     // Services
     servicesTitle: "Hizmetlerimiz",
     servicesSubtitle:
-      "DMR Finance, şirketlere, girişimcilere ve bireylere çeşitli hizmetler sunan bir yönetim ve danışmanlık ofisidir.",
+      "DMR Administratie, şirketlere, girişimcilere ve bireylere çeşitli hizmetler sunan bir yönetim ve danışmanlık ofisidir.",
 
     financialAdmin: "Mali Yönetim",
     financialAdminDesc:
@@ -1372,7 +1372,7 @@ export const translations = {
       "İşletmenizi optimal şekilde korumak ve karmaşık düzenlemelerde fırsatları değerlendirmek için hukuki ve mali uzmanlığın birleşimi.",
     individualsShort: "Kişisel finans deneyimi, mali geleceğinizi iyileştirin.",
     readyToStart: "Başlamaya hazır mısınız?",
-    readyToStartDesc: "Bizimle iletişime geçin ve DMR Finance'ın işletmenizi nasıl destekleyebileceğini keşfedin.",
+    readyToStartDesc: "Bizimle iletişime geçin ve DMR Administratie'ın işletmenizi nasıl destekleyebileceğini keşfedin.",
 
     // New startup support content
     startupSupportTitle: "Startup Desteği",
@@ -1404,11 +1404,11 @@ export const translations = {
     step2Desc: "İhtiyaçlarınıza mükemmel şekilde uyan kişisel bir plan oluşturuyoruz.",
     step3Title: "Uygulama",
     Nederland: "Hollanda",
-    rights: "2024 DMR Finance. Tüm hakları saklıdır.",
+    rights: "2024 DMR Administratie. Tüm hakları saklıdır.",
     step3Desc: "İşleri üstleniyor ve ilerleme hakkında sizi bilgilendiriyoruz.",
     readyToStartCta:
       "Size nasıl yardımcı olabileceğimiz konusunda bağlayıcı olmayan bir görüşme için bizimle iletişime geçin.",
-    serviceNotFound: "Hizmet bulunamadı - DMR Finance",
+    serviceNotFound: "Hizmet bulunamadı - DMR Administratie",
 
     // Service detail specific content
     financialAdminBenefit1: "Mali yönetiminizin tam işleme alınması",
@@ -1419,7 +1419,7 @@ export const translations = {
     financialAdminDescription1:
       "İyi mali yönetim şirketinizin başarısının temelidir. Mali durumunuz hakkında fikir verir, stratejik kararlar almanıza yardımcı olur ve tüm yasal yükümlülükleri yerine getirmenizi sağlar.",
     financialAdminDescription2:
-      "DMR Finance'ta bu karmaşık görevi tamamen üstleniyoruz. Faturalardan ve makbuzlardan banka ekstrelerine ve kasa defterlerine kadar tüm mali verilerinizin doğru işlenmesini sağlıyoruz. Deneyimli profesyonellerimiz yönetiminizin her zaman güncel ve uyumlu olmasını sağlar.",
+      "DMR Administratie'ta bu karmaşık görevi tamamen üstleniyoruz. Faturalardan ve makbuzlardan banka ekstrelerine ve kasa defterlerine kadar tüm mali verilerinizin doğru işlenmesini sağlıyoruz. Deneyimli profesyonellerimiz yönetiminizin her zaman güncel ve uyumlu olmasını sağlar.",
     financialAdminService1: "Günlük yönetiminizin işlenmesi",
     financialAdminService2: "KDV beyannamelerinin hazırlanması ve sunulması",
     createdby: "DevKan tarafından oluşturuldu",
@@ -1436,7 +1436,7 @@ export const translations = {
     payrollAdminDescription1:
       "Doğru bordro yönetimi şirketiniz için hayati önem taşır. Çalışanlarınızın zamanında ve doğru şekilde ödenmesini ve vergiler ve sosyal primler alanında tüm yasal yükümlülükleri yerine getirmenizi sağlar.",
     payrollAdminDescription2:
-      "DMR Finance'ta tam bordro yönetimini üstleniyoruz. Uzmanlarımız tüm maaşların doğru hesaplanıp ödendiğinden ve tüm beyannamelerin zamanında sunulduğundan emin olur.",
+      "DMR Administratie'ta tam bordro yönetimini üstleniyoruz. Uzmanlarımız tüm maaşların doğru hesaplanıp ödendiğinden ve tüm beyannamelerin zamanında sunulduğundan emin olur.",
     payrollAdminService1: "Maaşların hazırlanması ve işlenmesi",
     payrollAdminService2: "Maaş bordrolarının bakımı",
     payrollAdminService3: "Bordro beyannamelerinin sunulması",
@@ -1453,7 +1453,7 @@ export const translations = {
     taxAdviceDescription1:
       "Vergiler hem şirketler hem de bireyler için önemli bir maliyet kalemidir. Ancak uzman vergi danışmanlığı ile önemli ölçüde tasarruf edebilir ve vergi pozisyonunuzu optimize edebilirsiniz.",
     taxAdviceDescription2:
-      "DMR Finance'ta vergi uzmanlarımız yasal çerçeveler içinde vergi yükünüzü minimize etmenize yardımcı olur. Değişen vergi mevzuatını yakından takip ediyor ve danışmanlığımızı buna göre ayarlıyoruz.",
+      "DMR Administratie'ta vergi uzmanlarımız yasal çerçeveler içinde vergi yükünüzü minimize etmenize yardımcı olur. Değişen vergi mevzuatını yakından takip ediyor ve danışmanlığımızı buna göre ayarlıyoruz.",
     taxAdviceService1: "Vergi beyannamelerinin hazırlanması ve sunulması",
     taxAdviceService2: "Vergi planlaması ve optimizasyonu",
     taxAdviceService3: "KDV sorunları hakkında danışmanlık",
@@ -1470,7 +1470,7 @@ export const translations = {
     creditMediationDescription1:
       "Sermayeye erişim şirketinizin büyümesi ve gelişimi için hayati önem taşır. Yeni ekipmana yatırım yapmak, gayrimenkul satın almak veya işletme sermayesine ihtiyacınız olsun, doğru finansman esastır.",
     creditMediationDescription2:
-      "Bağımsız kredi aracısı olarak DMR Finance en uygun finansman çözümünü bulmanızda size yardımcı olur. Geniş finansör ağımıza erişimimiz var ve piyasayı çok iyi biliyoruz.",
+      "Bağımsız kredi aracısı olarak DMR Administratie en uygun finansman çözümünü bulmanızda size yardımcı olur. Geniş finansör ağımıza erişimimiz var ve piyasayı çok iyi biliyoruz.",
     creditMediationService1: "Finansman ihtiyaçlarınızın analizi",
     creditMediationService2: "Farklı finansman türleri hakkında danışmanlık",
     creditMediationService3: "Finansman başvurusunun hazırlanması",
@@ -1487,7 +1487,7 @@ export const translations = {
     businessAdviceDescription1:
       "Net bir strateji ve iyi planlama şirketinizin başarısı ve büyümesi için esastır. Profesyonel iş danışmanlığı ile bilinçli kararlar alabilir ve hedeflerinize daha etkili şekilde ulaşabilirsiniz.",
     businessAdviceDescription2:
-      "DMR Finance'ta ihtiyaçlarınıza göre kapsamlı iş danışmanlığı sunuyoruz. Danışmanlarımız çeşitli sektörlerde yıllarca deneyime sahiptir ve etkili stratejiler geliştirip uygulamanızda size yardımcı olur.",
+      "DMR Administratie'ta ihtiyaçlarınıza göre kapsamlı iş danışmanlığı sunuyoruz. Danışmanlarımız çeşitli sektörlerde yıllarca deneyime sahiptir ve etkili stratejiler geliştirip uygulamanızda size yardımcı olur.",
     businessAdviceService1: "İş planlarının hazırlanması",
     businessAdviceService2: "Mali tahminler ve senaryo analizleri",
     businessAdviceService3: "Maliyet analizi ve verimlilik iyileştirmeleri",
@@ -1504,7 +1504,7 @@ export const translations = {
     startupSupportDescription1:
       "Bir işletmeye başlamak heyecan verici ama aynı zamanda zorlu bir aşamadır. Şirketinizin geleceğini belirleyen birçok karar verilmelidir. Profesyonel destek doğru seçimler yapmanıza ve maliyetli hatalardan kaçınmanıza yardımcı olabilir.",
     startupSupportDescription2:
-      "DMR Finance startup'lar ve başlangıç girişimcileri için özel destek sunar. Şirketiniz için sağlam mali temel atmanızda size yardımcı oluyor ve girişimci olarak ilk adımlarınızda size rehberlik ediyoruz.",
+      "DMR Administratie startup'lar ve başlangıç girişimcileri için özel destek sunar. Şirketiniz için sağlam mali temel atmanızda size yardımcı oluyor ve girişimci olarak ilk adımlarınızda size rehberlik ediyoruz.",
     startupSupportService1: "Yasal form seçimi hakkında danışmanlık",
     startupSupportService2: "Mali yönetiminizin kurulması",
     startupSupportService3: "Ticaret Odası ve Vergi Dairesi kaydı konusunda rehberlik",
@@ -1521,7 +1521,7 @@ export const translations = {
     legalFinancialAdviceDescription1:
       "Günümüzün karmaşık iş ortamında hukuki ve mali yönler genellikle iç içe geçmiştir. Bu nedenle entegre bir yaklaşım şirketinizi optimal şekilde korumak ve fırsatları değerlendirmek için esastır.",
     legalFinancialAdviceDescription2:
-      "DMR Finance hukuki ve mali danışmanlığın benzersiz bir kombinasyonunu sunar. Uzmanlarımız her iki alanda da bilgi sahibidir ve bu nedenle karmaşık iş sorunları hakkında size bütünsel danışmanlık verebilir.",
+      "DMR Administratie hukuki ve mali danışmanlığın benzersiz bir kombinasyonunu sunar. Uzmanlarımız her iki alanda da bilgi sahibidir ve bu nedenle karmaşık iş sorunları hakkında size bütünsel danışmanlık verebilir.",
     legalFinancialAdviceService1: "Şirketinizin hukuki yapılandırılması",
     legalFinancialAdviceService2: "Sözleşmelerin hazırlanması ve gözden geçirilmesi",
     legalFinancialAdviceService3: "Genel şartlar ve koşullar hakkında danışmanlık",
@@ -1538,7 +1538,7 @@ export const translations = {
     individualsDescription1:
       "Birey olarak da karmaşık mali ve vergi sorunlarıyla karşılaşabilirsiniz. Vergi beyannameniz, varlık planlaması veya mali kararlar olsun, profesyonel danışmanlık doğru seçimler yapmanıza yardımcı olabilir.",
     individualsDescription2:
-      "DMR Finance'ta bireyler için kapsamlı hizmetler sunuyoruz. Danışmanlarımız mali durumunuzu optimize etmenize ve vergi yükünüzü minimize etmenize yardımcı olur.",
+      "DMR Administratie'ta bireyler için kapsamlı hizmetler sunuyoruz. Danışmanlarımız mali durumunuzu optimize etmenize ve vergi yükünüzü minimize etmenize yardımcı olur.",
     individualsService1: "Vergi beyannamenizin hazırlanması ve sunulması",
     individualsService2: "Vergi indirimleri hakkında danışmanlık",
     individualsService3: "İtiraz ve temyiz prosedürlerinde rehberlik",
@@ -1561,7 +1561,7 @@ export const translations = {
     pricingNOTK: "BSK (belirlenmesi sonradan kararlaştırılacak)",
 
     // Why DMR
-    whyDmrTitle: "Neden DMR Finance?",
+    whyDmrTitle: "Neden DMR Administratie?",
     experience: "10+ yıl deneyim",
     minimalTax: "Minimum vergi ödemesi",
     youSendWeDo: "Siz gönderirsiniz, biz yaparız",
@@ -1593,9 +1593,9 @@ export const translations = {
     mostPopular: "En Popüler",
 
     // About
-    aboutTitle: "DMR Finance Hakkında",
+    aboutTitle: "DMR Administratie Hakkında",
     aboutDescription:
-      "DMR Finance'ta hatları kısa tutuyoruz. Bu size mali yönetiminizi sağlarken kişisel bir yaklaşım verir. Mali hizmet sağlayıcıları olarak uzun yıllara dayanan deneyimimizde iletişimin büyük önem taşıdığını gördük.",
+      "DMR Administratie'ta hatları kısa tutuyoruz. Bu size mali yönetiminizi sağlarken kişisel bir yaklaşım verir. Mali hizmet sağlayıcıları olarak uzun yıllara dayanan deneyimimizde iletişimin büyük önem taşıdığını gördük.",
 
     // About page
     ourValues: "Değerlerimiz",
@@ -1609,7 +1609,7 @@ export const translations = {
     commitment: "Bağlılık",
     commitmentDesc: "Sizin başarınız bizim başarımız",
     storyParagraph1:
-      "DMR Finance, girişimcilere ve bireylere mali yönetimleri konusunda yardım etme tutkusundan doğdu. Sektörde 10 yılı aşkın deneyimle, müşterilerimizin karşılaştığı zorlukları derinlemesine anlayacak şekilde geliştik.",
+      "DMR Administratie, girişimcilere ve bireylere mali yönetimleri konusunda yardım etme tutkusundan doğdu. Sektörde 10 yılı aşkın deneyimle, müşterilerimizin karşılaştığı zorlukları derinlemesine anlayacak şekilde geliştik.",
     storyParagraph2:
       "İyi iletişim ve kişisel ilginin başarılı ortaklığın anahtarı olduğuna inanıyoruz. Bu nedenle her müşteriye hak ettiği ilgiyi gösteren küçük, kendini adamış bir ekiple çalışıyoruz.",
     storyParagraph3:

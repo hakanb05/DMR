@@ -3,9 +3,9 @@ import { Suspense } from "react"
 import ContactWrapper from "./contact-wrapper"
 
 export const metadata: Metadata = {
-  title: "Contact - DMR Finance",
+  title: "Contact - DMR Administratie",
   description:
-    "Neem contact op met DMR Finance voor al uw vragen over financiële administratie, loonadministratie en belastingadvies. Plan direct een gesprek.",
+    "Neem contact op met DMR Administratie voor al uw vragen over financiële administratie, loonadministratie en belastingadvies. Plan direct een gesprek.",
 }
 
 function ContactPageSkeleton() {

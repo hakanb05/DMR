@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     }
 
     const { data: emailData, error } = await resend.emails.send({
-      from: "DMR Finance <info@dmradministratie.nl>",
+      from: "DMR Administratie <info@dmradministratie.nl>",
     // from: "onboarding@resend.dev",
       to: ["Info@dmradministratie.nl"],
       subject,
@@ -68,16 +68,16 @@ function generateContactEmail(data: any) {
     </head>
     <body>
       <div class="header">
-        <h1>🏢 DMR Finance</h1>
+        <h1>🏢 DMR Administratie</h1>
         <h2>Nieuwe Contactaanvraag</h2>
       </div>
-      
+
       <div class="content">
         <div class="field">
           <span class="label">👤 Naam:</span>
           <div class="value">${data.name || "Niet opgegeven"}</div>
         </div>
-        
+
         ${
           data.company
             ? `
@@ -88,12 +88,12 @@ function generateContactEmail(data: any) {
         `
             : ""
         }
-        
+
         <div class="field">
           <span class="label">📧 Email:</span>
           <div class="value"><a href="mailto:${data.email}">${data.email || "Niet opgegeven"}</a></div>
         </div>
-        
+
         ${
           data.phone
             ? `
@@ -104,16 +104,16 @@ function generateContactEmail(data: any) {
         `
             : ""
         }
-        
+
         <div class="field">
           <span class="label">💬 Bericht:</span>
           <div class="value">${data.message || "Geen bericht opgegeven"}</div>
         </div>
       </div>
-      
+
       <div class="footer">
-        <p>Deze email is automatisch gegenereerd via de DMR Finance website.</p>
-        <p><strong>DMR Finance</strong> | Administratie & Advies</p>
+        <p>Deze email is automatisch gegenereerd via de DMR Administratie website.</p>
+        <p><strong>DMR Administratie</strong> | Administratie & Advies</p>
       </div>
     </body>
     </html>
@@ -143,16 +143,16 @@ function generateAppointmentEmail(data: any) {
     </head>
     <body>
       <div class="header">
-        <h1>📅 DMR Finance</h1>
+        <h1>📅 DMR Administratie</h1>
         <h2>Nieuwe Afspraakverzoek</h2>
       </div>
-      
+
       <div class="content">
         <div class="field">
           <span class="label">👤 Naam:</span>
           <div class="value">${data.name}</div>
         </div>
-        
+
         ${
           data.company
             ? `
@@ -163,12 +163,12 @@ function generateAppointmentEmail(data: any) {
         `
             : ""
         }
-        
+
         <div class="field">
           <span class="label">📧 Email:</span>
           <div class="value"><a href="mailto:${data.email}">${data.email}</a></div>
         </div>
-        
+
         ${
           data.phone
             ? `
@@ -179,7 +179,7 @@ function generateAppointmentEmail(data: any) {
         `
             : ""
         }
-        
+
         ${
           data.preferredDate
             ? `
@@ -190,7 +190,7 @@ function generateAppointmentEmail(data: any) {
         `
             : ""
         }
-        
+
         ${
           data.preferredTime
             ? `
@@ -226,7 +226,7 @@ function generateAppointmentEmail(data: any) {
         `
             : ""
         }
-        
+
         ${
           data.message
             ? `
@@ -241,7 +241,7 @@ function generateAppointmentEmail(data: any) {
 
       <div class="footer">
         <p>⚡ <strong>Actie vereist:</strong> Neem contact op met de klant om de afspraak in te plannen.</p>
-        <p><strong>DMR Finance</strong> | Administratie & Advies</p>
+        <p><strong>DMR Administratie</strong> | Administratie & Advies</p>
       </div>
     </body>
     </html>
@@ -273,7 +273,7 @@ function generateQuoteEmail(data: any) {
     </head>
     <body>
       <div class="header">
-        <h1>💼 DMR Finance</h1>
+        <h1>💼 DMR Administratie</h1>
         <h2>Nieuwe Offerteaanvraag</h2>
       </div>
 
@@ -333,7 +333,7 @@ function generateQuoteEmail(data: any) {
               : ""
           }
         </div>
-        
+
         <div class="grid">
           ${
             data.monthlyTransactions
@@ -345,7 +345,7 @@ function generateQuoteEmail(data: any) {
           `
               : ""
           }
-          
+
           ${
             data.yearlyInvoices
               ? `
@@ -387,7 +387,7 @@ function generateQuoteEmail(data: any) {
 
       <div class="footer">
         <p>💰 <strong>Actie vereist:</strong> Bereid een offerte voor op basis van de verstrekte informatie.</p>
-        <p><strong>DMR Finance</strong> | Administratie & Advies</p>
+        <p><strong>DMR Administratie</strong> | Administratie & Advies</p>
       </div>
     </body>
     </html>

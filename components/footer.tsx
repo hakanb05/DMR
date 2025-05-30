@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Linkedin, Instagram } from "lucide-react"
+import { Mail, Phone, MapPin, Clock } from "lucide-react"
 import { useLanguage } from "@/lib/contexts/language-context"
 import { Button } from "@/components/ui/button"
 
@@ -11,16 +11,17 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
-          <div className="mb-4">
-            <img
-              src="/images/logo/dark.png"
-              alt="DMR Finance logo"
-              className="h-40 w-40 object-contain"
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Bedrijfsinformatie */}
+          <div>
+            <div className="mb-4">
+              <img
+                src="/images/logo/dark.png"
+                alt="DMR Administratie logo"
+                className="h-24 object-contain"
+              />
+            </div>
+            <p className="text-gray-300 mb-2">Administratie & Advies</p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-blue-400" />
@@ -29,13 +30,13 @@ export default function Footer() {
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
                 <a href="mailto:info@dmrfinance.nl" className="text-gray-300 hover:text-blue-400">
-                Info@dmradministratie.nl
+                  Info@dmradministratie.nl
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
                 <a href="https://wa.me/31685295247" className="text-gray-300 hover:text-blue-400">
-                0685295247
+                  0685295247
                 </a>
               </div>
             </div>
@@ -68,39 +69,43 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Openingstijden */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
-            <div className="space-y-2 text-gray-300">
+            <h3 className="text-lg font-semibold mb-4">{t("openingHours")}</h3>
+            <div className="text-gray-300 text-sm space-y-1">
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-blue-400" />
-                <a href="mailto:info@dmrfinance.nl" className="hover:text-blue-400">
-                Info@dmradministratie.nl
+                <Clock className="h-4 w-4 text-blue-400" />
+                <span>{t("mondayFriday")}: 8:30 - 18:00</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 text-blue-400" />
+                <span>{t("saturdaySunday")}: 9:00 - 13:00</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="h-4 w-4 text-blue-400" />
+                <span>{t("closed")}</span>
+              </div>
+            </div>
+            <div className="mt-4">
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="text-blue-400 border-blue-400 hover:bg-blue-400/10"
+              >
+                <a href="https://wa.me/31685295247">
+                  <span className="mr-2">{t("quickContactWhatsApp")}</span>
                 </a>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-blue-400" />
-                <span>0685295247</span>
-              </div>
-              <div className="mt-2">
-                <Button
-                  asChild
-                  variant="outline"
-                  size="sm"
-                  className="text-blue-400 border-blue-400 hover:bg-blue-400/10"
-                >
-                  <a href="https://wa.me/31685295247">
-                    <span className="mr-2">{t("quickContactWhatsApp")}</span>
-                  </a>
-                </Button>
-              </div>
+              </Button>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy;{t("rights")}</p>
-          <a href="www.devkan.nl"> {t("createdby") }</a>
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+          <p>&copy; {t("rights")}</p>
+          <p className="mt-1">
+            <a href="https://www.devkan.nl" className="hover:text-blue-400">{t("createdby")}</a>
+          </p>
         </div>
       </div>
     </footer>
