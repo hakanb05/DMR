@@ -1191,6 +1191,7 @@ export const translations = {
     financialAdminBenefit1: "Finansal yönetiminizin tam olarak işlenmesi",
     financialAdminBenefit2: "Zamanında ve doğru KDV beyannameleri",
     financialAdminBenefit3: "Finansal durumunuza ilişkin içgörü",
+    planMeeting: "Bir görüşme planlayın",
     financialAdminBenefit4: "Yıllık hesaplar ve finansal raporlar",
     financialAdminBenefit5: "Kişisel rehberlik ve tavsiye",
     financialAdminDescription1:

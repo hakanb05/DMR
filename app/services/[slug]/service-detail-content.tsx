@@ -23,7 +23,7 @@ export default function ServiceDetailContent({ service }: ServiceDetailContentPr
   const serviceContent = {
     "financial-administration": {
       icon: "/images/services/financial.png",
-      bzenefits: [
+      benefits: [
         t("financialAdminBenefit1"),
         t("financialAdminBenefit2"),
         t("financialAdminBenefit3"),
