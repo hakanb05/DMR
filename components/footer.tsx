@@ -99,11 +99,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 text-blue-400" />
-                <span>{t("saturdaySunday")}: 9:00 - 13:00</span>
+                <span>{t("saturday")}: 9:00 - 13:00</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 text-blue-400" />
-                <span>{t("closed")}</span>
+                <span> {t("sunday")} {t("closed")}</span>
               </div>
             </div>
             <div className="mt-4">

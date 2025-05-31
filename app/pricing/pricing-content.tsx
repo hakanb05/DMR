@@ -88,6 +88,7 @@ export default function PricingContent() {
       name: t("particulierenTitle"),
       price: t("particulierenPrice"),
       popular: false,
+      perRequest: true,
       features: [
         t("particulierenFeature1"),
         t("particulierenFeature2"),
@@ -175,7 +176,11 @@ export default function PricingContent() {
                         </span>
                       )}
                       {!plan.smallPriceText && (
-                        <span className="text-gray-600 dark:text-gray-300 ml-2">{t("perMonth")}</span>
+                        plan.perRequest ? (
+                          <span className="text-gray-600 dark:text-gray-300 ml-2">{t("perRequest")}</span>
+                        ) : (
+                          <span className="text-gray-600 dark:text-gray-300 ml-2">{t("perMonth")}</span>
+                        )
                       )}
                     </div>
                   </CardHeader>
