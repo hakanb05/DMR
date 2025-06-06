@@ -27,7 +27,7 @@ export default function PricingContent() {
     },
     {
       name: "EENMANSZAAK",
-      price: "150",
+      price: "175",
       popular: true,
       features: [
         t("pricingFeature500BankTransactions"),
